@@ -33,6 +33,7 @@ fields:
     name: url
     label: url
 pages:
+- _posts/abejassss.md
 - _posts/dynamic-routing.md
 - _posts/hello-world.md
 - _posts/preview.md
