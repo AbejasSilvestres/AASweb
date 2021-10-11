@@ -2,38 +2,38 @@
 label: Post
 hide_body: false
 fields:
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: excerpt
+  label: excerpt
+- type: file
+  name: coverImage
+  label: coverImage
+- type: datetime
+  name: date
+  label: date
+  default: now
+- type: field_group
+  name: author
+  label: author
+  fields:
   - type: text
-    name: title
-    label: title
-  - type: textarea
-    name: excerpt
-    label: excerpt
+    name: name
+    label: name
   - type: file
-    name: coverImage
-    label: coverImage
-  - type: datetime
-    name: date
-    label: date
-    default: now
-  - type: field_group
-    name: author
-    label: author
-    fields:
-      - type: text
-        name: name
-        label: name
-      - type: file
-        name: picture
-        label: picture
-  - type: field_group
-    name: ogImage
-    label: ogImage
-    fields:
-      - type: file
-        name: url
-        label: url
+    name: picture
+    label: picture
+- type: field_group
+  name: ogImage
+  label: ogImage
+  fields:
+  - type: file
+    name: url
+    label: url
 pages:
-  - _posts/abejassss.md
-  - _posts/dynamic-routing.md
-  - _posts/hello-world.md
-  - _posts/preview.md
+- _posts/abejassss.md
+- _posts/dynamic-routing.md
+- _posts/hello-world.md
+- _posts/preview.md
