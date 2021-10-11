@@ -5,7 +5,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prettier": "npx prettier --write ."
   },
   "dependencies": {
     "classnames": "2.3.1",

@@ -8,6 +8,6 @@ author:
   picture: ''
 ogImage:
   url: ''
-
 ---
-Y aqui escribo más cosas de abejas.... 
+
+Y aqui escribo más cosas de abejas....
