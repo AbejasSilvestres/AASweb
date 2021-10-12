@@ -1,5 +1,5 @@
 const prod = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  assetPrefix: prod ? '/AASweb/' : '',
+  'process.env.BACKEND_URL': prod ? '/AASweb' : '',
 };
