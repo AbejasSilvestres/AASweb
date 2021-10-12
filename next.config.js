@@ -1,5 +1,6 @@
 const prod = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  basePath: '/AASweb',
+  basePath: prod ? '/AASweb' : '',
+  assetPrefix: prod ? '/AASweb/' : '',
 };
