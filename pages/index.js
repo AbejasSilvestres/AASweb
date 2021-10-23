@@ -1,10 +1,8 @@
-import Container from '../components/container';
 import MoreStories from '../components/more-stories';
 import HeroPost from '../components/hero-post';
-import Intro from '../components/intro';
-import Layout from '../components/layout';
 import { getAllPosts } from '../lib/api';
 import Head from 'next/head';
+import { Navbar, Container, Layout } from '../components';
 
 export default function Index({ allPosts }) {
   const heroPost = allPosts[0];
@@ -13,11 +11,9 @@ export default function Index({ allPosts }) {
     <>
       <Layout>
         <Head>
-          <title>Next.js Blog Example</title>
+          <title>Abejas silvestres</title>
         </Head>
         <Container>
-          <link rel="shortcut icon" href="/favicon/favicon.ico" />
-          <Intro />
           {heroPost && (
             <HeroPost
               title={heroPost.title}
