@@ -5,8 +5,8 @@ const navbarLinks = [
   { href: '/bees', label: 'Abejas de España' },
   { href: '/projects', label: 'Proyectos' },
   { href: '/resources', label: 'Recursos' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/about-us', label: 'Quiénes somos' },
+  { href: '/posts', label: 'Blog' },
+  { href: '/about', label: 'Quiénes somos' },
 ];
 
 export const Navbar = () => (

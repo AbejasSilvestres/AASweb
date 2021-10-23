@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import { Container, Layout } from '../components';
 
-const Index = () => (
+const Resources = () => (
   <Layout>
     <Head>
-      <title>Abejas silvestres</title>
+      <title>Recursos</title>
     </Head>
-    <Container>Abejas silvestres</Container>
+    <Container>recursos</Container>
   </Layout>
 );
 
-export default Index;
+export default Resources;
