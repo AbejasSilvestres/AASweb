@@ -1,8 +1,8 @@
 import classNames from 'classnames';
 import Link from 'next/link';
-import { getBasePath } from '../lib/utils';
+import { getBasePath } from '../../lib/utils';
 
-export default function CoverImage({ title, src, slug, height, width }) {
+export const CoverImage = ({ title, src, slug, height, width }) => {
   const image = (
     <img
       src={`${getBasePath()}${src}`}
@@ -26,4 +26,4 @@ export default function CoverImage({ title, src, slug, height, width }) {
       )}
     </div>
   );
-}
+};

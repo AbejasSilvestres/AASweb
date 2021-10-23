@@ -1,33 +1,31 @@
-import MoreStories from '../../components/more-stories';
-import HeroPost from '../../components/hero-post';
-import { getAllPosts } from '../../lib/api';
 import Head from 'next/head';
-import { Container, Layout } from '../../components';
+import { getAllPosts } from '../../lib/api';
+import { Container, Layout, PostPreview } from '../../components';
 
 export default function Index({ allPosts }) {
-  const heroPost = allPosts[0];
-  const morePosts = allPosts.slice(1);
   return (
-    <>
-      <Layout>
-        <Head>
-          <title>Blog</title>
-        </Head>
-        <Container>
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        </Container>
-      </Layout>
-    </>
+    <Layout>
+      <Head>
+        <title>Blog</title>
+      </Head>
+      <Container>
+        <section>
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
+            {allPosts.map((post) => (
+              <PostPreview
+                key={post.slug}
+                title={post.title}
+                coverImage={post.coverImage}
+                date={post.date}
+                author={post.author}
+                slug={post.slug}
+                excerpt={post.excerpt}
+              />
+            ))}
+          </div>
+        </section>
+      </Container>
+    </Layout>
   );
 }
 
