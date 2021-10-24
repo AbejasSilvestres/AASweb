@@ -6,7 +6,7 @@ export const AboutIntro = () => (
   <TwoColumnSection
     left={
       <img
-        src={`${getBasePath()}/assets/logo.png`}
+        src={`${getBasePath()}/assets/Logo.png`}
         alt="Logo"
         className="w-80 block"
       />

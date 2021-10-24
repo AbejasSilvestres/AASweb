@@ -9,6 +9,11 @@ sections:
   label: Posts
   create: documents
   match: "*.md"
+- type: directory
+  path: _members
+  label: Members
+  create: documents
+  match: "*.md"
 upload_dir: public/assets
 public_path: "/assets"
 front_matter_path: ''
