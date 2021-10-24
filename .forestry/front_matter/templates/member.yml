@@ -14,4 +14,3 @@ fields:
 - type: text
   name: url
   label: url
-
