@@ -3,7 +3,7 @@ import classNames from 'classnames';
 export const FooterHeading = ({ className, ...rest }) => (
   <h6
     className={classNames(
-      'text-neutral-0',
+      'text-neutral-200',
       'text-xl',
       'font-bold',
       'font-raleway',

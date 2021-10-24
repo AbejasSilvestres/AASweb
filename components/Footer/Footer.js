@@ -6,8 +6,8 @@ import { FooterText } from './FooterText';
 export const Footer = () => (
   <footer className="bg-primary-800 py-16">
     <Container>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4">
-        <div className="col-span-1">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 mb-20">
+        <div className="col-span-1 mb-8 md:mb-0">
           <FooterHeading>Social</FooterHeading>
           <ul>
             <li className="leading-none">
@@ -28,7 +28,7 @@ export const Footer = () => (
             </li>
           </ul>
         </div>
-        <div className="col-span-1">
+        <div className="col-span-1 mb-8 md:mb-0">
           <FooterHeading>Address</FooterHeading>
           <p>
             <FooterText>Asociación Abejas Silvestres</FooterText>
@@ -47,6 +47,10 @@ export const Footer = () => (
           </ExternalFooterLink>
         </div>
       </div>
+      <div className="h-px bg-neutral-500 mb-2" />
+      <span className="text-sm text-neutral-400 font-raleway">
+        @{new Date().getFullYear()} Asociacion Abejas Silvestres
+      </span>
     </Container>
   </footer>
 );

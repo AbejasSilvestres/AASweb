@@ -3,7 +3,7 @@ import classNames from 'classnames';
 export const FooterText = ({ className, children, ...rest }) => (
   <span
     className={classNames(
-      'text-neutral-300',
+      'text-neutral-400',
       'font-raleway',
       'text-base',
       'block',
