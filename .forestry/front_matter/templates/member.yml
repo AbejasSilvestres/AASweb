@@ -5,15 +5,25 @@ fields:
 - type: text
   name: name
   label: name
+  config:
+    required: true
 - type: textarea
   name: description
   label: description
+  config:
+    required: true
+    min: 100
+    max: 300
 - type: file
   name: photo
   label: photo
+  description: Square photo of at least 160px x 160px
+  config:
+    required: true
 - type: text
   name: url
   label: url
-  description: Square photo of at least 160px x 160px
+  config:
+    required: true
 pages:
 - _members/ignasi-bartomeus.md
