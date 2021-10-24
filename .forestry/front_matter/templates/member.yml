@@ -14,5 +14,6 @@ fields:
 - type: text
   name: url
   label: url
+  description: Square photo of at least 160px x 160px
 pages:
 - _members/ignasi-bartomeus.md

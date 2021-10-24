@@ -10,7 +10,9 @@ export const NavbarLink = ({ className, children, href, ...rest }) => {
       <a
         className={classNames(
           isActive ? 'text-primary-500' : 'text-neutral-900',
+          isActive ? 'border-primary-400' : 'border-neutral-0',
           'inline-block',
+          'whitespace-nowrap',
           'hover:text-primary-500',
           'focus-within:text-primary-500',
           'outline-none',
@@ -18,7 +20,6 @@ export const NavbarLink = ({ className, children, href, ...rest }) => {
           'font-semibold',
           'text-lg',
           'border-b-2',
-          isActive ? 'border-primary-400' : 'border-neutral-0',
           className
         )}
       >

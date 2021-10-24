@@ -19,12 +19,12 @@ fields:
   name: author
   label: author
   fields:
-  - type: text
-    name: name
-    label: name
-  - type: file
-    name: picture
-    label: picture
+- type: text
+  name: name
+  label: name
+- type: file
+  name: picture
+  label: picture
 - type: field_group
   name: ogImage
   label: ogImage
