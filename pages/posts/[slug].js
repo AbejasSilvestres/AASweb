@@ -7,7 +7,7 @@ import {
   PostBody,
   PostHeader,
 } from '../../components';
-import { getPostBySlug, getAllPosts } from '../../lib/api';
+import { getPostBySlug, getAllPosts } from '../../lib/api/posts';
 import Head from 'next/head';
 import markdownToHtml from '../../lib/markdownToHtml';
 

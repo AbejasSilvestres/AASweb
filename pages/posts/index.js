@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { getAllPosts } from '../../lib/api';
+import { getAllPosts } from '../../lib/api/posts';
 import { Container, Layout, PostPreview } from '../../components';
 
 export default function Index({ allPosts }) {
