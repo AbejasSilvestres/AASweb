@@ -47,7 +47,7 @@ export const Footer = () => (
           </ExternalFooterLink>
         </div>
       </div>
-      <div className="h-px bg-neutral-500 mb-2" />
+      <div className="h-px bg-neutral-700 mb-2" />
       <span className="text-sm text-neutral-400 font-raleway">
         @{new Date().getFullYear()} Asociacion Abejas Silvestres
       </span>

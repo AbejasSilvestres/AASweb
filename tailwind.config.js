@@ -1,8 +1,13 @@
 module.exports = {
   theme: {
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+    },
     colors: {
       primary: {
-        50: '#E0EACB',
+        50: '#FAFBF7',
         100: '#D5E2B9',
         200: '#BFD494',
         300: '#AAC570',
