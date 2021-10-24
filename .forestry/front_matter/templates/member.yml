@@ -1,0 +1,17 @@
+---
+label: Member
+hide_body: true
+fields:
+- type: text
+  name: name
+  label: name
+- type: textarea
+  name: description
+  label: description
+- type: file
+  name: photo
+  label: photo
+- type: text
+  name: url
+  label: url
+
