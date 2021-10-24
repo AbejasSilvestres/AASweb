@@ -26,4 +26,5 @@ fields:
   config:
     required: true
 pages:
+- _members/another-user.md
 - _members/ignasi-bartomeus.md

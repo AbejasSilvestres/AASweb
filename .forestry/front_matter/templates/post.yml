@@ -18,7 +18,6 @@ fields:
 - type: field_group
   name: author
   label: author
-  fields:
 - type: text
   name: name
   label: name
