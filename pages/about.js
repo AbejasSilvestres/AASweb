@@ -10,12 +10,13 @@ export default function About({ allMembers }) {
       </Head>
       <AboutIntro />
       <AboutMembers>
-        {allMembers.map(({ name, photo, description }) => (
+        {allMembers.map(({ name, photo, description, url }) => (
           <AboutMember
             key={name}
             name={name}
             photo={photo}
             description={description}
+            url={url}
           />
         ))}
       </AboutMembers>
@@ -24,7 +25,7 @@ export default function About({ allMembers }) {
 }
 
 export async function getStaticProps() {
-  const allMembers = getAllMembers(['name', 'link', 'photo', 'description']);
+  const allMembers = getAllMembers(['name', 'url', 'photo', 'description']);
   return {
     props: { allMembers },
   };
