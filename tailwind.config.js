@@ -36,5 +36,5 @@ module.exports = {
       raleway: 'Raleway',
     },
   },
-  purge: ['./components/**/*.js', './pages/**/*.js'],
+  purge: ['./components/**/*.js', './containers/**/*.js', './pages/**/*.js'],
 };
