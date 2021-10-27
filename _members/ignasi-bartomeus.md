@@ -1,10 +1,9 @@
 ---
-name: First member
-description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-  an unknown printer took a galley of type and scrambled it to make a type specimen
-  book.
+name: Ignasi (Nacho) Bartomeus
+description: Soy investigador en EBD-CSIC y estoy interesado en entender la ecología
+  de los polinizadores. Creamos *AbejasSilvestres* para poder usar el conocimiento
+  científico para conservar las abejas nativas.
 photo: "/assets/ibartomeus.png"
-url: ''
+url: www.bartomeuslab.com
 
 ---
