@@ -26,6 +26,6 @@ fields:
   config:
     required: true
 pages:
+- _members/Bartomeus.md
 - _members/Magrach.md
 - _members/Molina.md
-- _members/ignasi-bartomeus.md
