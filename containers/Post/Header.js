@@ -1,10 +1,10 @@
-import { CoverImage } from '../CoverImage/CoverImage';
+import { CoverImage } from '../../components';
 import { DateFormatter } from './DateFormatter';
-import { PostTitle } from './Title';
+import { Title } from './Title';
 
-export const PostHeader = ({ title, coverImage, date, author }) => (
+export const Header = ({ title, coverImage, date, author }) => (
   <>
-    <PostTitle>{title}</PostTitle>
+    <Title>{title}</Title>
     <div className="mb-8 md:mb-16 sm:mx-0">
       <CoverImage title={title} src={coverImage} height={620} width={1240} />
     </div>

@@ -1,15 +1,8 @@
 import Link from 'next/link';
 import { DateFormatter } from './DateFormatter';
-import { CoverImage } from '../CoverImage/CoverImage';
+import { CoverImage } from '../../components';
 
-export const PostPreview = ({
-  title,
-  coverImage,
-  date,
-  excerpt,
-  author,
-  slug,
-}) => (
+export const Preview = ({ title, coverImage, date, excerpt, author, slug }) => (
   <div>
     <div className="mb-5">
       <CoverImage

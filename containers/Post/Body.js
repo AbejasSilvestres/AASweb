@@ -1,6 +1,6 @@
 import markdownStyles from './markdown-styles.module.css';
 
-export const PostBody = ({ content }) => (
+export const Body = ({ content }) => (
   <div className="max-w-2xl mx-auto">
     <div
       className={markdownStyles['markdown']}

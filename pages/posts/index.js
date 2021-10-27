@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import { getAllPosts } from '../../lib/api/posts';
-import { Container, Layout, PostPreview } from '../../components';
+import { Container, Layout } from '../../components';
+import { Post } from '../../containers';
 
-export default function Index({ allPosts }) {
+export default function IndexPage({ allPosts }) {
   return (
     <Layout>
       <Head>
@@ -12,7 +13,7 @@ export default function Index({ allPosts }) {
         <section>
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
             {allPosts.map((post) => (
-              <PostPreview
+              <Post.Preview
                 key={post.slug}
                 title={post.title}
                 coverImage={post.coverImage}

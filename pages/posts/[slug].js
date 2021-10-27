@@ -1,17 +1,12 @@
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
-import {
-  Container,
-  Layout,
-  PostTitle,
-  PostBody,
-  PostHeader,
-} from '../../components';
-import { getPostBySlug, getAllPosts } from '../../lib/api/posts';
 import Head from 'next/head';
+import { Container, Layout } from '../../components';
+import { Post } from '../../containers';
+import { getPostBySlug, getAllPosts } from '../../lib/api/posts';
 import markdownToHtml from '../../lib/markdownToHtml';
 
-export default function Post({ post, morePosts, preview }) {
+export default function PostPage({ post, morePosts, preview }) {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -20,7 +15,7 @@ export default function Post({ post, morePosts, preview }) {
     <Layout preview={preview}>
       <Container>
         {router.isFallback ? (
-          <PostTitle>Loading…</PostTitle>
+          <Post.Title>Loading…</Post.Title>
         ) : (
           <>
             <article className="mb-32">
@@ -28,13 +23,13 @@ export default function Post({ post, morePosts, preview }) {
                 <title>{post.title} | Next.js Blog Example</title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
-              <PostHeader
+              <Post.Header
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
                 author={post.author}
               />
-              <PostBody content={post.content} />
+              <Post.Body content={post.content} />
             </article>
           </>
         )}
