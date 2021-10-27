@@ -1,6 +1,6 @@
-import { SectionContainer, SectionTitle } from '../Section';
+import { SectionContainer, SectionTitle } from '../../components';
 
-export const AboutMembers = ({ children }) => (
+export const Members = ({ children }) => (
   <SectionContainer className="bg-primary-50">
     <div className="pb-16">
       <SectionTitle className="mb-16">Miembros</SectionTitle>

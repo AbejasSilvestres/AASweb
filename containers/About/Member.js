@@ -1,8 +1,8 @@
 import { ExternalLinkOutline } from '../../icons';
-import { ExternalLink } from '../ExternalLink/ExternalLink';
+import { ExternalLink } from '../../components';
 import { getBasePath } from '../../lib/utils';
 
-export const AboutMember = ({ photo, name, url, description }) => (
+export const Member = ({ photo, name, url, description }) => (
   <div>
     <div className="flex gap-8">
       <div className="w-40 h-40 flex-shrink-0 rounded-full overflow-hidden border-neutral-300 border-2">

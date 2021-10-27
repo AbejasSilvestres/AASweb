@@ -1,8 +1,7 @@
-import { TwoColumnSection } from '../TwoColumnSection/TwoColumnSection';
-import { SectionTitle, SectionText } from '../Section';
+import { SectionTitle, SectionText, TwoColumnSection } from '../../components';
 import { getBasePath } from '../../lib/utils';
 
-export const AboutIntro = () => (
+export const Intro = () => (
   <TwoColumnSection
     left={
       <img

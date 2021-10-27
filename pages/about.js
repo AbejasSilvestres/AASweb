@@ -1,17 +1,18 @@
 import Head from 'next/head';
 import { getAllMembers } from '../lib/api/members';
-import { Layout, AboutMembers, AboutIntro, AboutMember } from '../components';
+import { Layout } from '../components';
+import { About } from '../containers';
 
-export default function About({ allMembers }) {
+export default function AboutPage({ allMembers }) {
   return (
     <Layout>
       <Head>
         <title>Quiénes somos</title>
       </Head>
-      <AboutIntro />
-      <AboutMembers>
+      <About.Intro />
+      <About.Members>
         {allMembers.map(({ name, photo, description, url }) => (
-          <AboutMember
+          <About.Member
             key={name}
             name={name}
             photo={photo}
@@ -19,7 +20,7 @@ export default function About({ allMembers }) {
             url={url}
           />
         ))}
-      </AboutMembers>
+      </About.Members>
     </Layout>
   );
 }
