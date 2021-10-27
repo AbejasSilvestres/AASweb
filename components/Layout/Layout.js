@@ -1,6 +1,6 @@
-import { Meta } from '../Meta/Meta';
-import { Footer } from '../Footer/Footer';
-import { Navbar } from '../Navbar/Navbar';
+import { Meta } from './Meta';
+import { Footer } from './Footer';
+import { Navbar } from './Navbar';
 
 export const Layout = ({ children }) => (
   <>

@@ -1,4 +1,4 @@
-import { Container } from '../Container/Container';
+import { Container } from '../../Container/Container';
 import { ExternalFooterLink } from './ExternalFooterLink';
 import { FooterHeading } from './FooterHeading';
 import { FooterText } from './FooterText';
