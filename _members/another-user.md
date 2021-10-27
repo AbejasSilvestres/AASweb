@@ -1,10 +1,10 @@
 ---
-name: Another user
-description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-  an unknown printer took a galley of type and scrambled it to make a type specimen
-  book.
-photo: "/assets/ibartomeus.png"
-url: google.com
+name: Curro Molina
+description: Soy técnico y entomólogo en EBD-CSIC, donde desarrollo diversas funciones
+  entre ellas la taxonomía de abejas y preparación de colecciones. Conocer la diversidad
+  de abejas silvestres es necesario para poder conservarlas y por eso creamos esta
+  asociación.
+photo: "/assets/20210514_103230.jpg"
+url: https://twitter.com/curromolfue
 
 ---
