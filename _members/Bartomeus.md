@@ -4,6 +4,6 @@ description: Soy investigador en EBD-CSIC y estoy interesado en entender la ecol
   de los polinizadores. Creamos Abejas Silvestres para poder usar el conocimiento
   científico para conservar las abejas nativas.
 photo: "/assets/ibartomeus.png"
-url: www.bartomeuslab.com
+url: https://www.bartomeuslab.com
 
 ---
