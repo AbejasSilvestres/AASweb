@@ -13,7 +13,7 @@ export const Preview = ({ title, coverImage, date, excerpt, author, slug }) => (
         <a className="hover:underline focus:underline">{title}</a>
       </Link>
     </h2>
-    <time className="text-lg mb-6 inline-block text-neutral-700 font-light">
+    <time className="text-lg mb-6 inline-block font-light">
       {formatDate(date)}
     </time>
     <p className="text-lg leading-relaxed mb-8">{excerpt}</p>

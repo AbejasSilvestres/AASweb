@@ -1,12 +1,8 @@
-.markdown {
-  @apply text-lg leading-relaxed;
-}
-
 .markdown p,
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply my-6;
+  @apply my-6 text-lg leading-relaxed;
 }
 
 .markdown h2 {
