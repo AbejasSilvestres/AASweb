@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import Head from 'next/head';
 import { Container, Layout } from '../../components';
-import { Post } from '../../containers';
+import { Blog } from '../../containers';
 import { getPostBySlug, getAllPosts } from '../../lib/api/posts';
 import markdownToHtml from '../../lib/markdownToHtml';
 
@@ -15,7 +15,7 @@ export default function PostPage({ post, morePosts, preview }) {
     <Layout preview={preview}>
       <Container>
         {router.isFallback ? (
-          <Post.Title>Loading…</Post.Title>
+          <Blog.Title>Loading…</Blog.Title>
         ) : (
           <>
             <article className="mb-32">
@@ -23,13 +23,13 @@ export default function PostPage({ post, morePosts, preview }) {
                 <title>{post.title} | Next.js Blog Example</title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
-              <Post.Header
+              <Blog.Header
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
                 author={post.author}
               />
-              <Post.Body content={post.content} />
+              <Blog.Body content={post.content} />
             </article>
           </>
         )}

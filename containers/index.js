@@ -1,2 +1,2 @@
 export * as About from './About';
-export * as Post from './Post';
+export * as Blog from './Blog';
