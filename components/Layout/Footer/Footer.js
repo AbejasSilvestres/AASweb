@@ -4,7 +4,7 @@ import { FooterHeading } from './FooterHeading';
 import { FooterText } from './FooterText';
 
 export const Footer = () => (
-  <footer className="bg-primary-800 py-16">
+  <footer className="bg-primary-800 py-16 h-full">
     <Container>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 mb-20">
         <div className="col-span-1 mb-8 md:mb-0">

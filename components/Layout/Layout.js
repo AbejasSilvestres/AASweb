@@ -5,8 +5,12 @@ import { Navbar } from './Navbar';
 export const Layout = ({ children }) => (
   <>
     <Meta />
-    <Navbar />
-    <main className="min-h-screen">{children}</main>
-    <Footer />
+    <div className="flex flex-col h-full">
+      <Navbar />
+      <main>{children}</main>
+      <div className="flex-grow">
+        <Footer />
+      </div>
+    </div>
   </>
 );
