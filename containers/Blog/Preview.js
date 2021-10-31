@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { DateFormatter } from './DateFormatter';
-import { CoverImage } from '../../components';
+import { CoverImage } from './CoverImage';
 
 export const Preview = ({ title, coverImage, date, excerpt, author, slug }) => (
   <div>

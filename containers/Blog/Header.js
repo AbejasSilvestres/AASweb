@@ -1,4 +1,4 @@
-import { CoverImage } from '../../components';
+import { CoverImage } from './CoverImage';
 import { DateFormatter } from './DateFormatter';
 import { Title } from './Title';
 
