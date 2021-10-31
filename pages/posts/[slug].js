@@ -20,7 +20,7 @@ export default function PostPage({ post, morePosts, preview }) {
           <>
             <article className="mb-32">
               <Head>
-                <title>{post.title} | Next.js Blog Example</title>
+                <title>{post.title}</title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
               <Blog.Header

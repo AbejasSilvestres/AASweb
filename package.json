@@ -15,7 +15,6 @@
   "dependencies": {
     "@svgr/cli": "^5.5.0",
     "classnames": "^2.3.1",
-    "date-fns": "2.25.0",
     "gray-matter": "4.0.3",
     "next": "latest",
     "react": "^17.0.2",
