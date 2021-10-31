@@ -8,7 +8,6 @@ export const Link = ({ className, children, ...rest }) => (
         'text-primary-500',
         'hover:text-primary-600',
         'focus-within:text-primary-600',
-        'font-raleway',
         'font-semibold',
         'text-lg',
         className

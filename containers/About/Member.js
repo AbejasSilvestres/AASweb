@@ -13,7 +13,7 @@ export const Member = ({ photo, name, url, description }) => (
         />
       </div>
       <div className="flex-grow items-center">
-        <h3 className="font-raleway font-semibold text-xl text-neutral-800 leading-relaxed mb-4 flex items-center">
+        <h3 className="font-semibold text-xl leading-relaxed mb-4 flex items-center">
           <span>{name}</span>
           <ExternalLink
             href={url}
@@ -23,9 +23,7 @@ export const Member = ({ photo, name, url, description }) => (
             <ExternalLinkOutline />
           </ExternalLink>
         </h3>
-        <p className="font-raleway font-normal text-base text-neutral-800 leading-relaxed">
-          {description}
-        </p>
+        <p className="font-normal text-base leading-relaxed">{description}</p>
       </div>
     </div>
   </div>

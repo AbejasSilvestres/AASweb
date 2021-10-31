@@ -6,7 +6,6 @@ export const ExternalFooterLink = ({ className, children, ...rest }) => (
       'text-neutral-400',
       'hover:text-primary-400',
       'focus-within:text-primary-400',
-      'font-raleway',
       'text-base',
       'inline-block',
       className
