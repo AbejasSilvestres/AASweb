@@ -2,14 +2,12 @@ import classNames from 'classnames';
 import Link from 'next/link';
 import { getBasePath } from '../../lib/utils';
 
-export const CoverImage = ({ title, src, slug, height, width }) => {
+export const CoverImage = ({ title, src, slug }) => {
   const image = (
     <img
       src={`${getBasePath()}${src}`}
       alt={`Una Imagen para ${title}`}
       className={slug ? '' : 'shadow-sm'}
-      width={width}
-      height={height}
     />
   );
   return slug ? (
