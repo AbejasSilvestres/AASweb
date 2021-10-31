@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { CoverImage } from './CoverImage';
-import { Avatar } from './Avatar';
+import { Author } from './Author';
 import { formatDate } from '../../lib/utils';
 
 export const Preview = ({ title, coverImage, date, excerpt, author, slug }) => (
@@ -17,6 +17,6 @@ export const Preview = ({ title, coverImage, date, excerpt, author, slug }) => (
       {formatDate(date)}
     </time>
     <p className="text-lg leading-relaxed mb-8">{excerpt}</p>
-    <Avatar name={author.name} picture={author.picture} />
+    <Author name={author.name} picture={author.picture} />
   </article>
 );
