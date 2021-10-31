@@ -6,35 +6,31 @@ import { Blog } from '../../containers';
 import { getPostBySlug, getAllPosts } from '../../lib/api/posts';
 import markdownToHtml from '../../lib/markdownToHtml';
 
-export default function PostPage({ post, morePosts, preview }) {
+export default function PostPage({ post, morePosts }) {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
   return (
-    <Layout preview={preview}>
-      <Container>
-        {router.isFallback ? (
-          <Blog.Title>Loading…</Blog.Title>
-        ) : (
-          <>
-            <article className="mb-32">
-              <Head>
-                <title>{post.title}</title>
-                <meta property="og:image" content={post.ogImage.url} />
-              </Head>
-              <Blog.Header
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                author={post.author}
-              />
-              <Blog.Body content={post.content} />
-            </article>
-          </>
-        )}
-      </Container>
-    </Layout>
+    <>
+      <Head>
+        <title>{post.title}</title>
+        <meta property="og:image" content={post.ogImage.url} />
+      </Head>
+      <Layout>
+        <Container>
+          <Blog.Post>
+            <Blog.Header
+              title={post.title}
+              coverImage={post.coverImage}
+              date={post.date}
+              author={post.author}
+            />
+            <Blog.Body content={post.content} />
+          </Blog.Post>
+        </Container>
+      </Layout>
+    </>
   );
 }
 

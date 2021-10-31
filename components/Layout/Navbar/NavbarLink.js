@@ -4,7 +4,8 @@ import classNames from 'classnames';
 
 export const NavbarLink = ({ className, children, href, ...rest }) => {
   const { pathname } = useRouter();
-  const isActive = href === pathname;
+  const isActive = href === '/' ? pathname === '/' : pathname.includes(href);
+
   return (
     <NextLink href={href} {...rest}>
       <a
