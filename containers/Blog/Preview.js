@@ -3,7 +3,7 @@ import { CoverImage } from './CoverImage';
 import { formatDate } from '../../lib/utils';
 
 export const Preview = ({ title, coverImage, date, excerpt, author, slug }) => (
-  <div>
+  <article>
     <div className="mb-5">
       <CoverImage
         slug={slug}
@@ -15,10 +15,12 @@ export const Preview = ({ title, coverImage, date, excerpt, author, slug }) => (
     </div>
     <h2 className="mb-3">
       <Link as={`/posts/${slug}`} href="/posts/[slug]">
-        <a className="hover:underline">{title}</a>
+        <a className="hover:underline focus:underline">{title}</a>
       </Link>
     </h2>
-    <div className="text-lg mb-4">{formatDate(date)}</div>
+    <time className="text-lg mb-6 inline-block text-neutral-600 font-light">
+      {formatDate(date)}
+    </time>
     <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-  </div>
+  </article>
 );

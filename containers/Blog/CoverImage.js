@@ -6,24 +6,22 @@ export const CoverImage = ({ title, src, slug, height, width }) => {
   const image = (
     <img
       src={`${getBasePath()}${src}`}
-      alt={`Cover Image for ${title}`}
-      className={classNames('shadow-sm', {
-        'hover:shadow-md transition-shadow duration-200': slug,
-      })}
-      layout="responsive"
+      alt={`Una Imagen para ${title}`}
+      className={slug ? '' : 'shadow-sm'}
       width={width}
       height={height}
     />
   );
-  return (
-    <div className="sm:mx-0">
-      {slug ? (
-        <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <a aria-label={title}>{image}</a>
-        </Link>
-      ) : (
-        image
-      )}
-    </div>
+  return slug ? (
+    <Link as={`/posts/${slug}`} href="/posts/[slug]">
+      <a
+        aria-label={title}
+        className="inline-block shadow-sm hover:shadow-md focus:shadow-md transition-shadow duration-200"
+      >
+        {image}
+      </a>
+    </Link>
+  ) : (
+    image
   );
 };
