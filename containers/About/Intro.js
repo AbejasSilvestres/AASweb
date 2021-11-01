@@ -7,7 +7,7 @@ export const Intro = () => (
       <img
         src={`${getBasePath()}/assets/Logo.png`}
         alt="Logo"
-        className="w-80 block"
+        className="w-80 md:w-full block"
       />
     }
     right={
