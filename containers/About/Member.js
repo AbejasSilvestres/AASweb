@@ -1,8 +1,9 @@
 import { ExternalLinkOutline } from '../../icons';
 import { ExternalLink } from '../../components';
 import { getBasePath } from '../../lib/utils';
+import memberStyles from './member.module.css';
 
-export const Member = ({ photo, name, url, description }) => (
+export const Member = ({ photo, name, url, content }) => (
   <div>
     <div className="flex flex-col md:flex-row gap-8 md:gap-16">
       <div className="w-40 h-40 flex-shrink-0 rounded-full overflow-hidden border-neutral-300 border-2">
@@ -23,7 +24,10 @@ export const Member = ({ photo, name, url, description }) => (
             <ExternalLinkOutline />
           </ExternalLink>
         </h3>
-        <p className="font-normal text-lg leading-relaxed">{description}</p>
+        <div
+          className={memberStyles['markdown']}
+          dangerouslySetInnerHTML={{ __html: content }}
+        />
       </div>
     </div>
   </div>

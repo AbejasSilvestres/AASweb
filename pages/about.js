@@ -1,9 +1,11 @@
 import Head from 'next/head';
 import { getAllMembers } from '../lib/api/members';
+import markdownToHtml from '../lib/markdownToHtml';
 import { Layout } from '../components';
 import { About } from '../containers';
 
 export default function AboutPage({ allMembers }) {
+  console.log({ allMembers });
   return (
     <>
       <Head>
@@ -12,12 +14,12 @@ export default function AboutPage({ allMembers }) {
       <Layout>
         <About.Intro />
         <About.Members>
-          {allMembers.map(({ name, photo, description, url }) => (
+          {allMembers.map(({ name, photo, content, url }) => (
             <About.Member
               key={name}
               name={name}
               photo={photo}
-              description={description}
+              content={content}
               url={url}
             />
           ))}
@@ -28,8 +30,16 @@ export default function AboutPage({ allMembers }) {
 }
 
 export async function getStaticProps() {
-  const allMembers = getAllMembers(['name', 'url', 'photo', 'description']);
+  const allMembers = getAllMembers(['name', 'url', 'photo', 'content']);
+  const parsedMembersContent = await Promise.all(
+    allMembers.map(({ content }) => markdownToHtml(content || ''))
+  );
   return {
-    props: { allMembers },
+    props: {
+      allMembers: allMembers.map((member, index) => ({
+        ...member,
+        content: parsedMembersContent[index],
+      })),
+    },
   };
 }

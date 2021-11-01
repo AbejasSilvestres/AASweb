@@ -7,13 +7,6 @@ fields:
   label: name
   config:
     required: true
-- type: textarea
-  name: description
-  label: description
-  config:
-    required: true
-    min: 100
-    max: 300
 - type: file
   name: photo
   label: photo

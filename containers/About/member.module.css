@@ -1,0 +1,3 @@
+.markdown p {
+  @apply my-6 text-lg leading-relaxed;
+}
