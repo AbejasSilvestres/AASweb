@@ -2,6 +2,8 @@ import { Container } from '../../Container/Container';
 import { ExternalFooterLink } from './ExternalFooterLink';
 import { FooterHeading } from './FooterHeading';
 import { FooterText } from './FooterText';
+import { FooterIcon } from './FooterIcon';
+import { Twitter, Instagram, Facebook, Email } from '../../../icons';
 
 export const Footer = () => (
   <footer className="bg-primary-800 py-16 h-full">
@@ -9,12 +11,15 @@ export const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-x-4 mb-20">
         <div className="col-span-1 mb-8 md:mb-0">
           <FooterHeading>Social</FooterHeading>
-          <ul>
+          <ul className="flex flex-col gap-1.5">
             <li className="leading-none">
               <ExternalFooterLink
                 href="https://twitter.com/abeja_silvestre"
                 target="_blank"
               >
+                <FooterIcon>
+                  <Twitter />
+                </FooterIcon>
                 Twitter
               </ExternalFooterLink>
             </li>
@@ -23,7 +28,21 @@ export const Footer = () => (
                 href="https://www.instagram.com/abejas_silvestres"
                 target="_blank"
               >
+                <FooterIcon>
+                  <Instagram />
+                </FooterIcon>
                 Instagram
+              </ExternalFooterLink>
+            </li>
+            <li className="leading-none">
+              <ExternalFooterLink
+                href="https://www.facebook.com/curro.molina.980"
+                target="_blank"
+              >
+                <FooterIcon>
+                  <Facebook />
+                </FooterIcon>
+                Facebook
               </ExternalFooterLink>
             </li>
           </ul>
@@ -38,11 +57,14 @@ export const Footer = () => (
           </p>
         </div>
         <div className="col-span-1">
-          <FooterHeading>Email</FooterHeading>
+          <FooterHeading>Contact</FooterHeading>
           <ExternalFooterLink
             href="mailto: info.abejas.silvestres@gmail.com"
             target="_blank"
           >
+            <FooterIcon className="text-lg">
+              <Email />
+            </FooterIcon>
             info.abejas.silvestres@gmail.com
           </ExternalFooterLink>
         </div>
