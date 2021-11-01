@@ -5,7 +5,6 @@ import { Layout } from '../components';
 import { About } from '../containers';
 
 export default function AboutPage({ allMembers }) {
-  console.log({ allMembers });
   return (
     <>
       <Head>
