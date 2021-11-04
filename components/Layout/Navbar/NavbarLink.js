@@ -18,7 +18,7 @@ export const NavbarLink = ({ className, children, href, ...rest }) => {
           'focus-within:text-primary-500',
           'outline-none',
           'font-semibold',
-          'text-lg',
+          'text-sm',
           'border-b-2',
           className
         )}
