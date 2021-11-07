@@ -1,7 +1,12 @@
 import { NavbarLink } from './NavbarLink';
+import { getBasePath } from '../../../lib/utils';
+import { Logo } from '../../Logo/Logo';
 
 const navbarLinks = [
-  { href: '/', label: 'Abejas Silvestres' },
+  {
+    href: '/',
+    label: <Logo className="h-10 w-10" />,
+  },
   { href: '/bees', label: 'Abejas Ibéricas' },
   { href: '/projects', label: 'Proyectos' },
   { href: '/resources', label: 'Recursos' },
@@ -14,7 +19,7 @@ export const Navbar = () => (
     <ul className="flex justify-center">
       {navbarLinks.map(({ href, label }) => (
         <li key={href}>
-          <NavbarLink className="py-4 px-6" href={href}>
+          <NavbarLink className="h-16 px-8" href={href}>
             {label}
           </NavbarLink>
         </li>

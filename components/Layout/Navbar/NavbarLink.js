@@ -12,7 +12,8 @@ export const NavbarLink = ({ className, children, href, ...rest }) => {
         className={classNames(
           isActive ? 'text-primary-500' : 'text-neutral-900',
           isActive ? 'border-primary-400' : 'border-neutral-0',
-          'inline-block',
+          'inline-flex',
+          'items-center',
           'whitespace-nowrap',
           'hover:text-primary-500',
           'focus-within:text-primary-500',

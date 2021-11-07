@@ -1,6 +1,6 @@
 ---
 name: Curro Molina
-photo: "/assets/20210514_103230.jpg"
+photo: "/assets/curro-molina.jpg"
 url: https://twitter.com/curromolfue
 
 ---
