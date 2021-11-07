@@ -1,6 +1,6 @@
 ---
 name: Ainhoa Magrach
-photo: "/assets/ainhoa-magrach-01_orig.jpg"
+photo: "/assets/ainhoa-magrach.jpg"
 url: https://www.ainhoamagrach.com/
 
 ---

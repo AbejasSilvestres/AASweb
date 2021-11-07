@@ -1,18 +1,20 @@
-import { SectionTitle, SectionText, TwoColumnSection } from '../../components';
-import { getBasePath } from '../../lib/utils';
+import {
+  SectionTitle,
+  SectionText,
+  TwoColumnSection,
+  Logo,
+} from '../../components';
 
 export const Intro = () => (
   <TwoColumnSection
     left={
-      <img
-        src={`${getBasePath()}/assets/Logo.png`}
-        alt="Logo"
-        className="w-80 lg:w-96 block"
-      />
+      <Logo alt="Logo" size="medium" className="w-72 block text-primary-700" />
     }
     right={
       <div>
-        <SectionTitle className="mb-4">Abejas Silvestres</SectionTitle>
+        <SectionTitle className="mb-4">
+          Asociación Abejas Silvestres
+        </SectionTitle>
         <SectionText>
           Somos una asociación sin ánimo de lucro para conservar y proteger las
           más de 1000 especies de abejas silvestres de la Peninsula Ibérica.
