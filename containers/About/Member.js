@@ -1,5 +1,5 @@
 import { ExternalLinkOutline } from '../../icons';
-import { ExternalLink } from '../../components';
+import { Link } from '../../components';
 import { getBasePath } from '../../lib/utils';
 import memberStyles from './member.module.css';
 
@@ -16,13 +16,13 @@ export const Member = ({ photo, name, url, content }) => (
       <div className="flex-grow items-center">
         <h3 className="font-semibold text-2xl mb-4">
           <span>{name}</span>
-          <ExternalLink
+          <Link
             href={url}
             target="_blank"
             className="inline-block pl-1.5 pb-1.5 align-middle"
           >
             <ExternalLinkOutline />
-          </ExternalLink>
+          </Link>
         </h3>
         <div
           className={memberStyles['markdown']}

@@ -2,11 +2,11 @@ import { NavbarLink } from './NavbarLink';
 
 const navbarLinks = [
   { href: '/', label: 'Abejas Silvestres' },
-  { href: '/bees', label: 'Abejas de España' },
+  { href: '/bees', label: 'Abejas Ibéricas' },
   { href: '/projects', label: 'Proyectos' },
   { href: '/resources', label: 'Recursos' },
   { href: '/posts', label: 'Blog' },
-  { href: '/about', label: 'Quiénes somos' },
+  { href: '/about', label: ' ¿Quiénes somos?' },
 ];
 
 export const Navbar = () => (

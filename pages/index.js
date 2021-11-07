@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { Container, Layout } from '../components';
+import { Home } from '../containers';
 
 const Index = () => (
   <>
@@ -7,7 +8,7 @@ const Index = () => (
       <title>Abejas silvestres</title>
     </Head>
     <Layout>
-      <Container>Abejas silvestres</Container>
+      <Home.Content />
     </Layout>
   </>
 );
