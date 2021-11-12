@@ -1,16 +1,34 @@
 import Head from 'next/head';
-import { Container, Layout } from '../components';
+import { getAllHomeSections } from '../lib/api/home';
+import markdownToHtml from '../lib/markdownToHtml';
+import { Layout } from '../components';
 import { Home } from '../containers';
 
-const Index = () => (
-  <>
-    <Head>
-      <title>Abejas silvestres</title>
-    </Head>
-    <Layout>
-      <Home.Content />
-    </Layout>
-  </>
-);
+export default function Index({ allHomeSections }) {
+  const { title, body, image, button } = allHomeSections[0];
+  return (
+    <>
+      <Head>
+        <title>Abejas silvestres</title>
+      </Head>
+      <Layout>
+        <Home.Content title={title} body={body} image={image} button={button} />
+      </Layout>
+    </>
+  );
+}
 
-export default Index;
+export async function getStaticProps() {
+  const allHomeSections = getAllHomeSections([
+    'image',
+    'title',
+    'body',
+    'button',
+  ]);
+
+  return {
+    props: {
+      allHomeSections,
+    },
+  };
+}
