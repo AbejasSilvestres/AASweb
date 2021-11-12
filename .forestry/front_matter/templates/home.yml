@@ -6,17 +6,15 @@ fields:
   name: image
   label: image
   fields:
-  - type: file
-    name: url
-    label: url
   - type: text
     name: label
     label: label
+  - type: file
+    name: url
+    label: url
 - type: text
   name: title
   label: title
-  config:
-    required: true
 - type: text
   name: body
   label: body
@@ -36,4 +34,6 @@ fields:
     label: label
     config:
       required: true
+pages:
+- _home/intro.md
 
