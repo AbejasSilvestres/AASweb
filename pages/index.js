@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { getAllHomeSections } from '../lib/api/home';
-import markdownToHtml from '../lib/markdownToHtml';
 import { Layout } from '../components';
 import { Home } from '../containers';
 

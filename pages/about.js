@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { getAllMembers } from '../lib/api/members';
-import markdownToHtml from '../lib/markdownToHtml';
+import markdownToHtml from '../lib/markdown-to-html';
 import { Layout } from '../components';
 import { About } from '../containers';
 

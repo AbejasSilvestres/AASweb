@@ -4,7 +4,7 @@ import Head from 'next/head';
 import { Container, Layout } from '../../components';
 import { Blog } from '../../containers';
 import { getPostBySlug, getAllPosts } from '../../lib/api/posts';
-import markdownToHtml from '../../lib/markdownToHtml';
+import markdownToHtml from '../../lib/markdown-to-html';
 
 export default function PostPage({ post, morePosts }) {
   const router = useRouter();
