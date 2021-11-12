@@ -9,13 +9,9 @@ fields:
   - type: file
     name: url
     label: url
-    config:
-      required: true
   - type: text
     name: label
     label: label
-    config:
-      required: true
 - type: text
   name: title
   label: title
