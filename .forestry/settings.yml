@@ -19,6 +19,11 @@ sections:
   label: Home
   create: none
   match: "*.md"
+- type: directory
+  path: _about
+  label: About
+  create: none
+  match: "*.md"
 upload_dir: public/assets
 public_path: "/assets"
 front_matter_path: ''

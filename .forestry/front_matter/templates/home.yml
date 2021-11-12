@@ -9,13 +9,19 @@ fields:
   - type: text
     name: label
     label: label
+    config:
+      required: true
   - type: file
     name: url
     label: url
+    config:
+      required: true
 - type: text
   name: title
   label: title
-- type: text
+  config:
+    required: true
+- type: textarea
   name: body
   label: body
   config:

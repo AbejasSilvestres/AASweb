@@ -1,0 +1,17 @@
+---
+label: About
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+  config:
+    required: true
+- type: textarea
+  name: body
+  label: body
+  config:
+    required: true
+pages:
+- _about/intro.md
+
