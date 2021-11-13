@@ -3,8 +3,6 @@ export const Logo = ({ size, ...rest }) => {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="220"
-        height="220"
         fill="none"
         viewBox="0 0 220 220"
         {...rest}
@@ -19,8 +17,6 @@ export const Logo = ({ size, ...rest }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="220"
-      height="220"
       fill="none"
       viewBox="0 0 220 220"
       {...rest}
