@@ -1,7 +1,6 @@
 import {
   SectionTitle,
   SectionText,
-  TwoColumnSection,
   Logo,
   SectionContainer,
 } from '../../components';

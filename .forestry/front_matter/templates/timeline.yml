@@ -1,0 +1,12 @@
+---
+label: Timeline
+hide_body: false
+fields:
+- type: text
+  name: label
+  label: label
+  config:
+    required: true
+pages:
+- _timeline/2019.md
+

@@ -24,6 +24,11 @@ sections:
   label: About
   create: none
   match: "*.md"
+- type: directory
+  path: _timeline
+  label: Timeline
+  create: documents
+  match: "*.md"
 upload_dir: public/assets
 public_path: "/assets"
 front_matter_path: ''
