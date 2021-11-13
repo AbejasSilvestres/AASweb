@@ -13,6 +13,11 @@ export default function AboutPage({ allMembers, intro }) {
       </Head>
       <Layout>
         <About.Intro title={intro.title} body={intro.body} />
+        <About.History>
+          <About.HistoryItem label="2019" />
+          <About.HistoryItem label="2020" />
+          <About.HistoryItem last label="2021" />
+        </About.History>
         <About.Members>
           {allMembers.map(({ name, photo, content, url }) => (
             <About.Member
