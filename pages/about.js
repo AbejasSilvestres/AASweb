@@ -14,16 +14,6 @@ export default function AboutPage({ intro, allMembers, allTimelineItems }) {
       </Head>
       <Layout>
         <About.Intro title={intro.title} body={intro.body} />
-        <About.History>
-          {allTimelineItems.map(({ label, content }, index) => (
-            <About.HistoryItem
-              key={label}
-              label={label}
-              content={content}
-              last={allTimelineItems.length - 1 === index}
-            />
-          ))}
-        </About.History>
         <About.Members>
           {allMembers.map(({ name, photo, content, url }) => (
             <About.Member
@@ -35,6 +25,16 @@ export default function AboutPage({ intro, allMembers, allTimelineItems }) {
             />
           ))}
         </About.Members>
+        <About.History>
+          {allTimelineItems.map(({ label, content }, index) => (
+            <About.HistoryItem
+              key={label}
+              label={label}
+              content={content}
+              last={allTimelineItems.length - 1 === index}
+            />
+          ))}
+        </About.History>
       </Layout>
     </>
   );
