@@ -5,13 +5,20 @@ import { Home } from '../containers';
 
 export default function Index({ allHomeSections }) {
   const { title, body, image, button } = allHomeSections[0];
+  const member = allHomeSections[1];
   return (
     <>
       <Head>
         <title>Abejas silvestres</title>
       </Head>
       <Layout>
-        <Home.Content title={title} body={body} image={image} button={button} />
+        <Home.Hero title={title} body={body} image={image} button={button} />
+        <Home.Member
+          title={member.title}
+          body={member.body}
+          image={member.image}
+          button={member.button}
+        />
       </Layout>
     </>
   );
