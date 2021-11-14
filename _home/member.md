@@ -3,9 +3,12 @@ image:
   label: Guía
   url: "/assets/guide.jpeg"
 title: Hazte soci@
-body: Somos una asociación sin ánimo de lucro para conservar y proteger las más de 1000 especies de abejas silvestres de la Peninsula Ibérica.
 button:
   label: Únete ahora
-  url: "https://www.teaming.net/abejassilvestres"
+  url: "https://forms.gle/s6NT9uZ8FuNzTW927"
 
 ---
+
+- Contribuirás a financiar proyectos
+- Recibirás actualizaciones 
+- Recibirás la Guía Visual de Abejorros Ibéricos

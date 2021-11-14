@@ -58,8 +58,8 @@ export async function getStaticProps() {
         ...member,
         content: parsedMembersContent[index],
       })),
-      allTimelineItems: allTimelineItems.map((member, index) => ({
-        ...member,
+      allTimelineItems: allTimelineItems.map((item, index) => ({
+        ...item,
         content: parsedTimelineItems[index],
       })),
       intro,

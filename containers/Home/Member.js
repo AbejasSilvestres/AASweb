@@ -6,8 +6,9 @@ import {
   SectionContainer,
 } from '../../components';
 import { getBasePath } from '../../lib/utils';
+import homeSectionStyles from './home-section.module.css';
 
-export const Member = ({ title, body, image, button }) => (
+export const Member = ({ title, content, image, button }) => (
   <SectionContainer className="bg-primary-50">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
       <div className="col-span-1 flex justify-center lg:justify-end items-center">
@@ -22,14 +23,12 @@ export const Member = ({ title, body, image, button }) => (
       <div className="col-span-1 flex lg:justify-start items-center">
         <div>
           <h1 className="text-5xl mb-8">{title}</h1>
-          <ul className="list-disc pl-5 mb-6">
-            <li className="text-lg">financiarámos proyectos de conservación</li>
-            <li className="text-lg">generarámos recursos y guías</li>
-            <li className="text-lg">recibirás actualizaciones</li>
-            <li className="text-lg">
-              recibirás la Guía Visual de Abejorros Ibéricos
-            </li>
-          </ul>
+          <div className="mb-6">
+            <div
+              className={homeSectionStyles['markdown']}
+              dangerouslySetInnerHTML={{ __html: content }}
+            />
+          </div>
           <Button target="_blank" href={button.url}>
             {button.label}
           </Button>

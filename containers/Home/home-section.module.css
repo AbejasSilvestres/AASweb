@@ -1,0 +1,6 @@
+.markdown p {
+  @apply text-lg text-neutral-800 leading-relaxed;
+}
+.markdown ul {
+  @apply list-disc pl-5;
+}

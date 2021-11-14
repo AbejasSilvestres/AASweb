@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import { getAllHomeSections } from '../lib/api/home';
+import markdownToHtml from '../lib/markdown-to-html';
 import { Layout } from '../components';
 import { Home } from '../containers';
 
 export default function Index({ allHomeSections }) {
-  const { title, body, image, button } = allHomeSections[0];
+  const intro = allHomeSections[0];
   const member = allHomeSections[1];
   return (
     <>
@@ -12,10 +13,14 @@ export default function Index({ allHomeSections }) {
         <title>Abejas silvestres</title>
       </Head>
       <Layout>
-        <Home.Hero title={title} body={body} image={image} button={button} />
+        <Home.Hero
+          title={intro.title}
+          content={intro.content}
+          image={intro.image}
+        />
         <Home.Member
           title={member.title}
-          body={member.body}
+          content={member.content}
           image={member.image}
           button={member.button}
         />
@@ -28,13 +33,18 @@ export async function getStaticProps() {
   const allHomeSections = getAllHomeSections([
     'image',
     'title',
-    'body',
+    'content',
     'button',
   ]);
-
+  const parsedHomeSections = await Promise.all(
+    allHomeSections.map(({ content }) => markdownToHtml(content || ''))
+  );
   return {
     props: {
-      allHomeSections,
+      allHomeSections: allHomeSections.map((section, index) => ({
+        ...section,
+        content: parsedHomeSections[index],
+      })),
     },
   };
 }
