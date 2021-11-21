@@ -1,0 +1,15 @@
+---
+label: Projects
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: excerpt
+  label: excerpt
+- type: file
+  name: coverImage
+  label: coverImage
+pages:
+- data/_projects/habeetat.md
