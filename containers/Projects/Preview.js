@@ -13,7 +13,7 @@ export const Preview = ({ type, title, excerpt, coverImage, slug }) => (
           <p className="leading-relaxed text-xl text-neutral-800 mb-2">
             {excerpt}
           </p>
-          <NextLink as={`/projects/${slug}`} href="/projects/[slug]">
+          <NextLink as={`/projects/${slug}`} href="/projects/[slug]" passHref>
             <Link className="text-xl">Lee más</Link>
           </NextLink>
         </div>
