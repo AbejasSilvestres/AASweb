@@ -12,7 +12,7 @@ export const Member = ({ title, content, image, button }) => (
   <SectionContainer className="bg-primary-50">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
       <div className="col-span-1 flex justify-center lg:justify-end items-center">
-        <div className="w-80 h-80 flex-shrink-0 rounded-full overflow-hidden shadow-md">
+        <div className="w-60 h-60 sm:w-80 sm:h-80 flex-shrink-0 rounded-full overflow-hidden shadow-md">
           <img
             src={`${getBasePath()}${image.url}`}
             alt={image.label}

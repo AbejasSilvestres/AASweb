@@ -1,15 +1,39 @@
 import Head from 'next/head';
-import { Container, Layout } from '../components';
+import { getAllProjects } from '../lib/api/projects';
+import { Layout } from '../components';
+import { Projects } from '../containers';
 
-const Projects = () => (
-  <>
-    <Head>
-      <title>Proyectos</title>
-    </Head>
-    <Layout>
-      <Container>Proyectos</Container>
-    </Layout>
-  </>
-);
+export default function ProjectsPage({ allProjects }) {
+  console.log({ allProjects });
+  return (
+    <>
+      <Head>
+        <title>Proyectos</title>
+      </Head>
+      <Layout>
+        {allProjects.map((project) => (
+          <Projects.Preview
+            key={project.slug}
+            title={project.title}
+            coverImage={project.coverImage}
+            slug={project.slug}
+            excerpt={project.excerpt}
+          />
+        ))}
+      </Layout>
+    </>
+  );
+}
 
-export default Projects;
+export async function getStaticProps() {
+  const allProjects = getAllProjects([
+    'title',
+    'excerpt',
+    'slug',
+    'coverImage',
+  ]);
+
+  return {
+    props: { allProjects },
+  };
+}

@@ -7,6 +7,7 @@ export const Link = ({ className, children, ...rest }) => (
       'hover:text-primary-600',
       'focus-within:text-primary-600',
       'font-semibold',
+      'underline',
       className
     )}
     {...rest}
