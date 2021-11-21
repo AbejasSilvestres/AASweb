@@ -10,8 +10,9 @@ export default function ProjectsPage({ allProjects }) {
         <title>Proyectos</title>
       </Head>
       <Layout>
-        {allProjects.map((project) => (
+        {allProjects.map((project, index) => (
           <Projects.Preview
+            type={index % 2 === 0 ? undefined : 'primary'}
             key={project.slug}
             title={project.title}
             coverImage={project.coverImage}
