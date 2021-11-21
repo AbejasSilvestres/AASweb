@@ -1,5 +1,4 @@
 import { RoundImage, Button, SectionContainer } from '../../components';
-import { getBasePath } from '../../lib/utils';
 import homeSectionStyles from './home-section.module.css';
 
 export const Member = ({ title, content, image, button }) => (
@@ -7,7 +6,7 @@ export const Member = ({ title, content, image, button }) => (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
       <div className="col-span-1 flex justify-center lg:justify-end items-center">
         <RoundImage
-          src={`${getBasePath()}${image.url}`}
+          src={image.url}
           alt={image.label}
           className="w-60 h-60 sm:w-80 sm:h-80"
         />
