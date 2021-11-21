@@ -5,27 +5,27 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: _posts
+  path: data/_posts
   label: Posts
   create: documents
   match: "*.md"
 - type: directory
-  path: _members
+  path: data/_members
   label: Members
   create: documents
   match: "*.md"
 - type: directory
-  path: _home
+  path: data/_home
   label: Home
   create: none
   match: "*.md"
 - type: directory
-  path: _about
+  path: data/_about
   label: About
   create: none
   match: "*.md"
 - type: directory
-  path: _timeline
+  path: data/_timeline
   label: Timeline
   create: documents
   match: "*.md"

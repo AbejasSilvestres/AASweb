@@ -13,4 +13,4 @@ fields:
   config:
     required: true
 pages:
-- _about/intro.md
+- data/_about/intro.md

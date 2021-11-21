@@ -19,6 +19,6 @@ fields:
   config:
     required: true
 pages:
-- _members/Bartomeus.md
-- _members/Magrach.md
-- _members/Molina.md
+- data/_members/Bartomeus.md
+- data/_members/Magrach.md
+- data/_members/Molina.md

@@ -8,4 +8,4 @@ fields:
   config:
     required: true
 pages:
-- _timeline/2019.md
+- data/_timeline/2019.md
