@@ -1,0 +1,27 @@
+---
+label: Projects
+hide_body: false
+fields:
+- type: number
+  name: order
+  label: order
+  config:
+    required: true
+- type: text
+  name: title
+  label: title
+  config:
+    required: true
+- type: textarea
+  name: excerpt
+  label: excerpt
+  config:
+    required: true
+- type: file
+  name: coverImage
+  label: coverImage
+  config:
+    required: true
+pages:
+- data/_projects/habeetat.md
+- data/_projects/airbeeandbee.md

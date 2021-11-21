@@ -15,7 +15,7 @@ const navbarLinks = [
 ];
 
 export const Navbar = () => (
-  <nav className="block shadow-sm">
+  <nav className="block shadow-sm relative">
     <ul className="flex justify-center">
       {navbarLinks.map(({ href, label }) => (
         <li key={href}>
