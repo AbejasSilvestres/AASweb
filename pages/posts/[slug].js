@@ -6,7 +6,7 @@ import { Blog } from '../../containers';
 import { getPostBySlug, getAllPosts } from '../../lib/api/posts';
 import markdownToHtml from '../../lib/markdown-to-html';
 
-export default function PostPage({ post, morePosts }) {
+export default function PostPage({ post }) {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;

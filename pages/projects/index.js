@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { getAllProjects } from '../../lib/api/projects';
 import { Layout } from '../../components';
-import { Projects } from '../../containers';
+import { Project } from '../../containers';
 
 export default function ProjectsPage({ allProjects }) {
   return (
@@ -11,7 +11,7 @@ export default function ProjectsPage({ allProjects }) {
       </Head>
       <Layout>
         {allProjects.map((project, index) => (
-          <Projects.Preview
+          <Project.Preview
             type={index % 2 === 0 ? undefined : 'primary'}
             key={project.slug}
             title={project.title}

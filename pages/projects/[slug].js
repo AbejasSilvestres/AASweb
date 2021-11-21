@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import Head from 'next/head';
 import { Container, Layout } from '../../components';
-import { Projects } from '../../containers';
+import { Project } from '../../containers';
 import markdownToHtml from '../../lib/markdown-to-html';
 import { getProjectBySlug, getAllProjects } from '../../lib/api/projects';
 
@@ -18,7 +18,11 @@ export default function ProjectPage({ project }) {
       </Head>
       <Layout>
         <Container>
-          <Projects.Body content={project.content} />
+          <Project.Header
+            title={project.title}
+            coverImage={project.coverImage}
+          />
+          <Project.Body content={project.content} />
         </Container>
       </Layout>
     </>
@@ -28,6 +32,7 @@ export default function ProjectPage({ project }) {
 export async function getStaticProps({ params }) {
   const project = getProjectBySlug(params.slug, [
     'slug',
+    'title',
     'content',
     'coverImage',
   ]);
