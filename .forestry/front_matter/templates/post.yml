@@ -49,5 +49,4 @@ fields:
     config:
       required: true
 pages:
-- data/_posts/dynamic-routing.md
 - data/_posts/preview.md
