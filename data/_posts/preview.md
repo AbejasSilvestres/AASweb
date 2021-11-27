@@ -1,6 +1,7 @@
 ---
-title: Ejemplo de Blog POst
-excerpt: Cosas muy interesantes sobre abejas
+title: El declive de las abejas
+excerpt: Todos conocemos la abeja de la miel, pero pocos saben que, junto a ella,
+  hay más de mil especies diferentes de abejas, y eso solo en España.
 coverImage: "/assets/curro-eucera-synhalonia-rufa-anthophorinae-en-linaria-viscosa-scrophulariaceae-22x19.jpg"
 date: 2020-03-16T05:35:07Z
 author:
