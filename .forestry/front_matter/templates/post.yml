@@ -50,5 +50,4 @@ fields:
       required: true
 pages:
 - data/_posts/dynamic-routing.md
-- data/_posts/hello-world.md
 - data/_posts/preview.md
