@@ -7,8 +7,6 @@ date: 2020-03-16T05:35:07Z
 author:
   name: Nacho Bartomeus
   picture: "/assets/ibartomeus.png"
-ogImage:
-  url: "/assets/preview/cover.jpg"
 
 ---
 Todos conocemos la abeja de la miel, pero pocos saben que, junto a ella, hay más de mil especies diferentes de abejas, y eso solo en España. Eso significa que hay más del doble de especies de abejas que de pájaros. Entre todas nos brindan un servicio muy importante: polinizar las flores de muchas plantas para que den fruto. La abeja de la miel es una especie muy peculiar. Vive en grandes colonias de forma social y, hoy en día, está totalmente gestionada por los apicultores. Pero el resto de especies de abejas tienen formas de vida de lo más diversas. Hay especies que nidifican en el suelo o en la madera en pequeños agujeros y no forman colonias, sino que viven solitarias. Las hay especializadas en visitar sólo unas pocas especies de plantas, mientras que otras son generalistas y visitan cualquier flor que vean. Las hay pequeñas como una hormiguita o grandes como un escarabajo pelotero. Y hasta las hay parásitas de otras abejas. Debido a esta diversidad, el problema del declive de las abejas es más complejo de lo que podría parecer. Las abejas de la miel, por ejemplo, tienen problemas que suelen ir asociados a ser una especies gestionada: están atacadas por diversos patógenos, sus condiciones alimentarias no siempre son buenas y suelen estar más expuestas a pesticidas. Pese a estos problemas de salud que debemos tratar, las abejas de la miel no se van a extinguir.

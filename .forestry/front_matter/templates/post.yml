@@ -37,16 +37,5 @@ fields:
     label: picture
     config:
       required: true
-- type: field_group
-  name: ogImage
-  label: ogImage
-  config:
-    required: true
-  fields:
-  - type: file
-    name: url
-    label: url
-    config:
-      required: true
 pages:
 - data/_posts/preview.md
