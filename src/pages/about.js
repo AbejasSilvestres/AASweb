@@ -36,16 +36,16 @@ export default function AboutPage({
             />
           ))}
         </About.Members>
-        <About.History>
+        <About.Timeline>
           {allTimelineItems.map(({ label, content }, index) => (
-            <About.HistoryItem
+            <About.TimelineItem
               key={label}
               label={label}
               content={content}
               last={allTimelineItems.length - 1 === index}
             />
           ))}
-        </About.History>
+        </About.Timeline>
       </Layout>
     </>
   );
