@@ -1,0 +1,35 @@
+---
+label: Resource
+hide_body: true
+fields:
+- type: select
+  name: category
+  label: category
+  config:
+    required: true
+    source:
+      type: custom
+    options:
+      - "Guide"
+      - "Video"
+      - "Infographics"
+- type: text
+  name: title
+  label: title
+  config:
+    required: true
+- type: textarea
+  name: description
+  label: description
+  config:
+    required: true
+- type: text
+  name: url
+  label: url
+  config:
+    required: true
+pages:
+- data/_resources/quick_guide.md
+- data/_resources/refuge_video.md
+- data/_resources/spanish_bees_guide.md
+- data/_resources/pollinator_structure_infographics.md
