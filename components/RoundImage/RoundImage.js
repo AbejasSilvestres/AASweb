@@ -8,6 +8,7 @@ export const RoundImage = ({ src, alt, className }) => (
       'rounded-full',
       'overflow-hidden',
       'shadow-md',
+      'bg-neutral-100',
       className
     )}
   >
