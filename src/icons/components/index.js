@@ -1,5 +1,10 @@
+export { default as BookOpen } from './BookOpen';
+export { default as ChartSquareBar } from './ChartSquareBar';
+export { default as CheckCircle } from './CheckCircle';
 export { default as Email } from './Email';
 export { default as ExternalLinkOutline } from './ExternalLinkOutline';
 export { default as Facebook } from './Facebook';
 export { default as Instagram } from './Instagram';
 export { default as Twitter } from './Twitter';
+export { default as Users } from './Users';
+export { default as VideoCamera } from './VideoCamera';

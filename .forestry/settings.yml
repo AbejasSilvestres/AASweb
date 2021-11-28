@@ -34,6 +34,11 @@ sections:
   label: Projects
   create: documents
   match: "*.md"
+- type: directory
+  path: data/_services
+  label: Services
+  create: none
+  match: "*.md"
 upload_dir: public/assets
 public_path: "/assets"
 front_matter_path: ''

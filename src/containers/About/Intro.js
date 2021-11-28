@@ -13,7 +13,7 @@ export const Intro = ({ title, body }) => (
       </div>
       <div className="flex-grow">
         <div className="max-w-xl">
-          <SectionTitle className="mb-4">{title}</SectionTitle>
+          <SectionTitle className="mb-8">{title}</SectionTitle>
           <SectionText>{body}</SectionText>
         </div>
       </div>
