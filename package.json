@@ -8,8 +8,8 @@
     "lint": "next lint",
     "prepare": "husky install",
     "prettier": "npx prettier --write .",
-    "icons:clean": "rm -rf icons/components",
-    "icons:generate": "npx @svgr/cli -d icons/components icons/svg",
+    "icons:clean": "rm -rf src/icons/components",
+    "icons:generate": "npx @svgr/cli -d src/icons/components src/icons/svg",
     "icons": "npm run icons:clean && npm run icons:generate"
   },
   "dependencies": {

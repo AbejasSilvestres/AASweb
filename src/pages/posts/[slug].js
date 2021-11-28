@@ -15,7 +15,7 @@ export default function PostPage({ post }) {
     <>
       <Head>
         <title>{post.title}</title>
-        <meta property="og:image" content={post.ogImage.url} />
+        <meta property="og:image" content={post.coverImage} />
       </Head>
       <Layout>
         <Container>
@@ -41,7 +41,6 @@ export async function getStaticProps({ params }) {
     'slug',
     'author',
     'content',
-    'ogImage',
     'coverImage',
   ]);
   const content = await markdownToHtml(post.content || '');

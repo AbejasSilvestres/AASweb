@@ -40,6 +40,11 @@ button,
 a {
   @apply font-raleway outline-none;
 }
+img {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 @tailwind components;
 @tailwind utilities;
