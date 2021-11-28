@@ -8,7 +8,5 @@ export const getTimelineItemSlugs = () => fs.readdirSync(timelineDirectory);
 
 export const getTimelineItemBySlug = getItemBySlug(timelineDirectory);
 
-export const getAllTimelineItems = (fields = []) => {
-  const slugs = getTimelineItemSlugs();
-  return slugs.map((slug) => getTimelineItemBySlug(slug, fields));
-};
+export const getAllTimelineItems = (fields = []) =>
+  getTimelineItemSlugs().map((slug) => getTimelineItemBySlug(slug, fields));

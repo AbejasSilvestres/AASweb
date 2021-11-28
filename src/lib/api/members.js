@@ -8,7 +8,5 @@ export const getMemberSlugs = () => fs.readdirSync(membersDirectory);
 
 export const getMemberBySlug = getItemBySlug(membersDirectory);
 
-export const getAllMembers = (fields = []) => {
-  const slugs = getMemberSlugs();
-  return slugs.map((slug) => getMemberBySlug(slug, fields));
-};
+export const getAllMembers = (fields = []) =>
+  getMemberSlugs().map((slug) => getMemberBySlug(slug, fields));
