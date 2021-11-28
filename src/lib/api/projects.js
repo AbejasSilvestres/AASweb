@@ -8,9 +8,7 @@ export const getProjectsSlugs = () => fs.readdirSync(projectsDirectory);
 
 export const getProjectBySlug = getItemBySlug(projectsDirectory);
 
-export const getAllProjects = (fields = []) => {
-  const slugs = getProjectsSlugs();
-  return slugs
+export const getAllProjects = (fields = []) =>
+  getProjectsSlugs()
     .map((slug) => getProjectBySlug(slug, fields))
     .sort((project1, project2) => (project1.order > project2.order ? 1 : -1));
-};

@@ -8,7 +8,5 @@ export const getAboutSectionSlugs = () => fs.readdirSync(aboutDirectory);
 
 export const getAboutSectionBySlug = getItemBySlug(aboutDirectory);
 
-export const getAllAboutSections = (fields = []) => {
-  const slugs = getAboutSectionSlugs();
-  return slugs.map((slug) => getAboutSectionBySlug(slug, fields));
-};
+export const getAllAboutSections = (fields = []) =>
+  getAboutSectionSlugs().map((slug) => getAboutSectionBySlug(slug, fields));

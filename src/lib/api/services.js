@@ -8,7 +8,7 @@ export const getServicesSectionSlugs = () => fs.readdirSync(servicesDirectory);
 
 export const getServiceSectionBySlug = getItemBySlug(servicesDirectory);
 
-export const getAllServicesSections = (fields = []) => {
-  const slugs = getServicesSectionSlugs();
-  return slugs.map((slug) => getServiceSectionBySlug(slug, fields));
-};
+export const getAllServicesSections = (fields = []) =>
+  getServicesSectionSlugs().map((slug) =>
+    getServiceSectionBySlug(slug, fields)
+  );
