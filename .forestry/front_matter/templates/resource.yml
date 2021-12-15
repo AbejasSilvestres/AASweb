@@ -10,9 +10,9 @@ fields:
     source:
       type: custom
     options:
-      - "Guide"
-      - "Video"
-      - "Infographics"
+    - Guide
+    - Video
+    - Infographics
 - type: text
   name: title
   label: title
@@ -29,7 +29,7 @@ fields:
   config:
     required: true
 pages:
+- data/_resources/pollinator_structure_infographics.md
 - data/_resources/quick_guide.md
 - data/_resources/refuge_video.md
 - data/_resources/spanish_bees_guide.md
-- data/_resources/pollinator_structure_infographics.md
