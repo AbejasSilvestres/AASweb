@@ -1,7 +1,8 @@
 ---
 category: Infographics
 title: La importancia de las redes planta-polinizador
-description: Meis vocent signiferumque pri et. Facilis corpora recusabo ne quo, eum ne eruditi blandit suscipiantur. Mazim sapientem sed id, sea debet commune iracundia in.
+description: 'Un conjunto de especies no forma una comunidad ecológica sino interaccionan
+  entre ellas. Aquí te explicamos porque. '
 url: "/assets/plant_pollinator_structure.jpg"
 
 ---
