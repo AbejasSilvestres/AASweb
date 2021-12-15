@@ -1,7 +1,8 @@
 ---
 category: Guide
-title: Guía rápida
-description: Meis vocent signiferumque pri et. Facilis corpora recusabo ne quo, eum ne eruditi blandit suscipiantur. Mazim sapientem sed id, sea debet commune iracundia in.
+title: Guía rápida para identificar abejas
+description: "¿Es esto una abeja?, ¿Y qué abeja es? Con esta mini guía te damos algunas
+  pistas para responder a tus preguntas."
 url: "/assets/quick_guide.pdf"
 
 ---
