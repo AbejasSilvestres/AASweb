@@ -1,12 +1,10 @@
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { Container, Layout } from '../components';
+import { getJsonData } from '../lib/api/bees';
 
-const Bees = () => {
-  const Map = dynamic(
-    () => import('../containers/Bees/Map'), // replace '@components/map' with your component's location
-    { ssr: false } // This line is important. It's what prevents server-side render
-  );
+export default function Bees({ data }) {
+  const Map = dynamic(() => import('../containers/Bees/Map'), { ssr: false });
   return (
     <>
       <Head>
@@ -23,11 +21,16 @@ const Bees = () => {
       </Head>
       <Layout>
         <Container>
-          <Map />
+          <Map data={data} />
         </Container>
       </Layout>
     </>
   );
-};
+}
 
-export default Bees;
+export async function getStaticProps() {
+  const data = await getJsonData();
+  return {
+    props: { data },
+  };
+}

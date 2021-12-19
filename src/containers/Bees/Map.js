@@ -1,8 +1,7 @@
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
-import data from './data.json';
 
-const Map = () => {
+const Map = ({ data }) => {
   return (
     <MapContainer
       className="markercluster-map"
