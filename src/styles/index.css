@@ -46,5 +46,10 @@ img {
   overflow: hidden;
 }
 
+.leaflet-container {
+  height: 600px;
+  width: 100%;
+}
+
 @tailwind components;
 @tailwind utilities;
