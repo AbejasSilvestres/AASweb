@@ -2,7 +2,7 @@
 order: 1
 title: HA BEE TAT
 excerpt: Un proyecto para conservar las poblaciones de abejas silvestres en los campos
-  de cultivo.
+  de cultivo
 coverImage: "/assets/habeetat.jpeg"
 
 ---
