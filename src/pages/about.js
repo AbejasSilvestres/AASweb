@@ -61,7 +61,7 @@ export async function getStaticProps() {
     allMembers.map(({ content }) => markdownToHtml(content || ''))
   );
 
-  const allTimelineItems = getAllTimelineItems(['label', 'content']);
+  const allTimelineItems = getAllTimelineItems(['label', 'content', 'order']);
   const parsedTimelineItems = await Promise.all(
     allTimelineItems.map(({ content }) => markdownToHtml(content || ''))
   );
