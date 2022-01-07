@@ -10,7 +10,9 @@ const filterByFamily = (data, family) =>
   family ? data.filter((item) => family === item.family) : data;
 
 export default function Bees({ data }) {
-  const Map = dynamic(() => import('../containers/Bees/Map'), { ssr: false });
+  const Map = dynamic(() => import('../containers/IberianBees/Map'), {
+    ssr: false,
+  });
   const [familyFilter, setFamilyFilter] = useState('');
 
   const handleFilterChange = ({ target }) => {
@@ -46,6 +48,7 @@ export default function Bees({ data }) {
                 id="family-filter"
                 className="text-2xl appearance-none outline-none p-2 border-primary-400 border-solid border-2 rounded-md w-full focus:ring-4 focus:ring-primary-100 transition-shadow"
                 onChange={handleFilterChange}
+                value={familyFilter}
               >
                 <option value="">Todas familias</option>
                 {getFamilies(data).map((family) => (

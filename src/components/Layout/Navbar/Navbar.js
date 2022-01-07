@@ -7,7 +7,7 @@ const navbarLinks = [
     href: '/',
     label: <Logo className="h-10 w-10" />,
   },
-  { href: '/bees', label: 'Abejas Ibéricas' },
+  { href: '/iberian-bees', label: 'Abejas Ibéricas' },
   { href: '/projects', label: 'Proyectos' },
   { href: '/resources', label: 'Recursos' },
   { href: '/posts', label: 'Blog' },
