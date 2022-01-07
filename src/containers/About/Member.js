@@ -1,4 +1,4 @@
-import { ExternalLinkOutline } from '../../icons';
+import { ExternalLink } from '../../icons';
 import { Link, RoundImage } from '../../components';
 import memberStyles from './member.module.css';
 
@@ -14,7 +14,7 @@ export const Member = ({ photo, name, url, content }) => (
             target="_blank"
             className="inline-block pl-1.5 pb-1.5 align-middle"
           >
-            <ExternalLinkOutline />
+            <ExternalLink />
           </Link>
         </h3>
         <div

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-function SvgExternalLinkOutline(props) {
+function SvgExternalLink(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -21,4 +21,4 @@ function SvgExternalLinkOutline(props) {
   );
 }
 
-export default SvgExternalLinkOutline;
+export default SvgExternalLink;
