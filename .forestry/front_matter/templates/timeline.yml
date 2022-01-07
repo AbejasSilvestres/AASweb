@@ -7,7 +7,13 @@ fields:
   label: label
   config:
     required: true
+- type: number
+  name: order
+  label: order
+  config:
+    required: true
 pages:
 - data/_timeline/2020.md
 - data/_timeline/2021.md
 - data/_timeline/2022.md
+- data/_timeline/Abril2019.md
