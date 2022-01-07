@@ -2,14 +2,17 @@ import { useState } from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { Container, Layout } from '../components';
-import { getJsonData } from '../lib/api/bees';
+import { IberianBees } from '../containers';
+import { getJsonData } from '../lib/api/iberian-bees-data';
+import { getAllIberianBeesSections } from '../lib/api/iberian-bees';
+import markdownToHtml from '../lib/markdown-to-html';
 
 const getFamilies = (data) => [...new Set(data.map((item) => item.family))];
 
 const filterByFamily = (data, family) =>
   family ? data.filter((item) => family === item.family) : data;
 
-export default function Bees({ data }) {
+export default function Bees({ data, intro }) {
   const Map = dynamic(() => import('../containers/IberianBees/Map'), {
     ssr: false,
   });
@@ -34,7 +37,9 @@ export default function Bees({ data }) {
         <title>Abjeas silvestres</title>
       </Head>
       <Layout>
-        <Container className="py-24"></Container>
+        <Container className="py-24">
+          <IberianBees.Intro content={intro} />
+        </Container>
         <div className="bg-primary-50">
           <Container className="pt-24 pb-36">
             <div className="max-w-sm mb-14">
@@ -70,7 +75,9 @@ export default function Bees({ data }) {
 
 export async function getStaticProps() {
   const data = await getJsonData();
+  const { content } = getAllIberianBeesSections(['content'])[0];
+  const parsedIberianBees = await markdownToHtml(content || '');
   return {
-    props: { data },
+    props: { data, intro: parsedIberianBees },
   };
 }

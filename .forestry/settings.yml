@@ -44,6 +44,11 @@ sections:
   label: Resources
   create: documents
   match: "*.md"
+- type: directory
+  path: data/_iberian_bees
+  label: Iberian bees
+  create: none
+  match: "*.md"
 upload_dir: public/assets
 public_path: "/assets"
 front_matter_path: ''
