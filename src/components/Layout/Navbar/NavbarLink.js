@@ -2,7 +2,7 @@ import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
 
-export const DesktopNavbarLink = ({ className, children, href, ...rest }) => {
+export const NavbarLink = ({ className, children, href, ...rest }) => {
   const { pathname } = useRouter();
   const isActive = href === '/' ? pathname === '/' : pathname.includes(href);
 
