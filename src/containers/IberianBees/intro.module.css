@@ -3,7 +3,7 @@
 }
 
 .markdown h1 {
-  @apply font-bold text-4xl mb-8;
+  @apply font-bold text-4xl mb-10;
 }
 
 .markdown a {
