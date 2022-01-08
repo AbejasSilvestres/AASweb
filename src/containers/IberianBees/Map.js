@@ -1,5 +1,7 @@
+import { Icon } from 'leaflet';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
+import { getBasePath } from '../../lib/utils';
 
 const filterOutEmpty = (marker) =>
   Object.keys(marker).reduce(
@@ -17,6 +19,11 @@ const formatDate = (day, month, year) =>
     ? `${month}/${year}`
     : year;
 
+const MarkerIcon = new Icon({
+  iconUrl: `${getBasePath()}/assets/marker-solid.svg`,
+  iconSize: [32, 32],
+});
+
 const Map = ({ data }) => (
   <MapContainer
     className="markercluster-map"
@@ -28,7 +35,6 @@ const Map = ({ data }) => (
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     />
-
     <MarkerClusterGroup>
       {data.map((marker) => {
         const {
@@ -44,7 +50,11 @@ const Map = ({ data }) => (
         } = filterOutEmpty(marker);
         const date = formatDate(day, month, year);
         return (
-          <Marker key={field1} position={[decimalLatitude, decimalLongitude]}>
+          <Marker
+            key={field1}
+            position={[decimalLatitude, decimalLongitude]}
+            icon={MarkerIcon}
+          >
             <Popup>
               <div className="p-2">
                 <span className="block text-neutral-700 font-raleway font-bold text-base mb-0.5">
