@@ -53,5 +53,44 @@ img {
   overflow: hidden;
 }
 
+.overlay {
+  transition: opacity 0.3s;
+  position: fixed;
+  z-index: 60;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.overlay-opened {
+  opacity: 1;
+}
+
+.overlay-closed {
+  opacity: 0;
+}
+
+.modal {
+  background: #fff;
+  outline: none;
+  position: absolute;
+  transition: opacity 0.3s;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal-opened {
+  opacity: 1;
+}
+
+.modal-closed {
+  opacity: 0;
+}
+
 @tailwind components;
 @tailwind utilities;
