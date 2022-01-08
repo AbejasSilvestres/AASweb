@@ -5,6 +5,7 @@ import { Container, Layout } from '../../components';
 import { Blog } from '../../containers';
 import { getPostBySlug, getAllPosts } from '../../lib/api/posts';
 import markdownToHtml from '../../lib/markdown-to-html';
+import { getBasePath } from '../../lib/utils';
 
 export default function PostPage({ post }) {
   const router = useRouter();
@@ -15,7 +16,10 @@ export default function PostPage({ post }) {
     <>
       <Head>
         <title>{post.title}</title>
-        <meta property="og:image" content={post.coverImage} />
+        <meta
+          property="og:image"
+          content={`${getBasePath()}${post.coverImage}`}
+        />
       </Head>
       <Layout>
         <Container>
