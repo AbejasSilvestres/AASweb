@@ -2,7 +2,7 @@ import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
 
-export const NavbarLink = ({ className, children, href, ...rest }) => {
+export const NavbarLink = ({ className, children, href, onClick, ...rest }) => {
   const { pathname } = useRouter();
   const isActive = href === '/' ? pathname === '/' : pathname.includes(href);
 
@@ -23,6 +23,7 @@ export const NavbarLink = ({ className, children, href, ...rest }) => {
           'border-b-2',
           className
         )}
+        onClick={onClick}
       >
         {children}
       </a>

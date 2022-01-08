@@ -1,6 +1,7 @@
 export { default as BookOpen } from './BookOpen';
 export { default as ChartSquareBar } from './ChartSquareBar';
 export { default as CheckCircle } from './CheckCircle';
+export { default as Close } from './Close';
 export { default as Email } from './Email';
 export { default as ExternalLink } from './ExternalLink';
 export { default as Facebook } from './Facebook';
