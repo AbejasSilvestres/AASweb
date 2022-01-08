@@ -5,7 +5,7 @@ import { getBasePath, isProd } from './utils';
 // previous solution
 // https://github.com/mhm13dev/modify-image-url-md/blob/master/index.js
 export const modifyMdImageUrl = (markdown) =>
-  isProd ? markdown.replace('/assets/', '/AASweb/assets') : markdown;
+  isProd ? markdown.replace('/assets/', '/AASweb/assets/') : markdown;
 
 export default async function markdownToHtml(markdown) {
   const result = await remark().use(html).process(modifyMdImageUrl(markdown));
