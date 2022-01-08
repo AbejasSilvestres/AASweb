@@ -7,19 +7,27 @@ import { getJsonData } from '../lib/api/iberian-bees-data';
 import { getAllIberianBeesSections } from '../lib/api/iberian-bees';
 import markdownToHtml from '../lib/markdown-to-html';
 
-const getFamilies = (data) => [...new Set(data.map((item) => item.family))];
+const getSpecies = (data) => [...new Set(data.map((item) => item.species))];
 
-const filterByFamily = (data, family) =>
-  family ? data.filter((item) => family === item.family) : data;
+const filterBySpecies = (data, species) =>
+  species ? data.filter((item) => species === item.species) : data;
+
+const Map = dynamic(() => import('../containers/IberianBees/Map'), {
+  ssr: false,
+});
+
+const Autocomplete = dynamic(
+  () => import('../containers/IberianBees/Autocomplete'),
+  {
+    ssr: false,
+  }
+);
 
 export default function Bees({ data, intro }) {
-  const Map = dynamic(() => import('../containers/IberianBees/Map'), {
-    ssr: false,
-  });
-  const [familyFilter, setFamilyFilter] = useState('');
+  const [speciesFilter, setSpeciesFilter] = useState('');
 
-  const handleFilterChange = ({ target }) => {
-    setFamilyFilter(target.value);
+  const handleFilterChange = ({ selectedItem }) => {
+    setSpeciesFilter(selectedItem);
   };
 
   return (
@@ -29,7 +37,6 @@ export default function Bees({ data, intro }) {
           rel="stylesheet"
           href="https://unpkg.com/leaflet/dist/leaflet.css"
         />
-
         <link
           rel="stylesheet"
           href="https://unpkg.com/react-leaflet-markercluster/dist/styles.min.css"
@@ -43,28 +50,15 @@ export default function Bees({ data, intro }) {
         <div className="bg-primary-50">
           <Container className="pt-24 pb-36">
             <div className="max-w-sm mb-14">
-              <label
-                className="font-semibold text-2xl block text-neutral-800 mb-2"
-                htmlFor="family-filter"
-              >
-                Selecciona familia
-              </label>
-              <select
-                id="family-filter"
-                className="text-2xl appearance-none outline-none p-2 border-primary-400 border-solid border-2 rounded-md w-full focus:ring-4 focus:ring-primary-100 transition-shadow"
-                onChange={handleFilterChange}
-                value={familyFilter}
-              >
-                <option value="">Todas familias</option>
-                {getFamilies(data).map((family) => (
-                  <option key={family} value={family}>
-                    {family}
-                  </option>
-                ))}
-              </select>
+              <Autocomplete
+                onSelectedItemChange={handleFilterChange}
+                label="Selecciona especie"
+                items={getSpecies(data)}
+                selectedItem={speciesFilter}
+              />
             </div>
             <div className="leaflet-container">
-              <Map data={filterByFamily(data, familyFilter)} />
+              <Map data={filterBySpecies(data, speciesFilter)} />
             </div>
           </Container>
         </div>
@@ -78,6 +72,9 @@ export async function getStaticProps() {
   const { content } = getAllIberianBeesSections(['content'])[0];
   const parsedIberianBees = await markdownToHtml(content || '');
   return {
-    props: { data, intro: parsedIberianBees },
+    props: {
+      data: data.sort((a, b) => a.species.localeCompare(b.species)),
+      intro: parsedIberianBees,
+    },
   };
 }
