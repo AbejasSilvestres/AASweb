@@ -17,70 +17,67 @@ const formatDate = (day, month, year) =>
     ? `${month}/${year}`
     : year;
 
-const Map = ({ data }) => {
-  return (
-    <MapContainer
-      className="markercluster-map"
-      center={[40.416729, -3.703339]}
-      zoom={6}
-      maxZoom={18}
-    >
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-      />
+const Map = ({ data }) => (
+  <MapContainer
+    className="markercluster-map"
+    center={[40.416729, -3.703339]}
+    zoom={6}
+    maxZoom={18}
+  >
+    <TileLayer
+      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    />
 
-      <MarkerClusterGroup>
-        {data.map((marker) => {
-          const {
-            field1,
-            decimalLatitude,
-            decimalLongitude,
-            species,
-            family,
-            year,
-            month,
-            day,
-            identifiedBy,
-          } = filterOutEmpty(marker);
-          const date = formatDate(day, month, year);
-          return (
-            <Marker key={field1} position={[decimalLatitude, decimalLongitude]}>
-              <Popup>
-                <div className="p-2">
-                  <span className="block text-neutral-700 font-raleway font-bold text-base mb-0.5">
-                    {species}
-                  </span>
-                  <span className="block text-neutral-500 font-raleway text-sm mb-3">
-                    {family}
-                  </span>
-                  <span className="block text-neutral-700 font-raleway text-sm m-0">
-                    {identifiedBy && (
-                      <>
-                        <span>Identificado por </span>
-                        <span className="font-semibold text-neutral-600">
-                          {identifiedBy}
-                        </span>
-                      </>
-                    )}
-                    {date && (
-                      <>
-                        <span>
-                          {identifiedBy ? ' en ' : 'Identificado en '}
-                        </span>
-                        <span className="font-semibold text-neutral-600">
-                          {date}
-                        </span>
-                      </>
-                    )}
-                  </span>
-                </div>
-              </Popup>
-            </Marker>
-          );
-        })}
-      </MarkerClusterGroup>
-    </MapContainer>
-  );
-};
+    <MarkerClusterGroup>
+      {data.map((marker) => {
+        const {
+          field1,
+          decimalLatitude,
+          decimalLongitude,
+          species,
+          family,
+          year,
+          month,
+          day,
+          identifiedBy,
+        } = filterOutEmpty(marker);
+        const date = formatDate(day, month, year);
+        return (
+          <Marker key={field1} position={[decimalLatitude, decimalLongitude]}>
+            <Popup>
+              <div className="p-2">
+                <span className="block text-neutral-700 font-raleway font-bold text-base mb-0.5">
+                  {species}
+                </span>
+                <span className="block text-neutral-500 font-raleway text-sm mb-3">
+                  {family}
+                </span>
+                <span className="block text-neutral-700 font-raleway text-sm m-0">
+                  {identifiedBy && (
+                    <>
+                      <span>Identificado por </span>
+                      <span className="font-semibold text-neutral-600">
+                        {identifiedBy}
+                      </span>
+                    </>
+                  )}
+                  {date && (
+                    <>
+                      <span>{identifiedBy ? ' en ' : 'Identificado en '}</span>
+                      <span className="font-semibold text-neutral-600">
+                        {date}
+                      </span>
+                    </>
+                  )}
+                </span>
+              </div>
+            </Popup>
+          </Marker>
+        );
+      })}
+    </MarkerClusterGroup>
+  </MapContainer>
+);
+
 export default Map;
