@@ -23,7 +23,6 @@ const Autocomplete = dynamic(
 );
 
 export default function Bees({ data, intro, species }) {
-  console.log({ data });
   const [, startTransition] = useTransition();
   const [speciesFilter, setSpeciesFilter] = useState('');
 
