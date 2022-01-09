@@ -1,7 +1,7 @@
 import { join } from 'path';
 import csv from 'csvtojson';
 
-const dataFile = join(process.cwd(), 'public', 'assets', 'data.csv');
+const dataFile = join(process.cwd(), 'public', 'assets', 'iberian_bees.csv');
 
 const filterOutEmpty = (marker) =>
   Object.keys(marker).reduce(
