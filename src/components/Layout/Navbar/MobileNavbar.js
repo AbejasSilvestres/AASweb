@@ -25,13 +25,13 @@ export const MobileNavbar = () => {
         onRequestClose={closeModal}
         className={{
           base: 'modal',
-          afterOpen: 'modal-opened',
-          beforeClose: 'modal-closed',
+          afterOpen: 'opacity-100',
+          beforeClose: 'opacity-0',
         }}
         overlayClassName={{
           base: 'overlay',
-          afterOpen: 'overlay-opened',
-          beforeClose: 'overlay-closed',
+          afterOpen: 'opacity-100',
+          beforeClose: 'opacity-0',
         }}
         closeTimeoutMS={200}
       >

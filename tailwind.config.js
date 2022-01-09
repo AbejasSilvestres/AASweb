@@ -35,6 +35,11 @@ module.exports = {
     fontFamily: {
       raleway: 'Raleway',
     },
+    extend: {
+      zIndex: {
+        9999: '9999',
+      },
+    },
   },
   purge: [
     './src/components/**/*.js',
