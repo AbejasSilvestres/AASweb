@@ -37,7 +37,7 @@ const Map = ({ data }) => (
           >
             <Popup>
               <div className="p-2">
-                <span className="block text-neutral-700 font-raleway font-bold text-base mb-0.5">
+                <span className="block italic text-neutral-700 font-raleway font-bold text-base mb-0.5">
                   {species}
                 </span>
                 <span className="block text-neutral-500 font-raleway text-sm mb-3">
