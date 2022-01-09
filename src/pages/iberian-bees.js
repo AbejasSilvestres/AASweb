@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, startTransition } from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { Container, Layout } from '../components';
@@ -6,8 +6,6 @@ import { IberianBees } from '../containers';
 import { getJsonData } from '../lib/api/iberian-bees-data';
 import { getAllIberianBeesSections } from '../lib/api/iberian-bees';
 import markdownToHtml from '../lib/markdown-to-html';
-
-const getSpecies = (data) => [...new Set(data.map((item) => item.species))];
 
 const filterBySpecies = (data, species) =>
   species ? data.filter((item) => species === item.species) : data;
@@ -23,7 +21,7 @@ const Autocomplete = dynamic(
   }
 );
 
-export default function Bees({ data, intro }) {
+export default function Bees({ data, intro, species }) {
   const [speciesFilter, setSpeciesFilter] = useState('');
 
   const handleFilterChange = ({ selectedItem }) => {
@@ -52,8 +50,9 @@ export default function Bees({ data, intro }) {
             <div className="max-w-sm mb-14">
               <Autocomplete
                 onSelectedItemChange={handleFilterChange}
-                label="Selecciona especie"
-                items={getSpecies(data)}
+                label="Filtrar por especie"
+                placeholder="Comienza escribir aqui..."
+                items={species}
                 selectedItem={speciesFilter}
               />
             </div>
@@ -74,6 +73,7 @@ export async function getStaticProps() {
   return {
     props: {
       data: data.sort((a, b) => a.species.localeCompare(b.species)),
+      species: [...new Set(data.map((item) => item.species))],
       intro: parsedIberianBees,
     },
   };

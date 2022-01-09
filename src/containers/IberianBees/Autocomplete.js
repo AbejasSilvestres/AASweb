@@ -1,9 +1,23 @@
-import { useState } from 'react';
+import { useState, startTransition } from 'react';
 import classNames from 'classnames';
 import { useCombobox } from 'downshift';
 
-const Autocomplete = ({ items, label, onSelectedItemChange, selectedItem }) => {
+const Autocomplete = ({
+  items,
+  label,
+  onSelectedItemChange,
+  selectedItem,
+  placeholder,
+}) => {
   const [inputItems, setInputItems] = useState(items);
+
+  const handleInputChange = ({ target }) => {
+    if (target.value === '') {
+      startTransition(() => {
+        onSelectedItemChange('');
+      });
+    }
+  };
 
   const {
     isOpen,
@@ -40,7 +54,10 @@ const Autocomplete = ({ items, label, onSelectedItemChange, selectedItem }) => {
         </label>
         <input
           className="text-2xl appearance-none outline-none p-2 border-primary-400 border-solid border-2 rounded-md w-full focus:ring-4 focus:ring-primary-100 transition-shadow"
-          {...getInputProps()}
+          {...getInputProps({
+            placeholder,
+            onChange: handleInputChange,
+          })}
         />
       </div>
       <ul
