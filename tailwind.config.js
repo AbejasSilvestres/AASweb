@@ -41,9 +41,10 @@ module.exports = {
       },
     },
   },
-  purge: [
+  content: [
     './src/components/**/*.js',
     './src/containers/**/*.js',
+    './src/icons/**/*.js',
     './src/pages/**/*.js',
   ],
 };

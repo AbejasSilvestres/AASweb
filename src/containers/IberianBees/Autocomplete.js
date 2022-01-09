@@ -58,7 +58,6 @@ const Autocomplete = ({ items, label, onSelectedItemChange, placeholder }) => {
           'mt-2',
           'w-full',
           'bg-neutral-0',
-          'z-50',
           'max-h-56',
           'overflow-y-auto'
         )}
