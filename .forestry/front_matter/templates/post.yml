@@ -39,4 +39,3 @@ fields:
       required: true
 pages:
 - data/_posts/preview.md
-- data/_posts/test.md
