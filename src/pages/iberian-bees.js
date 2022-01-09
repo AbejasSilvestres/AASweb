@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useTransition } from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import { Container, Layout } from '../components';
@@ -6,11 +6,10 @@ import { IberianBees } from '../containers';
 import { getJsonData } from '../lib/api/iberian-bees-data';
 import { getAllIberianBeesSections } from '../lib/api/iberian-bees';
 import markdownToHtml from '../lib/markdown-to-html';
-
-const getSpecies = (data) => [...new Set(data.map((item) => item.species))];
+import { filter } from '../lib/utils';
 
 const filterBySpecies = (data, species) =>
-  species ? data.filter((item) => species === item.species) : data;
+  species ? filter((item) => species === item.species, data) : data;
 
 const Map = dynamic(() => import('../containers/IberianBees/Map'), {
   ssr: false,
@@ -23,11 +22,14 @@ const Autocomplete = dynamic(
   }
 );
 
-export default function Bees({ data, intro }) {
+export default function Bees({ data, intro, species }) {
+  const [, startTransition] = useTransition();
   const [speciesFilter, setSpeciesFilter] = useState('');
 
   const handleFilterChange = ({ selectedItem }) => {
-    setSpeciesFilter(selectedItem);
+    startTransition(() => {
+      setSpeciesFilter(selectedItem);
+    });
   };
 
   return (
@@ -52,9 +54,9 @@ export default function Bees({ data, intro }) {
             <div className="max-w-sm mb-14">
               <Autocomplete
                 onSelectedItemChange={handleFilterChange}
-                label="Selecciona especie"
-                items={getSpecies(data)}
-                selectedItem={speciesFilter}
+                label="Filtrar por especie"
+                placeholder="Comienza escribir aqui..."
+                items={species}
               />
             </div>
             <div className="leaflet-container">
@@ -71,9 +73,11 @@ export async function getStaticProps() {
   const data = await getJsonData();
   const { content } = getAllIberianBeesSections(['content'])[0];
   const parsedIberianBees = await markdownToHtml(content || '');
+
   return {
     props: {
-      data: data.sort((a, b) => a.species.localeCompare(b.species)),
+      data,
+      species: [...new Set(data.map((item) => item.species))],
       intro: parsedIberianBees,
     },
   };

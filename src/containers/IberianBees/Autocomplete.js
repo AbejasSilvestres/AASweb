@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import classNames from 'classnames';
 import { useCombobox } from 'downshift';
+import { filter } from '../../lib/utils';
 
-const Autocomplete = ({ items, label, onSelectedItemChange, selectedItem }) => {
+const Autocomplete = ({ items, label, onSelectedItemChange, placeholder }) => {
   const [inputItems, setInputItems] = useState(items);
 
   const {
@@ -15,14 +16,17 @@ const Autocomplete = ({ items, label, onSelectedItemChange, selectedItem }) => {
     getItemProps,
   } = useCombobox({
     onSelectedItemChange,
-    selectedItem,
     items: inputItems,
     onInputValueChange: ({ inputValue }) => {
+      if (inputValue === '') {
+        onSelectedItemChange({ selectedItem: '' });
+      }
       setInputItems(
-        items.filter(
+        filter(
           (item) =>
             !inputValue ||
-            item.toLowerCase().startsWith(inputValue.toLowerCase())
+            item.toLowerCase().startsWith(inputValue.toLowerCase()),
+          items
         )
       );
     },
@@ -40,7 +44,9 @@ const Autocomplete = ({ items, label, onSelectedItemChange, selectedItem }) => {
         </label>
         <input
           className="text-2xl appearance-none outline-none p-2 border-primary-400 border-solid border-2 rounded-md w-full focus:ring-4 focus:ring-primary-100 transition-shadow"
-          {...getInputProps()}
+          {...getInputProps({
+            placeholder,
+          })}
         />
       </div>
       <ul
