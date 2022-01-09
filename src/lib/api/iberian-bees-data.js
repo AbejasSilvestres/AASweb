@@ -12,6 +12,17 @@ const filterOutEmpty = (marker) =>
     {}
   );
 
+const isUnused = (key) => key === 'sex' || key === 'recordedBy';
+
+const filterOutUnused = (marker) =>
+  Object.keys(marker).reduce(
+    (acc, next) => ({
+      ...acc,
+      ...(!isUnused(next) && { [next]: marker[next] }),
+    }),
+    {}
+  );
+
 const formatDate = (marker) => {
   const { day, month, year, ...rest } = marker;
   const date =
@@ -32,6 +43,7 @@ export const getJsonData = async () => {
   const markers = await csv().fromFile(dataFile);
   return markers
     .map(filterOutEmpty)
+    .map(filterOutUnused)
     .map(formatDate)
     .sort((a, b) => a.species?.localeCompare(b.species));
 };
