@@ -19,7 +19,6 @@ export const getItemBySlug =
       if (field === 'content') {
         items[field] = content;
       }
-
       if (typeof serializableData[field] !== 'undefined') {
         items[field] = serializableData[field];
       }

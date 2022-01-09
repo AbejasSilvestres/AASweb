@@ -46,11 +46,11 @@ export default function Bees({ data, intro, species }) {
         <title>Abjeas silvestres</title>
       </Head>
       <Layout>
-        <Container className="py-24">
+        <Container className="pt-24 pb-12">
           <IberianBees.Intro content={intro} />
         </Container>
         <div className="bg-primary-50">
-          <Container className="pt-24 pb-36">
+          <Container className="pt-12 pb-36">
             <div className="max-w-sm mb-14">
               <Autocomplete
                 onSelectedItemChange={handleFilterChange}
