@@ -50,15 +50,14 @@ const Autocomplete = ({ items, label, onSelectedItemChange, placeholder }) => {
         />
       </div>
       <ul
-        style={{ zIndex: 99999 }}
         className={classNames(
           isOpen && !!inputItems.length && 'rounded-md',
-          'shadow-md',
+          'z-9999',
+          'shadow-lg',
           'absolute',
           'mt-2',
           'w-full',
           'bg-neutral-0',
-          'z-50',
           'max-h-56',
           'overflow-y-auto'
         )}

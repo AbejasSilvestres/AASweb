@@ -42,54 +42,20 @@ a {
 }
 img {
   text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+  @apply whitespace-nowrap overflow-hidden;
 }
 
 .leaflet-container {
   height: 600px;
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
+  @apply w-full max-w-full overflow-hidden;
 }
 
 .overlay {
-  transition: opacity 0.3s;
-  position: fixed;
-  z-index: 60;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-}
-
-.overlay-opened {
-  opacity: 1;
-}
-
-.overlay-closed {
-  opacity: 0;
+  @apply transition-opacity fixed z-50 inset-0 opacity-0;
 }
 
 .modal {
-  background: #fff;
-  outline: none;
-  position: absolute;
-  transition: opacity 0.3s;
-  opacity: 0;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.modal-opened {
-  opacity: 1;
-}
-
-.modal-closed {
-  opacity: 0;
+  @apply bg-neutral-0 outline-none absolute transition-opacity inset-0;
 }
 
 @tailwind components;

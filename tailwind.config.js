@@ -35,10 +35,16 @@ module.exports = {
     fontFamily: {
       raleway: 'Raleway',
     },
+    extend: {
+      zIndex: {
+        9999: '9999',
+      },
+    },
   },
-  purge: [
+  content: [
     './src/components/**/*.js',
     './src/containers/**/*.js',
+    './src/icons/**/*.js',
     './src/pages/**/*.js',
   ],
 };
