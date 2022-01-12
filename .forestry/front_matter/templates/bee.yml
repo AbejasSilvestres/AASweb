@@ -28,10 +28,10 @@ fields:
       type: simple
     options:
     - Pirineos
-    - Cordillera Cantabrica
-    - Meseta Interior Peninsula
-    - Costa Atlantica
-    - Costa Mediterranea
+    - Cordillera Cantábrica
+    - Meseta Interior Península
+    - Costa Atlántica
+    - Costa Mediterránea
 - type: boolean
   name: psithyrus
   label: psithyrus

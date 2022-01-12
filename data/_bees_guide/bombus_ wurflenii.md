@@ -6,7 +6,7 @@ location:
 - Cordillera Cantabrica
 - Pirineos
 psithyrus: true
-image: "/assets/bombus_wurflenii.jpg"
+image: "/assets/bombus-wurflenii.jpg"
 description: description here
 
 ---

@@ -12,7 +12,7 @@ Durante la temporada 2019-2020, la Asociación Abejas Silvestres, con la ayuda d
 
 **Gracias a todos los que habéis participado!**
 
-**![Mapa](/assets/map_habeetat.png "Mapa de las fincas que han participado")**
+**![Mapa](/assets/map-habeetat.png "Mapa de las fincas que han participado")**
 
 <p class="text-center">El proyecto ya se ha completado para la primavera 2020 con más de 100 agricultores implicados.</p>  
 
