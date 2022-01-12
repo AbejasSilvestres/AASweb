@@ -47,6 +47,5 @@ fields:
   label: description
   config:
     required: true
-
 pages:
 - data/_bees_guide/bombus_ wurflenii.md
