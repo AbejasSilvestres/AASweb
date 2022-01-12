@@ -13,7 +13,7 @@ export const Item = ({ title, body, href }) => (
         <h3 className="text-xl text-neutral-700 mb-2">{title}</h3>
       </a>
     ) : (
-      <NextLink href={`${getBasePath()}${href}`}>
+      <NextLink href={href}>
         <a className="block hover:underline focus:underline" rel="noreferrer">
           <h3 className="text-xl text-neutral-700 mb-2">{title}</h3>
         </a>

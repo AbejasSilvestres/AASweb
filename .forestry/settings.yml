@@ -54,6 +54,8 @@ sections:
   label: Bees guide
   create: documents
   match: "*.md"
+  templates:
+  - bees-guide
 upload_dir: public/assets
 public_path: "/assets"
 front_matter_path: ''
