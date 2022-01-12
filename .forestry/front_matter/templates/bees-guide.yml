@@ -37,9 +37,9 @@ fields:
   label: parasite
   config:
     required: true
-- type: text
-  name: url
-  label: url
+- type: file
+  name: image
+  label: image
   config:
     required: true
 - type: textarea
