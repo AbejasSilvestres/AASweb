@@ -1,6 +1,7 @@
 import { Icon } from 'leaflet';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
+import { MapPopup } from './Popup';
 import { getBasePath } from '../../lib/utils';
 
 const MarkerIcon = new Icon({
@@ -29,40 +30,20 @@ const Map = ({ data }) => (
           family,
           date,
           identifiedBy,
+          recordedBy,
         }) => (
           <Marker
             key={field1}
             position={[decimalLatitude, decimalLongitude]}
             icon={MarkerIcon}
           >
-            <Popup>
-              <div className="p-2">
-                <span className="block italic text-neutral-700 font-raleway font-bold text-base mb-0.5">
-                  {species}
-                </span>
-                <span className="block text-neutral-500 font-raleway text-sm mb-3">
-                  {family}
-                </span>
-                <span className="block text-neutral-700 font-raleway text-sm m-0">
-                  {identifiedBy && (
-                    <>
-                      <span>Identificado por </span>
-                      <span className="font-semibold text-neutral-600">
-                        {identifiedBy}
-                      </span>
-                    </>
-                  )}
-                  {date && (
-                    <>
-                      <span>{identifiedBy ? ' en ' : 'Identificado en '}</span>
-                      <span className="font-semibold text-neutral-600">
-                        {date}
-                      </span>
-                    </>
-                  )}
-                </span>
-              </div>
-            </Popup>
+            <MapPopup
+              family={family}
+              species={species}
+              date={date}
+              identifiedBy={identifiedBy}
+              recordedBy={recordedBy}
+            />
           </Marker>
         )
       )}

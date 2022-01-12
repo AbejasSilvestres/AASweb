@@ -12,7 +12,7 @@ const filterOutEmpty = (marker) =>
     {}
   );
 
-const isUnused = (key) => key === 'sex' || key === 'recordedBy';
+const isUnused = (key) => key === 'sex';
 
 const filterOutUnused = (marker) =>
   Object.keys(marker).reduce(
