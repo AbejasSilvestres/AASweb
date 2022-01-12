@@ -12,12 +12,12 @@ export default function BeeGuide({ data }) {
       <Layout>
         <ul>
           {data.map(
-            ({ species, butt, location, parasite, image, description }) => (
+            ({ species, butt, location, psithyrus, image, description }) => (
               <li key={species}>
                 <span className="block mb-1">{species}</span>
                 <span className="block mb-1">{butt}</span>
                 <span className="block mb-1">{location}</span>
-                <span className="block mb-1">{parasite}</span>
+                <span className="block mb-1">{psithyrus}</span>
                 <span className="block mb-1">{description}</span>
                 <img src={`${getBasePath()}${image}`} alt={species} />
               </li>
@@ -34,7 +34,7 @@ export async function getStaticProps() {
     'species',
     'butt',
     'location',
-    'parasite',
+    'psithyrus',
     'image',
     'description',
   ]);

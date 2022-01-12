@@ -5,7 +5,7 @@ location:
 - Meseta Interior Peninsula
 - Cordillera Cantabrica
 - Pirineos
-parasite: true
+psithyrus: true
 image: "/assets/bombus_wurflenii.jpg"
 description: description here
 
