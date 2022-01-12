@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import { Container, Layout } from '../components';
-import { getAllResources } from '../lib/api/resources';
-import * as Resources from '../containers/Resources';
+import { Container, Layout } from '../../components';
+import { getAllResources } from '../../lib/api/resources';
+import * as Resources from '../../containers/Resources';
 
 export default function ResourcesPage({ allResources }) {
   const resourceByCategory = allResources.reduce(
