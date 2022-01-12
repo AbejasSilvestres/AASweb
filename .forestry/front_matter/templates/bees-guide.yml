@@ -32,7 +32,7 @@ fields:
     - Meseta Interior Peninsula
     - Costa Atlantica
     - Costa Mediterranea
-- type: toggle
+- type: boolean
   name: parasite
   label: parasite
   config:
@@ -49,4 +49,4 @@ fields:
     required: true
 
 pages:
-- data/bee/bombus_ wurflenii.md
+- data/_bees_guide/bombus_ wurflenii.md
