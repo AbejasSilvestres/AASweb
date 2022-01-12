@@ -9,31 +9,43 @@ sections:
   label: Posts
   create: documents
   match: "*.md"
+  templates:
+  - post
 - type: directory
   path: data/_members
   label: Members
   create: documents
   match: "*.md"
+  templates:
+  - member
 - type: directory
   path: data/_home
   label: Home
   create: none
   match: "*.md"
+  templates:
+  - home
 - type: directory
   path: data/_about
   label: About
   create: none
   match: "*.md"
+  templates:
+  - services
 - type: directory
   path: data/_timeline
   label: Timeline
   create: documents
   match: "*.md"
+  templates:
+  - timeline
 - type: directory
   path: data/_projects
   label: Projects
   create: documents
   match: "*.md"
+  templates:
+  - projects
 - type: directory
   path: data/_services
   label: Services
@@ -44,11 +56,15 @@ sections:
   label: Resources
   create: documents
   match: "*.md"
+  templates:
+  - resource
 - type: directory
   path: data/_iberian_bees
   label: Iberian bees
   create: none
   match: "*.md"
+  templates:
+  - iberian-bees
 - type: directory
   path: data/_bees_guide
   label: Bees guide
