@@ -31,7 +31,7 @@ sections:
   create: none
   match: "*.md"
   templates:
-  - services
+  - about
 - type: directory
   path: data/_timeline
   label: Timeline
@@ -45,12 +45,14 @@ sections:
   create: documents
   match: "*.md"
   templates:
-  - projects
+  - project
 - type: directory
   path: data/_services
   label: Services
   create: none
   match: "*.md"
+  templates:
+  - service
 - type: directory
   path: data/_resources
   label: Resources
@@ -64,14 +66,14 @@ sections:
   create: none
   match: "*.md"
   templates:
-  - iberian-bees
+  - iberian-bee
 - type: directory
   path: data/_bees_guide
   label: Bees guide
   create: documents
   match: "*.md"
   templates:
-  - bees-guide
+  - bee
 upload_dir: public/assets
 public_path: "/assets"
 front_matter_path: ''
