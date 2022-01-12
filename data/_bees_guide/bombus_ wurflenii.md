@@ -2,9 +2,9 @@
 species: Bombus wurflenii
 butt: Blanco
 location:
-- Meseta Interior Peninsula
-- Cordillera Cantabrica
-- Pirineos
+- Costa Atlántica
+- Meseta Interior Península
+- Cordillera Cantábrica
 psithyrus: true
 image: "/assets/bombus-wurflenii.jpg"
 description: description here
