@@ -1,8 +1,11 @@
 ---
 species: Bombus wurflenii
 butt: Blanco
-location: Pirineos
-parasite: false
+location:
+- Meseta Interior Peninsula
+- Cordillera Cantabrica
+- Pirineos
+parasite: true
 image: "/assets/bombus_wurflenii.jpg"
 description: description here
 
