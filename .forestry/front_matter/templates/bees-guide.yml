@@ -1,0 +1,52 @@
+---
+label: Bees guide
+hide_body: true
+fields:
+- type: text
+  name: species
+  label: species
+  config:
+    required: true
+- type: select
+  name: butt
+  label: butt
+  config:
+    required: true
+    source:
+      type: custom
+    options:
+    - Blanco
+    - Rojo
+    - Otro
+- type: list
+  name: location
+  label: location
+  config:
+    use_select: true
+    required: true
+    source:
+      type: simple
+    options:
+    - Pirineos
+    - Cordillera Cantabrica
+    - Meseta Interior Peninsula
+    - Costa Atlantica
+    - Costa Mediterranea
+- type: toggle
+  name: parasite
+  label: parasite
+  config:
+    required: true
+- type: text
+  name: url
+  label: url
+  config:
+    required: true
+- type: textarea
+  name: description
+  label: description
+  config:
+    required: true
+
+pages:
+- data/bee/bombus_ wurflenii.md
