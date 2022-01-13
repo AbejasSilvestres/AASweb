@@ -24,7 +24,7 @@ export default function Guide({ intro, data }) {
                   {species}
                 </span>
                 <img
-                  src={`${getBasePath()}/assets/bees-guide/${image}`}
+                  src={`${getBasePath()}/bees-guide/${image}`}
                   alt={species}
                 />
                 <span className="block">
