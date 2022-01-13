@@ -70,7 +70,7 @@ sections:
 - type: directory
   path: data/_bees_guide
   label: Bees guide
-  create: documents
+  create: none
   match: "*.md"
   templates:
   - bees-guide
