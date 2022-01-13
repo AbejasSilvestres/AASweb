@@ -1,46 +1,31 @@
 import Head from 'next/head';
-import { Layout } from '../../components';
-import { getAllBeesGuide } from '../../lib/api/bees-guide';
-import { getBasePath } from '../../lib/utils';
+import { Layout, Container } from '../../components';
+import { getAllBeesGuideSections } from '../../lib/api/bees-guide';
+import { BeesGuide } from '../../containers';
+import markdownToHtml from '../../lib/markdown-to-html';
 
-export default function BeeGuide({ data }) {
+export default function Guide({ intro }) {
   return (
     <>
       <Head>
         <title>Guía</title>
       </Head>
       <Layout>
-        <ul>
-          {data.map(
-            ({ species, butt, location, psithyrus, image, description }) => (
-              <li key={species}>
-                <span className="block mb-1">{species}</span>
-                <span className="block mb-1">{butt}</span>
-                <span className="block mb-1">{location}</span>
-                <span className="block mb-1">{psithyrus}</span>
-                <span className="block mb-1">{description}</span>
-                <img src={`${getBasePath()}${image}`} alt={species} />
-              </li>
-            )
-          )}
-        </ul>
+        <Container className="pt-24 pb-12">
+          <BeesGuide.Intro content={intro} />
+        </Container>
       </Layout>
     </>
   );
 }
 
 export async function getStaticProps() {
-  const data = getAllBeesGuide([
-    'species',
-    'butt',
-    'location',
-    'psithyrus',
-    'image',
-    'description',
-  ]);
+  const { content } = getAllBeesGuideSections(['content'])[0];
+  const parsedBeesGuideIntro = await markdownToHtml(content || '');
+
   return {
     props: {
-      data,
+      intro: parsedBeesGuideIntro,
     },
   };
 }

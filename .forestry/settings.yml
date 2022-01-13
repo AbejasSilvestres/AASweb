@@ -73,7 +73,7 @@ sections:
   create: documents
   match: "*.md"
   templates:
-  - bee
+  - bees-guide
 upload_dir: public/assets
 public_path: "/assets"
 front_matter_path: ''
