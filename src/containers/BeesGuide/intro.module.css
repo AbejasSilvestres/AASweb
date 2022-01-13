@@ -1,0 +1,11 @@
+.markdown p {
+  @apply font-normal text-lg leading-relaxed my-6;
+}
+
+.markdown h1 {
+  @apply font-bold text-4xl mb-10;
+}
+
+.markdown a {
+  @apply text-primary-500 hover:text-primary-600 focus-within:text-primary-600 underline;
+}
