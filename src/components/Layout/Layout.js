@@ -1,5 +1,5 @@
-import { Meta } from './Meta';
 import { Footer } from './Footer';
+import { Meta } from './Meta';
 import { Navbar } from './Navbar';
 
 export const Layout = ({ children }) => (

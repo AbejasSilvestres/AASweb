@@ -1,6 +1,7 @@
-import { useState } from 'react';
 import classNames from 'classnames';
 import { useCombobox } from 'downshift';
+import { useState } from 'react';
+
 import { filter } from '../../lib/utils';
 
 const Autocomplete = ({ items, label, onSelectedItemChange, placeholder }) => {

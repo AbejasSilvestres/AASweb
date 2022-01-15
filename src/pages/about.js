@@ -1,11 +1,12 @@
 import Head from 'next/head';
-import { getAllMembers } from '../lib/api/members';
-import { getAllAboutSections } from '../lib/api/about';
-import { getAllTimelineItems } from '../lib/api/timeline';
-import { getAllServicesSections } from '../lib/api/services';
-import markdownToHtml from '../lib/markdown-to-html';
+
 import { Layout } from '../components';
 import { About } from '../containers';
+import { getAllAboutSections } from '../lib/api/about';
+import { getAllMembers } from '../lib/api/members';
+import { getAllServicesSections } from '../lib/api/services';
+import { getAllTimelineItems } from '../lib/api/timeline';
+import markdownToHtml from '../lib/markdown-to-html';
 
 export default function AboutPage({
   intro,

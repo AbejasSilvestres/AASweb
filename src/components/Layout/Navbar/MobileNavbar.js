@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { Modal } from '../../Modal/Modal';
-import { IconButton } from '../../IconButton/IconButton';
+
 import { Icon } from '../../Icon';
-import { NavbarLink } from './NavbarLink';
+import { IconButton } from '../../IconButton/IconButton';
+import { Modal } from '../../Modal/Modal';
 import { links } from './links';
+import { NavbarLink } from './NavbarLink';
 
 export const MobileNavbar = () => {
   const [isOpen, toggleModal] = useState(false);

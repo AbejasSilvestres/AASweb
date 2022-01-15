@@ -1,15 +1,16 @@
 import Head from 'next/head';
-import { useState, startTransition } from 'react';
+import { startTransition, useState } from 'react';
+
 import {
-  Layout,
-  Container,
-  Select,
   ClearButton,
+  Container,
+  Layout,
   RadioGroup,
+  Select,
 } from '../../components';
+import { BeesGuide } from '../../containers';
 import { getAllBeesGuideSections } from '../../lib/api/bees-guide';
 import { getJsonData, locations } from '../../lib/api/bees-guide-data';
-import { BeesGuide } from '../../containers';
 import markdownToHtml from '../../lib/markdown-to-html';
 
 const buttOptions = [
@@ -70,7 +71,7 @@ export default function Guide({ intro, allBees }) {
   return (
     <>
       <Head>
-        <title>Guía</title>
+        <title>Guía de abejas</title>
       </Head>
       <Layout>
         <Container className="pt-24 pb-12">

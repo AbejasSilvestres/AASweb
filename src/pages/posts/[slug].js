@@ -1,9 +1,10 @@
-import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+
 import { Container, Layout } from '../../components';
 import { Blog } from '../../containers';
-import { getPostBySlug, getAllPosts } from '../../lib/api/posts';
+import { getAllPosts, getPostBySlug } from '../../lib/api/posts';
 import markdownToHtml from '../../lib/markdown-to-html';
 import { getBasePath } from '../../lib/utils';
 

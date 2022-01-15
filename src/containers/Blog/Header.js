@@ -1,6 +1,6 @@
-import { CoverImage } from './CoverImage';
-import { Author } from './Author';
 import { formatDate } from '../../lib/utils';
+import { Author } from './Author';
+import { CoverImage } from './CoverImage';
 
 export const Header = ({ title, coverImage, date, author }) => (
   <>

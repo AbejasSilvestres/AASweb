@@ -1,8 +1,8 @@
 import {
-  SectionTitle,
-  SectionText,
   Logo,
   SectionContainer,
+  SectionText,
+  SectionTitle,
 } from '../../components';
 
 export const Intro = ({ title, body }) => (

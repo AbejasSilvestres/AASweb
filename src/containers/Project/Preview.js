@@ -1,6 +1,7 @@
 import NextLink from 'next/link';
-import { getBasePath } from '../../lib/utils';
+
 import { Container, Link } from '../../components';
+import { getBasePath } from '../../lib/utils';
 
 export const Preview = ({ type, title, excerpt, coverImage, slug }) => (
   <section className={type === 'primary' ? 'bg-primary-50' : 'bg-neutral-0'}>

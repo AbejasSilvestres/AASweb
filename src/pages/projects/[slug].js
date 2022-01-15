@@ -1,10 +1,11 @@
-import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+
 import { Container, Layout } from '../../components';
 import { Project } from '../../containers';
+import { getAllProjects, getProjectBySlug } from '../../lib/api/projects';
 import markdownToHtml from '../../lib/markdown-to-html';
-import { getProjectBySlug, getAllProjects } from '../../lib/api/projects';
 import { getBasePath } from '../../lib/utils';
 
 export default function ProjectPage({ project }) {

@@ -1,4 +1,4 @@
-import { SectionTitle, SectionContainer } from '../../components';
+import { SectionContainer, SectionTitle } from '../../components';
 
 export const Timeline = ({ children }) => (
   <SectionContainer className="bg-primary-50">

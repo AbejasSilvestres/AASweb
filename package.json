@@ -5,7 +5,7 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint --fix",
     "prepare": "husky install",
     "prettier": "npx prettier --write src"
   },
@@ -30,6 +30,7 @@
     "eslint": "8.6.0",
     "eslint-config-next": "12.0.7",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^7.0.4",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",

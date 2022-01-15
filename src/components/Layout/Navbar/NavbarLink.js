@@ -1,6 +1,6 @@
+import classNames from 'classnames';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
-import classNames from 'classnames';
 
 export const NavbarLink = ({ className, children, href, onClick, ...rest }) => {
   const { pathname } = useRouter();

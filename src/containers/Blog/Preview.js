@@ -1,7 +1,8 @@
 import Link from 'next/link';
-import { CoverImage } from './CoverImage';
-import { Author } from './Author';
+
 import { formatDate } from '../../lib/utils';
+import { Author } from './Author';
+import { CoverImage } from './CoverImage';
 
 export const Preview = ({ title, coverImage, date, excerpt, author, slug }) => (
   <article>

@@ -1,5 +1,5 @@
-import { join } from 'path';
 import csv from 'csvtojson';
+import { join } from 'path';
 
 const dataFile = join(process.cwd(), 'public', 'assets', 'bees-guide.csv');
 

@@ -1,10 +1,11 @@
-import { useState, useTransition } from 'react';
-import Head from 'next/head';
 import dynamic from 'next/dynamic';
+import Head from 'next/head';
+import { useState, useTransition } from 'react';
+
 import { Container, Layout } from '../components';
 import { IberianBees } from '../containers';
-import { getJsonData } from '../lib/api/iberian-bees-data';
 import { getAllIberianBeesSections } from '../lib/api/iberian-bees';
+import { getJsonData } from '../lib/api/iberian-bees-data';
 import markdownToHtml from '../lib/markdown-to-html';
 import { filter } from '../lib/utils';
 

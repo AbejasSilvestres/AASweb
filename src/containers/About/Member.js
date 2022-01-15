@@ -1,4 +1,4 @@
-import { Link, RoundImage, Icon } from '../../components';
+import { Icon, Link, RoundImage } from '../../components';
 import memberStyles from './member.module.css';
 
 export const Member = ({ photo, name, url, content }) => (

@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+
 import { getBasePath } from '../../lib/utils';
 
 export const RoundImage = ({ src, alt, className }) => (

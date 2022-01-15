@@ -1,5 +1,6 @@
 import fs from 'fs';
 import { join } from 'path';
+
 import { getItemBySlug } from '../api-utils';
 
 const postsDirectory = join(process.cwd(), 'data', '_posts');

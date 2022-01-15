@@ -1,5 +1,6 @@
 import fs from 'fs';
 import { join } from 'path';
+
 import { getItemBySlug } from '../api-utils';
 
 const membersDirectory = join(process.cwd(), 'data', '_members');

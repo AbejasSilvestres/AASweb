@@ -1,4 +1,5 @@
 import Head from 'next/head';
+
 import { getBasePath } from '../../lib/utils';
 
 export const Meta = () => (

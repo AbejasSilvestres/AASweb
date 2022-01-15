@@ -1,4 +1,5 @@
 import ReactModal from 'react-modal';
+
 import modalStyles from './modal.module.css';
 
 ReactModal.setAppElement('#__next');
