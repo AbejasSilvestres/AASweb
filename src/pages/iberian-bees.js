@@ -16,7 +16,7 @@ const Map = dynamic(() => import('../containers/IberianBees/Map'), {
 });
 
 const Autocomplete = dynamic(
-  () => import('../containers/IberianBees/Autocomplete'),
+  () => import('../components/Autocomplete/Autocomplete'),
   {
     ssr: false,
   }
