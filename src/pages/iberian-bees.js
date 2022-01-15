@@ -72,7 +72,7 @@ export default function Bees({ data, intro, species }) {
 export async function getStaticProps() {
   const data = await getJsonData();
   const { content } = getAllIberianBeesSections(['content'])[0];
-  const parsedIberianBees = await markdownToHtml(content || '');
+  const parsedIberianBees = await markdownToHtml(content);
 
   return {
     props: {

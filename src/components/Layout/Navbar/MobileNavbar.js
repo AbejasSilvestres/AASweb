@@ -1,11 +1,9 @@
 import { useState } from 'react';
-import Modal from 'react-modal';
+import { Modal } from '../../Modal/Modal';
+import { IconButton } from '../../IconButton/IconButton';
 import { Icon } from '../../Icon';
 import { NavbarLink } from './NavbarLink';
 import { links } from './links';
-import { IconButton } from './IconButton';
-
-Modal.setAppElement('#__next');
 
 export const MobileNavbar = () => {
   const [isOpen, toggleModal] = useState(false);
@@ -20,21 +18,7 @@ export const MobileNavbar = () => {
           <Icon.Menu />
         </IconButton>
       </div>
-      <Modal
-        isOpen={isOpen}
-        onRequestClose={closeModal}
-        className={{
-          base: 'modal',
-          afterOpen: 'opacity-100',
-          beforeClose: 'opacity-0',
-        }}
-        overlayClassName={{
-          base: 'overlay',
-          afterOpen: 'opacity-100',
-          beforeClose: 'opacity-0',
-        }}
-        closeTimeoutMS={200}
-      >
+      <Modal isOpen={isOpen} onRequestClose={closeModal}>
         <div>
           <IconButton onClick={closeModal}>
             <Icon.Close />

@@ -47,7 +47,7 @@ export async function getStaticProps({ params }) {
     'content',
     'coverImage',
   ]);
-  const content = await markdownToHtml(post.content || '');
+  const content = await markdownToHtml(post.content);
 
   return {
     props: {

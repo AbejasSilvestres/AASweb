@@ -37,7 +37,7 @@ export async function getStaticProps() {
     'button',
   ]);
   const parsedHomeSections = await Promise.all(
-    allHomeSections.map(({ content }) => markdownToHtml(content || ''))
+    allHomeSections.map(({ content }) => markdownToHtml(content))
   );
   return {
     props: {

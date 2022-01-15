@@ -15,7 +15,7 @@ export const RadioGroup = ({ label, options, value, onChange, ...rest }) => {
           htmlFor={option.label}
         >
           <input
-            className="accent-primary-500 scale-250 ml-2 mr-5 cursor-pointer"
+            className="accent-primary-500 scale-250 ml-2 mr-5 cursor-pointer outline-none"
             id={option.label}
             type="radio"
             checked={option.value === value}

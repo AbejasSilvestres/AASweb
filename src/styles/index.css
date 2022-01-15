@@ -50,13 +50,5 @@ img {
   @apply w-full max-w-full overflow-hidden;
 }
 
-.overlay {
-  @apply transition-opacity fixed z-50 inset-0 opacity-0;
-}
-
-.modal {
-  @apply bg-neutral-0 outline-none absolute transition-opacity inset-0;
-}
-
 @tailwind components;
 @tailwind utilities;

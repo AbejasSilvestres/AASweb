@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import classNames from 'classnames';
 import { useState, startTransition } from 'react';
 import {
   Layout,
@@ -12,7 +11,6 @@ import { getAllBeesGuideSections } from '../../lib/api/bees-guide';
 import { getJsonData, locations } from '../../lib/api/bees-guide-data';
 import { BeesGuide } from '../../containers';
 import markdownToHtml from '../../lib/markdown-to-html';
-import { getBasePath } from '../../lib/utils';
 
 const buttOptions = [
   { value: 'blanco', label: 'Blanco' },
@@ -25,8 +23,8 @@ const psithyrusOptions = [
   { value: false, label: 'No' },
 ];
 
-const filterData = (data, filters) =>
-  data
+const filterBees = (bees, filters) =>
+  bees
     .filter(({ butt }) => !filters.butt || butt === filters.butt)
     .filter(
       ({ location }) => !filters.location || location.includes(filters.location)
@@ -51,7 +49,7 @@ export default function Guide({ intro, allBees }) {
     };
     setFilters(newFilters);
     startTransition(() => {
-      setFilteredBees(filterData(allBees, newFilters));
+      setFilteredBees(filterBees(allBees, newFilters));
     });
   };
 
@@ -62,7 +60,7 @@ export default function Guide({ intro, allBees }) {
     };
     setFilters(newFilters);
     startTransition(() => {
-      setFilteredBees(filterData(allBees, newFilters));
+      setFilteredBees(filterBees(allBees, newFilters));
     });
   };
 
@@ -116,21 +114,12 @@ export default function Guide({ intro, allBees }) {
             </div>
             <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {allBees.map(({ species, image }) => (
-                <li
+                <BeesGuide.Bee
                   key={species}
-                  className={classNames(
-                    'bg-neutral-0 p-8 rounded-lg shadow-sm hover:shadow-md cursor-pointer transition-shadow',
-                    isVisible(species) ? 'block' : 'hidden'
-                  )}
-                >
-                  <span className="block text-xl text-center italic font-semibold">
-                    {species}
-                  </span>
-                  <img
-                    src={`${getBasePath()}/bees-guide/${image}`}
-                    alt={species}
-                  />
-                </li>
+                  image={image}
+                  species={species}
+                  isVisible={isVisible(species)}
+                />
               ))}
             </ul>
           </Container>
@@ -143,7 +132,7 @@ export default function Guide({ intro, allBees }) {
 export async function getStaticProps() {
   const allBees = await getJsonData();
   const { content } = getAllBeesGuideSections(['content'])[0];
-  const parsedBeesGuideIntro = await markdownToHtml(content || '');
+  const parsedBeesGuideIntro = await markdownToHtml(content);
 
   return {
     props: {
