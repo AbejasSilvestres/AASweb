@@ -6,7 +6,7 @@ export const Bee = ({ isVisible, species, image, onClick }) => (
   <button
     onClick={onClick}
     className={classNames(
-      'bg-neutral-0 p-8 rounded-lg shadow-sm hover:shadow-md cursor-pointer transition-shadow',
+      'bg-neutral-0 p-8 rounded-lg shadow-sm hover:shadow-md focus:shadow-md cursor-pointer transition-shadow',
       isVisible ? 'block' : 'hidden'
     )}
   >
