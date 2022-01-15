@@ -1,3 +1,5 @@
+import radioStyles from './radio-group.module.css';
+
 export const RadioGroup = ({ label, options, value, onChange, ...rest }) => {
   const handleChange = (value) => () => {
     onChange(value);
@@ -10,18 +12,18 @@ export const RadioGroup = ({ label, options, value, onChange, ...rest }) => {
       </legend>
       {options.map((option) => (
         <label
-          className="block mb-6 cursor-pointer"
+          className="flex flex-row items-center mb-6 cursor-pointer"
           key={option.value}
           htmlFor={option.label}
         >
           <input
-            className="accent-primary-500 scale-250 ml-2 mr-5 cursor-pointer outline-none"
+            className={radioStyles.radio}
             id={option.label}
             type="radio"
             checked={option.value === value}
             onChange={handleChange(option.value)}
           />
-          <span className="text-xl text-neutral-800">{option.label}</span>
+          <span className="ml-2 text-xl text-neutral-800">{option.label}</span>
         </label>
       ))}
     </fieldset>

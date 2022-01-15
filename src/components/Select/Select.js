@@ -12,7 +12,7 @@ export const Select = ({ label, id, options, onChange, ...rest }) => {
         {label}
       </label>
       <select
-        className="text-2xl appearance-none outline-none p-2 border-neutral-400 border-solid border-2 rounded-md w-full focus:ring-4 focus:ring-primary-100 transition-shadow"
+        className="text-2xl appearance-none outline-none p-2 bg-neutral-0 border-neutral-400 border-solid border-2 rounded-md w-full focus:ring-4 focus:border-primary-400 focus:ring-primary-100 transition-shadow"
         onChange={handleChange}
         {...rest}
       >

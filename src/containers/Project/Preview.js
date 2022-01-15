@@ -11,7 +11,7 @@ export const Preview = ({ type, title, excerpt, coverImage, slug }) => (
           <img
             src={`${getBasePath()}${coverImage}`}
             alt={title}
-            className="w-56 h-56"
+            className="w-56 h-56 object-contain"
           />
         </div>
         <div>
