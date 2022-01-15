@@ -1,4 +1,4 @@
-import { SectionTitle, SectionContainer, Button, Icon } from '../../components';
+import { Button, Icon, SectionContainer, SectionTitle } from '../../components';
 
 export const Services = ({ title, services, button }) => (
   <SectionContainer className="bg-primary-50">

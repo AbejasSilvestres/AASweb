@@ -1,12 +1,13 @@
 import NextLink from 'next/link';
-import { getBasePath } from '../../lib/utils';
+
 import { Container, Link } from '../../components';
+import { getBasePath } from '../../lib/utils';
 
 export const Preview = ({ type, title, excerpt, coverImage, slug }) => (
   <section className={type === 'primary' ? 'bg-primary-50' : 'bg-neutral-0'}>
     <Container className="py-20 md:py-0 md:h-96">
       <div className="flex flex-col md:flex-row md:items-center h-full gap-16 md:gap-20">
-        <div className="flex-shrink-0">
+        <div className="shrink-0">
           <img
             src={`${getBasePath()}${coverImage}`}
             alt={title}

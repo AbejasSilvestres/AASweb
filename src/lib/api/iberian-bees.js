@@ -1,5 +1,6 @@
 import fs from 'fs';
 import { join } from 'path';
+
 import { getItemBySlug } from '../api-utils';
 
 const iberianBeesDirectory = join(process.cwd(), 'data', '_iberian_bees');

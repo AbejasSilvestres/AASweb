@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import Modal from 'react-modal';
-import { Icon } from '../../Icon';
-import { NavbarLink } from './NavbarLink';
-import { links } from './links';
-import { IconButton } from './IconButton';
 
-Modal.setAppElement('#__next');
+import { Icon } from '../../Icon';
+import { IconButton } from '../../IconButton/IconButton';
+import { Modal } from '../../Modal/Modal';
+import { links } from './links';
+import { NavbarLink } from './NavbarLink';
 
 export const MobileNavbar = () => {
   const [isOpen, toggleModal] = useState(false);
@@ -14,27 +13,13 @@ export const MobileNavbar = () => {
   const closeModal = () => toggleModal(false);
 
   return (
-    <nav className="block shadow-sm relative">
+    <nav>
       <div className="flex items-center">
         <IconButton onClick={openModal}>
           <Icon.Menu />
         </IconButton>
       </div>
-      <Modal
-        isOpen={isOpen}
-        onRequestClose={closeModal}
-        className={{
-          base: 'modal',
-          afterOpen: 'opacity-100',
-          beforeClose: 'opacity-0',
-        }}
-        overlayClassName={{
-          base: 'overlay',
-          afterOpen: 'opacity-100',
-          beforeClose: 'opacity-0',
-        }}
-        closeTimeoutMS={200}
-      >
+      <Modal isOpen={isOpen} onRequestClose={closeModal}>
         <div>
           <IconButton onClick={closeModal}>
             <Icon.Close />

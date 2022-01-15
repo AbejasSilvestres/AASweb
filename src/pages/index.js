@@ -1,8 +1,9 @@
 import Head from 'next/head';
-import { getAllHomeSections } from '../lib/api/home';
-import markdownToHtml from '../lib/markdown-to-html';
+
 import { Layout } from '../components';
 import { Home } from '../containers';
+import { getAllHomeSections } from '../lib/api/home';
+import markdownToHtml from '../lib/markdown-to-html';
 
 export default function Index({ allHomeSections }) {
   const intro = allHomeSections[0];
@@ -37,7 +38,7 @@ export async function getStaticProps() {
     'button',
   ]);
   const parsedHomeSections = await Promise.all(
-    allHomeSections.map(({ content }) => markdownToHtml(content || ''))
+    allHomeSections.map(({ content }) => markdownToHtml(content))
   );
   return {
     props: {

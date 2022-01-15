@@ -1,6 +1,6 @@
-import { NavbarLink } from './NavbarLink';
 import { Logo } from '../../Logo/Logo';
 import { links } from './links';
+import { NavbarLink } from './NavbarLink';
 
 export const DesktopNavbar = () => (
   <nav className="block shadow-sm relative">

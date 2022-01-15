@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 import { getBasePath } from '../../lib/utils';
 
 export const CoverImage = ({ title, src, slug }) => {

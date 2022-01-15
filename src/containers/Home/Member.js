@@ -1,4 +1,4 @@
-import { RoundImage, Button, SectionContainer } from '../../components';
+import { Button, RoundImage, SectionContainer } from '../../components';
 import homeSectionStyles from './home-section.module.css';
 
 export const Member = ({ title, content, image, button }) => (

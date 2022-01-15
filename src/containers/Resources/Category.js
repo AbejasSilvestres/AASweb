@@ -20,7 +20,7 @@ export const Category = ({ name, children }) => {
   return (
     <div className="mb-20">
       <div className="flex items-center mb-6">
-        <div className="w-20 flex-shrink-0">
+        <div className="w-20 shrink-0">
           <div className="bg-primary-50 w-14 h-14 rounded-full flex items-center justify-center text-3xl text-primary-500">
             <Icon />
           </div>

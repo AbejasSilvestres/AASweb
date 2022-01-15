@@ -1,9 +1,9 @@
 import { Container } from '../../Container/Container';
+import { Icon } from '../../Icon';
 import { ExternalFooterLink } from './ExternalFooterLink';
 import { FooterHeading } from './FooterHeading';
-import { FooterText } from './FooterText';
 import { FooterIcon } from './FooterIcon';
-import { Icon } from '../../Icon';
+import { FooterText } from './FooterText';
 
 export const Footer = () => (
   <footer className="bg-primary-800 py-16 h-full">

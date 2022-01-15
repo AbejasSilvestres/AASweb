@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
-import { forwardRef } from 'react';
 import classNames from 'classnames';
+import { forwardRef } from 'react';
 
 export const Link = forwardRef(({ className, children, ...rest }, ref) => (
   <a

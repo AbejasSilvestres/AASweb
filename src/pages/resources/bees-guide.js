@@ -1,18 +1,17 @@
 import Head from 'next/head';
-import classNames from 'classnames';
-import { useState, startTransition } from 'react';
+import { startTransition, useState } from 'react';
+
 import {
-  Layout,
-  Container,
-  Select,
   ClearButton,
+  Container,
+  Layout,
   RadioGroup,
+  Select,
 } from '../../components';
-import { getAllBeesGuideSections } from '../../lib/api/bees-guide';
-import { getJsonData, locations } from '../../lib/api/bees-guide-data';
 import { BeesGuide } from '../../containers';
+import { getAllBeesGuideSections } from '../../lib/api/bees-guide';
+import { getJsonData } from '../../lib/api/bees-guide-data';
 import markdownToHtml from '../../lib/markdown-to-html';
-import { getBasePath } from '../../lib/utils';
 
 const buttOptions = [
   { value: 'blanco', label: 'Blanco' },
@@ -25,8 +24,24 @@ const psithyrusOptions = [
   { value: false, label: 'No' },
 ];
 
-const filterData = (data, filters) =>
-  data
+const locationOptions = [
+  {
+    value: 'location_cordillera_betica_penibetica',
+    label: 'Cordillera Bética Penibética',
+  },
+  { value: 'location_cordillera_cantabrica', label: 'Cordillera Cantábrica' },
+  { value: 'location_costa_atlantica', label: 'Costa Atlántica' },
+  { value: 'location_costa_cantabrica', label: 'Costa Cantábrica' },
+  { value: 'location_costa_mediterranea', label: 'Costa Mediterránea' },
+  {
+    value: 'location_meseta_interior_peninsula',
+    label: 'Meseta Interior Península',
+  },
+  { value: 'location_pirineos', label: 'Pirineos' },
+];
+
+const filterBees = (bees, filters) =>
+  bees
     .filter(({ butt }) => !filters.butt || butt === filters.butt)
     .filter(
       ({ location }) => !filters.location || location.includes(filters.location)
@@ -43,6 +58,17 @@ export default function Guide({ intro, allBees }) {
     location: '',
     psithyrus: '',
   });
+  const [chosenBee, chooseBee] = useState(undefined);
+  const [isModalOpen, toggleModal] = useState(false);
+
+  const handleOpeningModal = (bee) => () => {
+    toggleModal(true);
+    chooseBee(bee);
+  };
+  const handleClosingModal = () => {
+    toggleModal(false);
+    chooseBee(undefined);
+  };
 
   const handleSettingFilter = (filterName) => (value) => {
     const newFilters = {
@@ -51,7 +77,7 @@ export default function Guide({ intro, allBees }) {
     };
     setFilters(newFilters);
     startTransition(() => {
-      setFilteredBees(filterData(allBees, newFilters));
+      setFilteredBees(filterBees(allBees, newFilters));
     });
   };
 
@@ -62,7 +88,7 @@ export default function Guide({ intro, allBees }) {
     };
     setFilters(newFilters);
     startTransition(() => {
-      setFilteredBees(filterData(allBees, newFilters));
+      setFilteredBees(filterBees(allBees, newFilters));
     });
   };
 
@@ -72,7 +98,7 @@ export default function Guide({ intro, allBees }) {
   return (
     <>
       <Head>
-        <title>Guía</title>
+        <title>Guía de abejas</title>
       </Head>
       <Layout>
         <Container className="pt-24 pb-12">
@@ -86,10 +112,7 @@ export default function Guide({ intro, allBees }) {
                   value={filters.location}
                   id="location"
                   label="Lugar"
-                  options={Object.keys(locations).map((location) => ({
-                    value: locations[location],
-                    label: locations[location],
-                  }))}
+                  options={locationOptions}
                   onChange={handleSettingFilter('location')}
                 />
               </div>
@@ -116,23 +139,21 @@ export default function Guide({ intro, allBees }) {
             </div>
             <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {allBees.map(({ species, image }) => (
-                <li
+                <BeesGuide.Bee
+                  onClick={handleOpeningModal({ species, image })}
                   key={species}
-                  className={classNames(
-                    'bg-neutral-0 p-8 rounded-lg shadow-sm hover:shadow-md cursor-pointer transition-shadow',
-                    isVisible(species) ? 'block' : 'hidden'
-                  )}
-                >
-                  <span className="block text-xl text-center italic font-semibold">
-                    {species}
-                  </span>
-                  <img
-                    src={`${getBasePath()}/bees-guide/${image}`}
-                    alt={species}
-                  />
-                </li>
+                  image={image}
+                  species={species}
+                  isVisible={isVisible(species)}
+                />
               ))}
             </ul>
+            <BeesGuide.BeeModal
+              isOpen={isModalOpen}
+              onRequestClose={handleClosingModal}
+              species={chosenBee?.species}
+              image={chosenBee?.image}
+            />
           </Container>
         </div>
       </Layout>
@@ -143,7 +164,7 @@ export default function Guide({ intro, allBees }) {
 export async function getStaticProps() {
   const allBees = await getJsonData();
   const { content } = getAllBeesGuideSections(['content'])[0];
-  const parsedBeesGuideIntro = await markdownToHtml(content || '');
+  const parsedBeesGuideIntro = await markdownToHtml(content);
 
   return {
     props: {

@@ -1,10 +1,11 @@
-import { useState, useTransition } from 'react';
-import Head from 'next/head';
 import dynamic from 'next/dynamic';
+import Head from 'next/head';
+import { useState, useTransition } from 'react';
+
 import { Container, Layout } from '../components';
 import { IberianBees } from '../containers';
-import { getJsonData } from '../lib/api/iberian-bees-data';
 import { getAllIberianBeesSections } from '../lib/api/iberian-bees';
+import { getJsonData } from '../lib/api/iberian-bees-data';
 import markdownToHtml from '../lib/markdown-to-html';
 import { filter } from '../lib/utils';
 
@@ -35,14 +36,6 @@ export default function Bees({ data, intro, species }) {
   return (
     <>
       <Head>
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/leaflet/dist/leaflet.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/react-leaflet-markercluster/dist/styles.min.css"
-        />
         <title>Abjeas silvestres</title>
       </Head>
       <Layout>
@@ -72,7 +65,7 @@ export default function Bees({ data, intro, species }) {
 export async function getStaticProps() {
   const data = await getJsonData();
   const { content } = getAllIberianBeesSections(['content'])[0];
-  const parsedIberianBees = await markdownToHtml(content || '');
+  const parsedIberianBees = await markdownToHtml(content);
 
   return {
     props: {

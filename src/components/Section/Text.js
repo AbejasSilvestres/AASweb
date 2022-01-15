@@ -1,5 +1,5 @@
-import { createElement } from 'react';
 import classNames from 'classnames';
+import { createElement } from 'react';
 
 export const SectionText = ({ as = 'p', children, className, ...rest }) =>
   createElement(

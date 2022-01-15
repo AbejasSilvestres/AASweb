@@ -1,7 +1,8 @@
 import Head from 'next/head';
-import { getAllProjects } from '../../lib/api/projects';
+
 import { Layout } from '../../components';
 import { Project } from '../../containers';
+import { getAllProjects } from '../../lib/api/projects';
 
 export default function ProjectsPage({ allProjects }) {
   return (

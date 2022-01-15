@@ -1,11 +1,11 @@
-import { Link, RoundImage, Icon } from '../../components';
+import { Icon, Link, RoundImage } from '../../components';
 import memberStyles from './member.module.css';
 
 export const Member = ({ photo, name, url, content }) => (
   <div>
     <div className="flex flex-col md:flex-row gap-8 md:gap-16">
       <RoundImage src={photo} alt={name} className="w-40 h-40" />
-      <div className="flex-grow items-center">
+      <div className="grow items-center">
         <h3 className="font-semibold text-2xl mb-4">
           <span>{name}</span>
           <Link

@@ -1,0 +1,15 @@
+.overlay {
+  @apply transition-opacity fixed z-4000 inset-0 opacity-0;
+}
+
+.modal {
+  @apply bg-neutral-0 outline-none absolute transition-opacity inset-0;
+}
+
+.opened {
+  @apply opacity-100;
+}
+
+.closed {
+  @apply opacity-0;
+}

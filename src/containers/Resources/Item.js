@@ -1,4 +1,5 @@
 import NextLink from 'next/link';
+
 import { isExternalLink } from '../../lib/utils';
 
 export const Item = ({ title, body, href }) => (

@@ -1,7 +1,8 @@
 import Head from 'next/head';
-import { getAllPosts } from '../../lib/api/posts';
+
 import { Container, Layout } from '../../components';
 import { Blog } from '../../containers';
+import { getAllPosts } from '../../lib/api/posts';
 
 export default function IndexPage({ allPosts }) {
   return (
