@@ -15,20 +15,19 @@ const parseBoolean = (bee) =>
     {}
   );
 
-export const locations = {
-  location_cordillera_betica_penibetica: 'Cordillera Bética Penibética',
-  location_cordillera_cantabrica: 'Cordillera Cantábrica',
-  location_costa_atlantica: 'Costa Atlántica',
-  location_costa_cantabrica: 'Costa Cantábrica',
-  location_costa_mediterranea: 'Costa Mediterránea',
-  location_meseta_interior_peninsula: 'Meseta Interior Península',
-  location_pirineos: 'Pirineos',
-};
+export const locations = [
+  'location_cordillera_betica_penibetica',
+  'location_cordillera_cantabrica',
+  'location_costa_atlantica',
+  'location_costa_cantabrica',
+  'location_costa_mediterranea',
+  'location_meseta_interior_peninsula',
+  'location_pirineos',
+];
 
-const parseLocation = (bee) => {
-  const locationKeys = Object.keys(locations);
-  return Object.keys(bee).reduce((acc, next) => {
-    if (!locationKeys.includes(next)) {
+const parseLocation = (bee) =>
+  Object.keys(bee).reduce((acc, next) => {
+    if (!locations.includes(next)) {
       return {
         ...acc,
         [next]: bee[next],
@@ -36,12 +35,9 @@ const parseLocation = (bee) => {
     }
     return {
       ...acc,
-      location: bee[next]
-        ? (acc.location || []).concat(locations[next])
-        : acc.location,
+      location: bee[next] ? (acc.location || []).concat(next) : acc.location,
     };
   }, {});
-};
 
 export const getJsonData = async () => {
   const bees = await csv().fromFile(dataFile);

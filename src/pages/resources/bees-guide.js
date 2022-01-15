@@ -10,7 +10,7 @@ import {
 } from '../../components';
 import { BeesGuide } from '../../containers';
 import { getAllBeesGuideSections } from '../../lib/api/bees-guide';
-import { getJsonData, locations } from '../../lib/api/bees-guide-data';
+import { getJsonData } from '../../lib/api/bees-guide-data';
 import markdownToHtml from '../../lib/markdown-to-html';
 
 const buttOptions = [
@@ -22,6 +22,22 @@ const buttOptions = [
 const psithyrusOptions = [
   { value: true, label: 'Sí' },
   { value: false, label: 'No' },
+];
+
+const locationOptions = [
+  {
+    value: 'location_cordillera_betica_penibetica',
+    label: 'Cordillera Bética Penibética',
+  },
+  { value: 'location_cordillera_cantabrica', label: 'Cordillera Cantábrica' },
+  { value: 'location_costa_atlantica', label: 'Costa Atlántica' },
+  { value: 'location_costa_cantabrica', label: 'Costa Cantábrica' },
+  { value: 'location_costa_mediterranea', label: 'Costa Mediterránea' },
+  {
+    value: 'location_meseta_interior_peninsula',
+    label: 'Meseta Interior Península',
+  },
+  { value: 'location_pirineos', label: 'Pirineos' },
 ];
 
 const filterBees = (bees, filters) =>
@@ -96,10 +112,7 @@ export default function Guide({ intro, allBees }) {
                   value={filters.location}
                   id="location"
                   label="Lugar"
-                  options={Object.keys(locations).map((location) => ({
-                    value: locations[location],
-                    label: locations[location],
-                  }))}
+                  options={locationOptions}
                   onChange={handleSettingFilter('location')}
                 />
               </div>
