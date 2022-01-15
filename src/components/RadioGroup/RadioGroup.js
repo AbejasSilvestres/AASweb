@@ -21,9 +21,7 @@ export const RadioGroup = ({ label, options, value, onChange, ...rest }) => {
             checked={option.value === value}
             onChange={handleChange(option.value)}
           />
-          <span className="capitalize text-xl text-neutral-800">
-            {option.label}
-          </span>
+          <span className="text-xl text-neutral-800">{option.label}</span>
         </label>
       ))}
     </fieldset>

@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import classNames from 'classnames';
 import { useState, startTransition } from 'react';
 import {
   Layout,
@@ -24,28 +25,8 @@ const psithyrusOptions = [
   { value: false, label: 'No' },
 ];
 
-export default function Guide({ intro, data }) {
-  const [filters, setFilters] = useState({
-    butt: '',
-    location: '',
-    psithyrus: '',
-  });
-
-  const handleSettingFilter = (filterName) => (value) => {
-    setFilters((filters) => ({
-      ...filters,
-      [filterName]: value,
-    }));
-  };
-
-  const handleClearingFilter = (filterName) => () => {
-    setFilters((filters) => ({
-      ...filters,
-      [filterName]: '',
-    }));
-  };
-
-  const filteredData = data
+const filterData = (data, filters) =>
+  data
     .filter(({ butt }) => !filters.butt || butt === filters.butt)
     .filter(
       ({ location }) => !filters.location || location.includes(filters.location)
@@ -54,6 +35,39 @@ export default function Guide({ intro, data }) {
       ({ psithyrus }) =>
         filters.psithyrus === '' || psithyrus === filters.psithyrus
     );
+
+export default function Guide({ intro, allBees }) {
+  const [filteredBees, setFilteredBees] = useState(allBees);
+  const [filters, setFilters] = useState({
+    butt: '',
+    location: '',
+    psithyrus: '',
+  });
+
+  const handleSettingFilter = (filterName) => (value) => {
+    const newFilters = {
+      ...filters,
+      [filterName]: value,
+    };
+    setFilters(newFilters);
+    startTransition(() => {
+      setFilteredBees(filterData(allBees, newFilters));
+    });
+  };
+
+  const handleClearingFilter = (filterName) => () => {
+    const newFilters = {
+      ...filters,
+      [filterName]: '',
+    };
+    setFilters(newFilters);
+    startTransition(() => {
+      setFilteredBees(filterData(allBees, newFilters));
+    });
+  };
+
+  const isVisible = (species) =>
+    filteredBees.find((filteredBee) => species === filteredBee.species);
 
   return (
     <>
@@ -101,15 +115,19 @@ export default function Guide({ intro, data }) {
               </div>
             </div>
             <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredData.map(({ species, image }) => (
+              {allBees.map(({ species, image }) => (
                 <li
                   key={species}
-                  className="bg-neutral-0 p-8 rounded-lg shadow-sm hover:shadow-md cursor-pointer transition-shadow"
+                  className={classNames(
+                    'bg-neutral-0 p-8 rounded-lg shadow-sm hover:shadow-md cursor-pointer transition-shadow',
+                    isVisible(species) ? 'block' : 'hidden'
+                  )}
                 >
-                  <span className="block text-xl italic font-semibold">
+                  <span className="block text-xl text-center italic font-semibold">
                     {species}
                   </span>
                   <img
+                    className="h-[158px]"
                     src={`${getBasePath()}/bees-guide/${image}`}
                     alt={species}
                   />
@@ -124,13 +142,13 @@ export default function Guide({ intro, data }) {
 }
 
 export async function getStaticProps() {
-  const data = await getJsonData();
+  const allBees = await getJsonData();
   const { content } = getAllBeesGuideSections(['content'])[0];
   const parsedBeesGuideIntro = await markdownToHtml(content || '');
 
   return {
     props: {
-      data,
+      allBees,
       intro: parsedBeesGuideIntro,
     },
   };
