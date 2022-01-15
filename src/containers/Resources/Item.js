@@ -1,5 +1,5 @@
 import NextLink from 'next/link';
-import { getBasePath, isExternalLink } from '../../lib/utils';
+import { isExternalLink } from '../../lib/utils';
 
 export const Item = ({ title, body, href }) => (
   <div className="pl-0 md:pl-20 mb-8">

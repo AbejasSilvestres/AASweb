@@ -5,5 +5,6 @@ export * from './Layout/Layout';
 export * from './Link/Link';
 export * from './Logo/Logo';
 export * from './RoundImage/RoundImage';
+export * from './RadioGroup/RadioGroup';
 export * from './Section';
 export * from './Select/Select';

@@ -1,11 +1,28 @@
 import Head from 'next/head';
 import { useState } from 'react';
-import { Layout, Container, Select, ClearButton } from '../../components';
+import {
+  Layout,
+  Container,
+  Select,
+  ClearButton,
+  RadioGroup,
+} from '../../components';
 import { getAllBeesGuideSections } from '../../lib/api/bees-guide';
 import { getJsonData, locations } from '../../lib/api/bees-guide-data';
 import { BeesGuide } from '../../containers';
 import markdownToHtml from '../../lib/markdown-to-html';
 import { getBasePath } from '../../lib/utils';
+
+const buttOptions = [
+  { value: 'blanco', label: 'Blanco' },
+  { value: 'rojo', label: 'Rojo' },
+  { value: 'otros', label: 'Otros' },
+];
+
+const psithyrusOptions = [
+  { value: true, label: 'Sí' },
+  { value: false, label: 'No' },
+];
 
 export default function Guide({ intro, data }) {
   const [filters, setFilters] = useState({
@@ -14,14 +31,14 @@ export default function Guide({ intro, data }) {
     psithyrus: '',
   });
 
-  const handleSettingFilter =
-    (filterName) =>
-    ({ target }) => {
-      setFilters((filters) => ({
-        ...filters,
-        [filterName]: target.value,
-      }));
-    };
+  console.log({ data });
+
+  const handleSettingFilter = (filterName) => (value) => {
+    setFilters((filters) => ({
+      ...filters,
+      [filterName]: value,
+    }));
+  };
 
   const handleClearingFilter = (filterName) => () => {
     setFilters((filters) => ({
@@ -47,17 +64,38 @@ export default function Guide({ intro, data }) {
       <Layout>
         <Container className="pt-24 pb-12">
           <BeesGuide.Intro content={intro} />
-          <Select
-            value={filters.location}
-            id="location"
-            label="Lugar"
-            options={Object.keys(locations).map((location) => ({
-              value: locations[location],
-              label: locations[location],
-            }))}
-            onChange={handleSettingFilter('location')}
-          />
-          <ClearButton onClick={handleClearingFilter('location')} />
+          <div className="flex gap-20">
+            <div>
+              <Select
+                value={filters.location}
+                id="location"
+                label="Lugar"
+                options={Object.keys(locations).map((location) => ({
+                  value: locations[location],
+                  label: locations[location],
+                }))}
+                onChange={handleSettingFilter('location')}
+              />
+            </div>
+            <div>
+              <RadioGroup
+                label="Culo"
+                value={filters.butt}
+                onChange={handleSettingFilter('butt')}
+                options={buttOptions}
+              />
+              <ClearButton onClick={handleClearingFilter('butt')} />
+            </div>
+            <div>
+              <RadioGroup
+                label="Psithyrus"
+                value={filters.psithyrus}
+                onChange={handleSettingFilter('psithyrus')}
+                options={psithyrusOptions}
+              />
+              <ClearButton onClick={handleClearingFilter('psithyrus')} />
+            </div>
+          </div>
           <ul>
             {filteredData.map(
               ({ species, image, butt, psithyrus, description, location }) => (
