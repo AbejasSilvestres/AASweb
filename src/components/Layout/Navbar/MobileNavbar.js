@@ -13,7 +13,7 @@ export const MobileNavbar = () => {
   const closeModal = () => toggleModal(false);
 
   return (
-    <nav className="block shadow-sm relative">
+    <nav>
       <div className="flex items-center">
         <IconButton onClick={openModal}>
           <Icon.Menu />

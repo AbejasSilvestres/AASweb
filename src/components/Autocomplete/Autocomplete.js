@@ -53,7 +53,7 @@ const Autocomplete = ({ items, label, onSelectedItemChange, placeholder }) => {
       <ul
         className={classNames(
           isOpen && !!inputItems.length && 'rounded-md',
-          'z-9999',
+          'z-2000',
           'shadow-lg',
           'absolute',
           'mt-2',

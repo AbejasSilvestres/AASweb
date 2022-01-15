@@ -1,5 +1,5 @@
 .overlay {
-  @apply transition-opacity fixed z-50 inset-0 opacity-0;
+  @apply transition-opacity fixed z-4000 inset-0 opacity-0;
 }
 
 .modal {

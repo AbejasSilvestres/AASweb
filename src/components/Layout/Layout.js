@@ -8,7 +8,7 @@ export const Layout = ({ children }) => (
     <div className="flex flex-col h-full">
       <Navbar />
       <main>{children}</main>
-      <div className="flex-grow">
+      <div className="grow">
         <Footer />
       </div>
     </div>

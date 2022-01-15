@@ -1,2 +1,3 @@
-export * from './Intro';
 export * from './Bee';
+export * from './BeeModal';
+export * from './Intro';

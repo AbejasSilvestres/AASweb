@@ -36,14 +36,6 @@ export default function Bees({ data, intro, species }) {
   return (
     <>
       <Head>
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/leaflet/dist/leaflet.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/react-leaflet-markercluster/dist/styles.min.css"
-        />
         <title>Abjeas silvestres</title>
       </Head>
       <Layout>

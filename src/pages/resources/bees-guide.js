@@ -42,6 +42,17 @@ export default function Guide({ intro, allBees }) {
     location: '',
     psithyrus: '',
   });
+  const [chosenBee, chooseBee] = useState(undefined);
+  const [isModalOpen, toggleModal] = useState(false);
+
+  const handleOpeningModal = (bee) => () => {
+    toggleModal(true);
+    chooseBee(bee);
+  };
+  const handleClosingModal = () => {
+    toggleModal(false);
+    chooseBee(undefined);
+  };
 
   const handleSettingFilter = (filterName) => (value) => {
     const newFilters = {
@@ -116,6 +127,7 @@ export default function Guide({ intro, allBees }) {
             <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {allBees.map(({ species, image }) => (
                 <BeesGuide.Bee
+                  onClick={handleOpeningModal({ species, image })}
                   key={species}
                   image={image}
                   species={species}
@@ -123,6 +135,12 @@ export default function Guide({ intro, allBees }) {
                 />
               ))}
             </ul>
+            <BeesGuide.BeeModal
+              isOpen={isModalOpen}
+              onRequestClose={handleClosingModal}
+              species={chosenBee?.species}
+              image={chosenBee?.image}
+            />
           </Container>
         </div>
       </Layout>

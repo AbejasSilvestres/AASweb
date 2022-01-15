@@ -5,7 +5,7 @@ import { getBasePath } from '../../lib/utils';
 export const RoundImage = ({ src, alt, className }) => (
   <div
     className={classNames(
-      'flex-shrink-0',
+      'shrink-0',
       'rounded-full',
       'overflow-hidden',
       'shadow-md',
