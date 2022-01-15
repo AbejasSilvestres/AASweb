@@ -1,6 +1,4 @@
-import * as React from 'react';
-
-const SvgInstagram = (props) => (
+export const Instagram = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -19,5 +17,3 @@ const SvgInstagram = (props) => (
     />
   </svg>
 );
-
-export default SvgInstagram;

@@ -1,6 +1,4 @@
-import * as React from 'react';
-
-const SvgClose = (props) => (
+export const Close = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -17,5 +15,3 @@ const SvgClose = (props) => (
     />
   </svg>
 );
-
-export default SvgClose;

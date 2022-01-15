@@ -1,6 +1,4 @@
-import * as React from 'react';
-
-const SvgExternalLink = (props) => (
+export const ExternalLink = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -18,5 +16,3 @@ const SvgExternalLink = (props) => (
     />
   </svg>
 );
-
-export default SvgExternalLink;

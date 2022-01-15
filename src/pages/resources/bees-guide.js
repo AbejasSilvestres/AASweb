@@ -127,7 +127,6 @@ export default function Guide({ intro, allBees }) {
                     {species}
                   </span>
                   <img
-                    className="h-[158px]"
                     src={`${getBasePath()}/bees-guide/${image}`}
                     alt={species}
                   />

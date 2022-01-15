@@ -7,13 +7,9 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "prettier": "npx prettier --write src",
-    "icons:clean": "rm -rf src/icons/components",
-    "icons:generate": "npx @svgr/cli -d src/icons/components src/icons/svg",
-    "icons": "npm run icons:clean && npm run icons:generate"
+    "prettier": "npx prettier --write src"
   },
   "dependencies": {
-    "@svgr/cli": "^6.1.2",
     "classnames": "^2.3.1",
     "csvtojson": "^2.0.10",
     "downshift": "^6.1.7",

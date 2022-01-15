@@ -3,7 +3,7 @@ import { ExternalFooterLink } from './ExternalFooterLink';
 import { FooterHeading } from './FooterHeading';
 import { FooterText } from './FooterText';
 import { FooterIcon } from './FooterIcon';
-import { Twitter, Instagram, Facebook, Email } from '../../../icons';
+import { Icon } from '../../Icon';
 
 export const Footer = () => (
   <footer className="bg-primary-800 py-16 h-full">
@@ -18,7 +18,7 @@ export const Footer = () => (
                 target="_blank"
               >
                 <FooterIcon>
-                  <Twitter />
+                  <Icon.Twitter />
                 </FooterIcon>
                 Twitter
               </ExternalFooterLink>
@@ -29,7 +29,7 @@ export const Footer = () => (
                 target="_blank"
               >
                 <FooterIcon>
-                  <Instagram />
+                  <Icon.Instagram />
                 </FooterIcon>
                 Instagram
               </ExternalFooterLink>
@@ -40,7 +40,7 @@ export const Footer = () => (
                 target="_blank"
               >
                 <FooterIcon>
-                  <Facebook />
+                  <Icon.Facebook />
                 </FooterIcon>
                 Facebook
               </ExternalFooterLink>
@@ -63,7 +63,7 @@ export const Footer = () => (
             target="_blank"
           >
             <FooterIcon className="text-lg">
-              <Email />
+              <Icon.Email />
             </FooterIcon>
             info.abejas.silvestres@gmail.com
           </ExternalFooterLink>

@@ -1,6 +1,4 @@
-import { SectionTitle, SectionContainer } from '../../components';
-import { CheckCircle } from '../../icons';
-import { Button } from '../../components';
+import { SectionTitle, SectionContainer, Button, Icon } from '../../components';
 
 export const Services = ({ title, services, button }) => (
   <SectionContainer className="bg-primary-50">
@@ -10,7 +8,7 @@ export const Services = ({ title, services, button }) => (
         {services.map((service) => (
           <li className="text-lg leading-relaxed mb-3 flex" key={service}>
             <span className="inline-block text-2xl text-primary-500 pr-3 pt-0.5">
-              <CheckCircle />
+              <Icon.CheckCircle />
             </span>
             <span>{service}</span>
           </li>

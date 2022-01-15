@@ -1,17 +1,16 @@
-import { BookOpen, VideoCamera, ChartSquareBar } from '../../icons';
-import { Container } from '../../components';
+import { Icon } from '../../components';
 
 const categoryContent = {
   Guide: {
-    icon: BookOpen,
+    icon: Icon.BookOpen,
     title: 'Guías',
   },
   Video: {
-    icon: VideoCamera,
+    icon: Icon.VideoCamera,
     title: 'Videos',
   },
   Infographics: {
-    icon: ChartSquareBar,
+    icon: Icon.ChartSquareBar,
     title: 'Infográficos',
   },
 };

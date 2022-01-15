@@ -1,6 +1,4 @@
-import * as React from 'react';
-
-const SvgEmail = (props) => (
+export const Email = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -19,5 +17,3 @@ const SvgEmail = (props) => (
     />
   </svg>
 );
-
-export default SvgEmail;

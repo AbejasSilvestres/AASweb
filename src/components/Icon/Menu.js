@@ -1,6 +1,4 @@
-import * as React from 'react';
-
-const SvgMenu = (props) => (
+export const Menu = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -17,5 +15,3 @@ const SvgMenu = (props) => (
     />
   </svg>
 );
-
-export default SvgMenu;

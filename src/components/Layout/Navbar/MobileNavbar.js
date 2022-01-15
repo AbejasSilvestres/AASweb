@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Modal from 'react-modal';
-import { Menu, Close } from '../../../icons';
+import { Icon } from '../../Icon';
 import { NavbarLink } from './NavbarLink';
 import { links } from './links';
 import { IconButton } from './IconButton';
@@ -17,7 +17,7 @@ export const MobileNavbar = () => {
     <nav className="block shadow-sm relative">
       <div className="flex items-center">
         <IconButton onClick={openModal}>
-          <Menu />
+          <Icon.Menu />
         </IconButton>
       </div>
       <Modal
@@ -37,7 +37,7 @@ export const MobileNavbar = () => {
       >
         <div>
           <IconButton onClick={closeModal}>
-            <Close />
+            <Icon.Close />
           </IconButton>
           <ul className="text-center flex flex-col gap-6">
             <li>
