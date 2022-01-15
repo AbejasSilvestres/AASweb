@@ -1,0 +1,20 @@
+.radio {
+  @apply outline-none appearance-none h-8 w-8 rounded-full relative border-2 border-solid bg-neutral-0 border-neutral-400 transition-shadow;
+}
+
+.radio:hover {
+  @apply cursor-pointer;
+}
+
+.radio:focus {
+  @apply border-primary-400 ring-4 ring-primary-100;
+}
+
+.radio:checked {
+  @apply border-primary-400;
+}
+
+.radio:checked:after {
+  content: '';
+  @apply absolute inset-0 w-4 h-4 rounded-full bg-primary-400 m-auto;
+}
