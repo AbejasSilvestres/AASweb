@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useState } from 'react';
+import { useState, startTransition } from 'react';
 import {
   Layout,
   Container,
@@ -31,8 +31,6 @@ export default function Guide({ intro, data }) {
     psithyrus: '',
   });
 
-  console.log({ data });
-
   const handleSettingFilter = (filterName) => (value) => {
     setFilters((filters) => ({
       ...filters,
@@ -53,7 +51,8 @@ export default function Guide({ intro, data }) {
       ({ location }) => !filters.location || location.includes(filters.location)
     )
     .filter(
-      ({ psithyrus }) => !filters.psithyrus || psithyrus === filters.psithyrus
+      ({ psithyrus }) =>
+        filters.psithyrus === '' || psithyrus === filters.psithyrus
     );
 
   return (
@@ -64,62 +63,61 @@ export default function Guide({ intro, data }) {
       <Layout>
         <Container className="pt-24 pb-12">
           <BeesGuide.Intro content={intro} />
-          <div className="flex gap-20">
-            <div>
-              <Select
-                value={filters.location}
-                id="location"
-                label="Lugar"
-                options={Object.keys(locations).map((location) => ({
-                  value: locations[location],
-                  label: locations[location],
-                }))}
-                onChange={handleSettingFilter('location')}
-              />
+        </Container>
+        <div className="bg-primary-50">
+          <Container className="pt-24 pb-24">
+            <div className="flex flex-wrap gap-20 mb-20">
+              <div>
+                <Select
+                  value={filters.location}
+                  id="location"
+                  label="Lugar"
+                  options={Object.keys(locations).map((location) => ({
+                    value: locations[location],
+                    label: locations[location],
+                  }))}
+                  onChange={handleSettingFilter('location')}
+                />
+              </div>
+              <div className="flex flex-wrap gap-20">
+                <div>
+                  <RadioGroup
+                    label="Culo"
+                    value={filters.butt}
+                    onChange={handleSettingFilter('butt')}
+                    options={buttOptions}
+                  />
+                  <ClearButton onClick={handleClearingFilter('butt')} />
+                </div>
+                <div>
+                  <RadioGroup
+                    label="Psithyrus"
+                    value={filters.psithyrus}
+                    onChange={handleSettingFilter('psithyrus')}
+                    options={psithyrusOptions}
+                  />
+                  <ClearButton onClick={handleClearingFilter('psithyrus')} />
+                </div>
+              </div>
             </div>
-            <div>
-              <RadioGroup
-                label="Culo"
-                value={filters.butt}
-                onChange={handleSettingFilter('butt')}
-                options={buttOptions}
-              />
-              <ClearButton onClick={handleClearingFilter('butt')} />
-            </div>
-            <div>
-              <RadioGroup
-                label="Psithyrus"
-                value={filters.psithyrus}
-                onChange={handleSettingFilter('psithyrus')}
-                options={psithyrusOptions}
-              />
-              <ClearButton onClick={handleClearingFilter('psithyrus')} />
-            </div>
-          </div>
-          <ul>
-            {filteredData.map(
-              ({ species, image, butt, psithyrus, description, location }) => (
-                <li key={species} className="mb-8">
-                  <span className="block text-lg italic font-semibold">
+            <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {filteredData.map(({ species, image }) => (
+                <li
+                  key={species}
+                  className="bg-neutral-0 p-8 rounded-lg shadow-sm hover:shadow-md cursor-pointer transition-shadow"
+                >
+                  <span className="block text-xl italic font-semibold">
                     {species}
                   </span>
                   <img
                     src={`${getBasePath()}/bees-guide/${image}`}
                     alt={species}
                   />
-                  <span className="block">
-                    {JSON.stringify({
-                      butt,
-                      psithyrus,
-                      description,
-                      location,
-                    })}
-                  </span>
                 </li>
-              )
-            )}
-          </ul>
-        </Container>
+              ))}
+            </ul>
+          </Container>
+        </div>
       </Layout>
     </>
   );
