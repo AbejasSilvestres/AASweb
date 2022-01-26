@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "export": "next export",
+    "export": "next export && echo 'www.abejassilvestres.es' > ./out/CNAME",
     "start": "next start",
     "lint": "next lint --fix",
     "prepare": "husky install",
