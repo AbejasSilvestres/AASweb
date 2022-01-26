@@ -1,7 +1,6 @@
 import NextLink from 'next/link';
 
 import { Container, Link } from '../../components';
-import { getBasePath } from '../../lib/utils';
 
 export const Preview = ({ type, title, excerpt, coverImage, slug }) => (
   <section className={type === 'primary' ? 'bg-primary-50' : 'bg-neutral-0'}>
@@ -9,7 +8,7 @@ export const Preview = ({ type, title, excerpt, coverImage, slug }) => (
       <div className="flex flex-col md:flex-row md:items-center h-full gap-16 md:gap-20">
         <div className="shrink-0">
           <img
-            src={`${getBasePath()}${coverImage}`}
+            src={coverImage}
             alt={title}
             className="w-56 h-56 object-contain"
           />

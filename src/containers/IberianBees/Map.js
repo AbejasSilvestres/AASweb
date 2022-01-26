@@ -2,11 +2,10 @@ import { Icon } from 'leaflet';
 import { MapContainer, Marker, TileLayer } from 'react-leaflet';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
 
-import { getBasePath } from '../../lib/utils';
 import { MapPopup } from './Popup';
 
 const MarkerIcon = new Icon({
-  iconUrl: `${getBasePath()}/assets/marker-solid.svg`,
+  iconUrl: '/assets/marker-solid.svg',
   iconSize: [32, 32],
 });
 

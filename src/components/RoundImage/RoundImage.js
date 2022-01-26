@@ -1,7 +1,5 @@
 import classNames from 'classnames';
 
-import { getBasePath } from '../../lib/utils';
-
 export const RoundImage = ({ src, alt, className }) => (
   <div
     className={classNames(
@@ -13,10 +11,6 @@ export const RoundImage = ({ src, alt, className }) => (
       className
     )}
   >
-    <img
-      src={`${getBasePath()}${src}`}
-      alt={alt}
-      className="h-full w-full object-cover"
-    />
+    <img src={src} alt={alt} className="h-full w-full object-cover" />
   </div>
 );

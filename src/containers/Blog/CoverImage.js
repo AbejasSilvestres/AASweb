@@ -1,11 +1,9 @@
 import Link from 'next/link';
 
-import { getBasePath } from '../../lib/utils';
-
 export const CoverImage = ({ title, src, slug }) => {
   const image = (
     <img
-      src={`${getBasePath()}${src}`}
+      src={src}
       alt={`Una Imagen para ${title}`}
       className={slug ? '' : 'shadow-sm'}
     />

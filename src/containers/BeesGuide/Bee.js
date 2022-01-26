@@ -1,7 +1,5 @@
 import classNames from 'classnames';
 
-import { getBasePath } from '../../lib/utils';
-
 export const Bee = ({ isVisible, species, image, onClick }) => (
   <button
     onClick={onClick}
@@ -13,6 +11,6 @@ export const Bee = ({ isVisible, species, image, onClick }) => (
     <span className="block text-xl text-center italic font-semibold">
       {species}
     </span>
-    <img src={`${getBasePath()}/bees-guide/${image}`} alt={species} />
+    <img src={`/bees-guide/${image}`} alt={species} />
   </button>
 );
