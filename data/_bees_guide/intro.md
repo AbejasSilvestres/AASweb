@@ -9,6 +9,6 @@ Sin embargo, identificar correctamente estas especies es muy complicado. Esta gu
 
 Para buscar las especies puedes usar los filtros por lugar donde lo has observado, el color del culo (blanco, rojo o de otro color) y si pertenecen al genero _Psithyrus_, que es cleptoparásito, es decir, que parasita otras especies de abejorros. Si te fijas, sus patas no tienen corbicula para transportar polen.
 
-**AbejasSilvestres.es es una asociación sin animo de lucro, si usas esta guía, considera hacerte socio!** 
+**AbejasSilvestres.es es una asociación sin animo de lucro, si usas esta guía, considera hacerte** [**socio**](https://www.abejassilvestres.es/)**!** 
 
 Las ilustraciones son de [DharmaBeren.com]() y pudes usarlas con licencia CC-BY-NC-ND
