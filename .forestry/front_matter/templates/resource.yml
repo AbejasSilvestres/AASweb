@@ -29,6 +29,7 @@ fields:
   config:
     required: true
 pages:
+- data/_resources/guia-de-abejorros-ibericos.md
 - data/_resources/pollinator_structure_infographics.md
 - data/_resources/quick_guide.md
 - data/_resources/refuge_video.md
