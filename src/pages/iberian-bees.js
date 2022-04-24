@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
-import { useState, useTransition } from 'react';
+import { useState } from 'react';
 
 import { Container, Layout } from '../components';
 import { IberianBees } from '../containers';
@@ -24,13 +24,10 @@ const Autocomplete = dynamic(
 );
 
 export default function Bees({ data, intro, species }) {
-  const [, startTransition] = useTransition();
   const [speciesFilter, setSpeciesFilter] = useState('');
 
   const handleFilterChange = ({ selectedItem }) => {
-    startTransition(() => {
-      setSpeciesFilter(selectedItem);
-    });
+    setSpeciesFilter(selectedItem);
   };
 
   return (
@@ -53,7 +50,9 @@ export default function Bees({ data, intro, species }) {
               />
             </div>
             <div className="leaflet-container">
-              <Map data={filterBySpecies(data, speciesFilter)} />
+              <Map
+                data={filterBySpecies(speciesFilter ? data : [], speciesFilter)}
+              />
             </div>
           </Container>
         </div>
