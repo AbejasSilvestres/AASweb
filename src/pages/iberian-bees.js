@@ -8,6 +8,7 @@ import { getAllIberianBeesSections } from '../lib/api/iberian-bees';
 import { getJsonData } from '../lib/api/iberian-bees-data';
 import markdownToHtml from '../lib/markdown-to-html';
 import { filter } from '../lib/utils';
+import { cities } from '../utils/cities';
 
 const filterBySpecies = (data, species) =>
   species ? filter((item) => species === item.species, data) : data;
@@ -25,10 +26,17 @@ const Autocomplete = dynamic(
 
 export default function Bees({ data, intro, species }) {
   const [speciesFilter, setSpeciesFilter] = useState('');
+  const [cityFilter, setCityFilter] = useState('');
 
   const handleFilterChange = ({ selectedItem }) => {
     setSpeciesFilter(selectedItem);
   };
+
+  const handleCityChange = ({ selectedItem }) => {
+    setCityFilter(selectedItem);
+  };
+
+  const city = cities.find((city) => city.name === cityFilter);
 
   return (
     <>
@@ -49,8 +57,19 @@ export default function Bees({ data, intro, species }) {
                 items={species}
               />
             </div>
+            <div className="max-w-sm mb-14">
+              <Autocomplete
+                onSelectedItemChange={handleCityChange}
+                label="Filtrar por ciudad"
+                placeholder="Comienza escribir aqui..."
+                items={cities
+                  .map(({ name }) => name)
+                  .sort((a, b) => a.localeCompare(b))}
+              />
+            </div>
             <div className="leaflet-container">
               <Map
+                center={city?.geo}
                 data={filterBySpecies(speciesFilter ? data : [], speciesFilter)}
               />
             </div>
