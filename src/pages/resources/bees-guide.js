@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { startTransition, useState } from 'react';
+import { useState } from 'react';
 
 import {
   ClearButton,
@@ -76,9 +76,7 @@ export default function Guide({ intro, allBees }) {
       [filterName]: value,
     };
     setFilters(newFilters);
-    startTransition(() => {
-      setFilteredBees(filterBees(allBees, newFilters));
-    });
+    setFilteredBees(filterBees(allBees, newFilters));
   };
 
   const handleClearingFilter = (filterName) => () => {
@@ -87,9 +85,7 @@ export default function Guide({ intro, allBees }) {
       [filterName]: '',
     };
     setFilters(newFilters);
-    startTransition(() => {
-      setFilteredBees(filterBees(allBees, newFilters));
-    });
+    setFilteredBees(filterBees(allBees, newFilters));
   };
 
   const isVisible = (species) =>
