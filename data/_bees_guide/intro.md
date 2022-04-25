@@ -11,4 +11,4 @@ Para buscar las especies puedes usar los filtros por lugar donde lo has observad
 
 **AbejasSilvestres.es es una asociación sin animo de lucro, si usas esta guía, considera hacerte** [**socio**](https://www.abejassilvestres.es/)**!**
 
-Las ilustraciones son de [DharmaBeren.com](www.DharmaBeren.com ) y pudes usarlas con licencia CC-BY-NC-ND
+Las ilustraciones son de [DharmaBeren.com](http://www.DharmaBeren.com ) y pudes usarlas con licencia CC-BY-NC-ND
