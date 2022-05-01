@@ -77,7 +77,7 @@ export default function Bees({ data, intro, species }) {
         </Container>
         <div className="bg-primary-50">
           <Container className="pt-12 pb-36">
-            <div className="grid md:grid-cols-2 mb-14 gap-14">
+            <div className="grid md:grid-cols-2 mb-14 gap-8">
               <div>
                 <Autocomplete
                   selectedItem={selectedSpecies?.species || ''}
