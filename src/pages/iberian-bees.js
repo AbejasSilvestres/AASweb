@@ -58,15 +58,13 @@ export default function Bees({ data, intro, species }) {
   const [speciesFilter, setSpeciesFilter] = useState('');
   const [cityFilter, setCityFilter] = useState('');
 
-  const handleFilterChange = ({ selectedItem }) => {
+  const handleFilterChange = ({ selectedItem }) =>
     setSpeciesFilter(selectedItem);
-  };
 
-  const handleCityChange = ({ selectedItem }) => {
-    setCityFilter(selectedItem);
-  };
+  const handleCityChange = ({ selectedItem }) => setCityFilter(selectedItem);
 
-  const city = cities.find((city) => city.name === cityFilter);
+  const selectedCity = cities.find((city) => city.name === cityFilter);
+  const selectedSpecies = data.find((item) => item.species === speciesFilter);
 
   return (
     <>
@@ -82,6 +80,7 @@ export default function Bees({ data, intro, species }) {
             <div className="grid md:grid-cols-2 mb-14 gap-14">
               <div>
                 <Autocomplete
+                  selectedItem={selectedSpecies?.species || ''}
                   onSelectedItemChange={handleFilterChange}
                   label="Filtrar por especie"
                   placeholder="Comienza escribir aqui..."
@@ -90,6 +89,7 @@ export default function Bees({ data, intro, species }) {
               </div>
               <div>
                 <Autocomplete
+                  selectedItem={selectedCity?.name || ''}
                   onSelectedItemChange={handleCityChange}
                   label="Filtrar por ciudad"
                   placeholder="Comienza escribir aqui..."
@@ -101,8 +101,8 @@ export default function Bees({ data, intro, species }) {
             </div>
             <div className="leaflet-container">
               <Map
-                center={city?.geo}
-                data={filterBees(data, speciesFilter, city?.geo)}
+                center={selectedCity?.geo}
+                data={filterBees(data, speciesFilter, selectedCity?.geo)}
               />
             </div>
           </Container>
