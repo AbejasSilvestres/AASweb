@@ -4,7 +4,13 @@ import { useState } from 'react';
 
 import { filter } from '../../lib/utils';
 
-const Autocomplete = ({ items, label, onSelectedItemChange, placeholder }) => {
+const Autocomplete = ({
+  items,
+  label,
+  selectedItem,
+  onSelectedItemChange,
+  placeholder,
+}) => {
   const [inputItems, setInputItems] = useState(items);
 
   const {
@@ -16,6 +22,7 @@ const Autocomplete = ({ items, label, onSelectedItemChange, placeholder }) => {
     highlightedIndex,
     getItemProps,
   } = useCombobox({
+    selectedItem,
     onSelectedItemChange,
     items: inputItems,
     onInputValueChange: ({ inputValue }) => {
