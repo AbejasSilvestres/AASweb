@@ -26,7 +26,6 @@ const Autocomplete = ({
     onSelectedItemChange,
     items: inputItems,
     onInputValueChange: ({ inputValue }) => {
-      console.log({ inputValue });
       if (inputValue === '') {
         onSelectedItemChange({ selectedItem: '' });
       }
