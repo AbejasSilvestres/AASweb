@@ -1,6 +1,15 @@
 export const cities = [
   /**
+   * Andorra
+   * https://simplemaps.com/data/ad-cities
+   */
+  {
+    name: 'Andorra',
+    geo: [42.5, 1.5],
+  },
+  /**
    * Spain
+   * https://simplemaps.com/data/es-cities
    */
   {
     name: 'Madrid',
@@ -212,6 +221,7 @@ export const cities = [
   },
   /**
    * Portugal
+   * https://simplemaps.com/data/pt-cities
    */
   {
     name: 'Aveiro',
