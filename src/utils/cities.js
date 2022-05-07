@@ -1,4 +1,7 @@
 export const cities = [
+  /**
+   * Spain
+   */
   {
     name: 'Madrid',
     geo: [40.4167, -3.7167],
@@ -206,5 +209,88 @@ export const cities = [
   {
     name: 'Soria',
     geo: [41.7667, -2.4667],
+  },
+  /**
+   * Portugal
+   */
+  {
+    name: 'Aveiro',
+    geo: [40.6389, -8.6553],
+  },
+  {
+    name: 'Ponta Delgada',
+    geo: [37.74, -25.67],
+  },
+  {
+    name: 'Beja',
+    geo: [38.0333, -7.8833],
+  },
+  {
+    name: 'Braga',
+    geo: [41.5333, -8.4167],
+  },
+  {
+    name: 'Bragança',
+    geo: [41.8, -6.75],
+  },
+  {
+    name: 'Castelo Branco',
+    geo: [39.823, -7.4931],
+  },
+  {
+    name: 'Coimbra',
+    geo: [40.2111, -8.4291],
+  },
+  {
+    name: 'Évora',
+    geo: [38.5667, -7.9],
+  },
+  {
+    name: 'Faro',
+    geo: [37.0161, -7.935],
+  },
+  {
+    name: 'Guarda',
+    geo: [40.5364, -7.2683],
+  },
+  {
+    name: 'Leiria',
+    geo: [39.7444, -8.8072],
+  },
+  {
+    name: 'Lisboa',
+    geo: [38.7452, -9.1604],
+  },
+  {
+    name: 'Funchal',
+    geo: [32.65, -16.9167],
+  },
+  {
+    name: 'Portalegre',
+    geo: [39.3167, -7.4167],
+  },
+  {
+    name: 'Porto',
+    geo: [41.1495, -8.6108],
+  },
+  {
+    name: 'Santarém',
+    geo: [39.2369, -8.685],
+  },
+  {
+    name: 'Setúbal',
+    geo: [38.5243, -8.8926],
+  },
+  {
+    name: 'Viana do Castelo',
+    geo: [41.7, -8.8333],
+  },
+  {
+    name: 'Vila Real',
+    geo: [41.3002, -7.7398],
+  },
+  {
+    name: 'Viseu',
+    geo: [40.6667, -7.9167],
   },
 ];
