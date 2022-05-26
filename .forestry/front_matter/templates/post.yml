@@ -38,4 +38,5 @@ fields:
     config:
       required: true
 pages:
+- data/_posts/como-ayudar-a-las-abejas.md
 - data/_posts/preview.md
