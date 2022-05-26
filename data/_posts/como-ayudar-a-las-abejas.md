@@ -7,7 +7,7 @@ excerpt: 'A medida que la gente conoce más a las abejas silvestres y aprende so
   fácil. ¿Por qué? '
 coverImage: "/assets/collage-megachille-rotundata-nidificando.jpg"
 author:
-  name: Nacho Bartomues
+  name: Nacho Bartomeus
   picture: "/assets/ibartomeus.png"
 
 ---
