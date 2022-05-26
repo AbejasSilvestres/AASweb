@@ -13,8 +13,6 @@ author:
 ---
 A medida que la gente conoce más a las abejas silvestres y aprende sobre los factores que amenazan a sus poblaciones, empiezan a surgir iniciativas para su conservación. Tradicionalmente, los insectos no han sido el foco de acciones de conservación, más centradas en especies más carismáticas de mamíferos o aves, y es por tanto una buena noticia que las abejas despierten interés en el público porque esto supone que pueden actuar como “especies paraguas” para conservar las poblaciones de muchos otros insectos. El problema es que ayudar a las abejas (y otros insectos) no es fácil. ¿Por qué? Porque las acciones que sabemos que funcionan no son vistosas, las acciones vistosas no sabemos si funcionan, y nos falta una visión clara sobre a quién queremos proteger, dónde y cómo. Vayamos por partes.
 
-_![](/assets/collage-megachille-rotundata-nidificando.jpg "Megachile rotundata")Foto: C. Molina_
-
 **Medidas que funcionan:**
 
 Sin un conocimiento específico de la zona a conservar, y con el objetivo general de proteger a todos los polinizadores de una zona lo mejor que puedes hacer es no hacer nada. No hacer nada parece fácil, pero suele implicar dejar de hacer cosas que se están haciendo o se iban a hacer. Me explico. Hay que dejar de aplicar pesticidas, herbicidas, insecticidas, y fungicidas, todos ellos dañinos directa o indirectamente para las abejas silvestres. Además, hay que dejar de aplicar fertilizantes, no eliminar las “malas hierbas”, no destruir más habitat natural y dejar que se recupere el que hay. En definitiva, asilvestrar el hábitat que estás protegiendo. Depende de qué hábitat estés intentando mejorar, no hacer nada es difícil. En estos casos hacer menos, es un primer paso.
