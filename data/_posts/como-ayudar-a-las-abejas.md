@@ -25,7 +25,7 @@ Hacer cosas siempre nos gusta mucho más que no hacerlas, pero la naturaleza tie
 
 Otra opción popular es añadir refugios para polinizadores los llamados “hoteles de bichos”. Esta es una gran acción para divulgar sobre la importancia de los polinizadores, y que mucha gente vea de primera mano la belleza de las abejas silvestres. Sin embargo, cuando añadimos estos refugios no sabemos qué consecuencias tienen. Primero, estos solo ayudan a un grupo muy reducido de especies que anidan en cavidades como por ejemplo: los megaquílidos, y dentro de este grupo, suelen ocuparlos especies bastante comunes, mientras que muchas otras especies que usan otro tipo de sustratos para crear sus nidos (e.g. arena, madera) no se benefician. Segundo, en la naturaleza, las cavidades para nidificar no se encuentran tan cerca unas de otras, y estas agregaciones de nidos a menudo se convierten en dianas perfectas para especies parásitas. Por tanto, a menudo se convierten en trampas mortales para incautas abejas. Si vas a instalar estos refugios, que sea para que los vea la gente, en zonas urbanas o agrícolas, si lo que buscas es incrementar los polinizadores que visiten tu cultivo usa siempre refugios de pequeño tamaño.
 
-![Nomiapis bispinosa](/assets/nomiapis-bispinosa-en-nido.jpg "Nido de Nomiapis bispinosa")_Foto: C. Molina_
+![Nomiapis bispinosa](/assets/nomiapis-bispinosa-en-nido.jpg "Nido de Nomiapis bispinosa")_Fotos: C. Molina_
 
 **Pero, ¿a quien queremos proteger?**
 
