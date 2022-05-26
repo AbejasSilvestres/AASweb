@@ -4,9 +4,7 @@ title: Cómo ayudar a las abejas
 excerpt: 'A medida que la gente conoce más a las abejas silvestres y aprende sobre
   los factores que amenazan a sus poblaciones, empiezan a surgir iniciativas para
   su conservación. El problema es que ayudar a las abejas (y otros insectos) no es
-  fácil. ¿Por qué? Porque las acciones que sabemos que funcionan no son vistosas,
-  las acciones vistosas no sabemos si funcionan, y nos falta una visión clara sobre
-  a quién queremos proteger, dónde y cómo. '
+  fácil. ¿Por qué? '
 coverImage: "/assets/collage-megachille-rotundata-nidificando.jpg"
 author:
   name: Nacho Bartomues
