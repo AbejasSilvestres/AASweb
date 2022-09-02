@@ -12,9 +12,9 @@ author:
   picture: "/assets/curro-eucera-synhalonia-rufa-anthophorinae-en-linaria-viscosa-scrophulariaceae-22x19.jpg"
 
 ---
-La Asociación sin animo de lucro [AbejasSilvestres.es](http://AbejasSilvestres.es) esta buscando una persona motivada para trabajar con ellos a tiempo completo (sueldo según convenio, pero aproximado \~1100 EUR brutos mensuales) durante un año. La persona que se incorpore realizara monitoreo de polinizadores en zonas cercanas a Sevilla, así como la dinamización de una campaña de conservación de polinizadores. La Asociación Abejas Silvestres ofrecerá oportunidades de formación y un ambiente dinámico e inclusivo. 
+La Asociación sin animo de lucro [AbejasSilvestres.es](http://AbejasSilvestres.es) esta buscando una persona motivada para trabajar con ellos a tiempo completo (sueldo según convenio, pero aproximado 1100 -1200 EUR brutos mensuales) durante un año. La persona que se incorpore realizara monitoreo de polinizadores en zonas cercanas a Sevilla, así como la dinamización de una campaña de conservación de polinizadores. La Asociación Abejas Silvestres ofrecerá oportunidades de formación y un ambiente dinámico e inclusivo.
 
-**Requerimientos**: 
+**Requerimientos**:
 
 * Carnet de conducir
 * Se valorara experiencia en monitoreo de insectos y/o colecciones entomológicas
