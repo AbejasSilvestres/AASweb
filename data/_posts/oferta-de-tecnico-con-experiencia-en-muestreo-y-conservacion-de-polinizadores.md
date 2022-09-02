@@ -6,7 +6,7 @@ excerpt: 'La Asociación sin animo de lucro AbejasSilvestres.es esta buscando un
   se incorpore realizara monitoreo de polinizadores en zonas cercanas a Sevilla, así
   como la dinamización de una campaña de conservación de polinizadores. La Asociación
   Abejas Silvestres ofrecerá oportunidades de formación y un ambiente dinámico e inclusivo. '
-coverImage: "/assets/foto-4.jpg"
+coverImage: ''
 author:
   name: Abeja Silvestre
   picture: "/assets/curro-eucera-synhalonia-rufa-anthophorinae-en-linaria-viscosa-scrophulariaceae-22x19.jpg"
