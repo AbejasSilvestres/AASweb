@@ -6,10 +6,10 @@ excerpt: 'La Asociación sin animo de lucro AbejasSilvestres.es esta buscando un
   se incorpore realizara monitoreo de polinizadores en zonas cercanas a Sevilla, así
   como la dinamización de una campaña de conservación de polinizadores. La Asociación
   Abejas Silvestres ofrecerá oportunidades de formación y un ambiente dinámico e inclusivo. '
-coverImage: "/assets/curro-nomiapis-bispinosa-en-rubus-ulmifolius-twitter.jpg"
+coverImage: "/assets/foto-4.jpg"
 author:
   name: Abeja Silvestre
-  picture: ''
+  picture: "/assets/curro-eucera-synhalonia-rufa-anthophorinae-en-linaria-viscosa-scrophulariaceae-22x19.jpg"
 
 ---
 La Asociación sin animo de lucro [AbejasSilvestres.es](http://AbejasSilvestres.es) esta buscando una persona motivada para trabajar con ellos a tiempo completo (sueldo según convenio, pero aproximado \~1100 EUR brutos mensuales) durante un año. La persona que se incorpore realizara monitoreo de polinizadores en zonas cercanas a Sevilla, así como la dinamización de una campaña de conservación de polinizadores. La Asociación Abejas Silvestres ofrecerá oportunidades de formación y un ambiente dinámico e inclusivo. 
