@@ -24,5 +24,4 @@ Por fin llegó el día, todo listo para partir con la luz del alba y las estrell
 
 Igual que comenzó este viaje, así lo acabamos, volviendo a casa contentos y cansados, con muchos datos que procesar, letras y números, palabras y códigos esperando a ser acumulados en una tabla, que quizás nos abrirán nuevas preguntas y quién sabe si más destinos que explorar, pero quedando en nuestra memoria una experiencia inolvidable tanto en lo personal como en lo profesional.
 
-  
-![](https://lh4.googleusercontent.com/8qT0qcOXzKCLgi83x9tIPfcQE8Q1P7w92l2I2khd0EDaGkyAgLL09VmWtuPPF1u7JilhOUexHjikTZxIAFli-Hmq-nJjY8PHJLPxBladZpz-Y5oUtM7ofdJa0Q7Rg8F3OVQazhbFlRTYME0rp03StKkfwRJyxY6SA3Wt2eCI2nbgjkAqC4ZD9L9W =600x400)
+![](/assets/collage-bardenas.jpg)
