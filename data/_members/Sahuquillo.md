@@ -1,6 +1,6 @@
 ---
 name: Yaiza Sahuquillo
-photo: "/assets/dsc_0317.JPG"
+photo: "/assets/foto-cv.jpg"
 url: https://www.abejassilvestres.es/
 
 ---
