@@ -26,4 +26,4 @@ En la primavera de 2022 repetimos la experiencia con los agricultores de  la pro
 
 ![Set HA BEE TAT](/assets/whatsapp-image-2022-04-23-at-19-37-06.jpeg "Set HA BEE TAT")
 
-<p class="text-center">Este es el set de plantas, la guía y el nido que repartimos a más de 100 agricultores en Sevilla</p>
+<p class="text-center">Este es el set de plantas, la guía y el nido que repartimos a más de 100 agricultores en la provincia de Sevilla</p>
