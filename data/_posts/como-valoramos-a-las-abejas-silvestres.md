@@ -19,3 +19,5 @@ Para Marta* las abejas solitarias son su infancia junto al jardín de rosas de s
 Las abejas silvestres son importantes para nosotros cuando forman parte de nuestra vida. Su existencia nos permite descubrir cosas fascinantes. Conocer enriquece nuestras vidas y sin ellas habría menos sorpresas. Forman parte de nuestros recuerdos, y nos abren la puerta a compartir experiencias con los seres queridos. Ahora el padre de Marta ya no está aquí, pero los rosales siguen teniendo recortes en sus hojas cada primavera. Las abejas solitarias son importantes más allá de su papel ecológico.
 
 _*todos los nombres son inventados para preservar el anonimato._
+
+Foto: Curro Molina
