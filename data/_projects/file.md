@@ -25,11 +25,11 @@ Sé paciente, esta es una acción con una menor probabilidad de éxito, y puede 
 
 Te dejamos un listado de flores silvestres autóctonas que ofrecen grandes cantidades de polen y néctar para las abejas y los abejorros, pero hay muchas más y lo importante es la diversidad:
 
-Aromáticas: romero (_Salvia sp._), tomillo (_Thymus sp._), salvia (_Salvia sp._), lavanda (_Lavandula sp._), menta (_Mentha sp._), hierbabuena (_Mentha sp._), hierbaluisa (_Aloysia sp._), laurel (_Laurus sp._), manzanilla (_Chamaemelum sp._), caléndula (_Calendula sp._), ajedrea (_Satureja sp._), abrótano (_Santolina sp._), albahaca (_Ocimum sp._)
+**Aromáticas:** romero (_Salvia sp._), tomillo (_Thymus sp._), salvia (_Salvia sp._), lavanda (_Lavandula sp._), menta (_Mentha sp._), hierbabuena (_Mentha sp._), hierbaluisa (_Aloysia sp._), laurel (_Laurus sp._), manzanilla (_Chamaemelum sp._), caléndula (_Calendula sp._), ajedrea (_Satureja sp._), abrótano (_Santolina sp._), albahaca (_Ocimum sp._)
 
-Anuales: aciano (_Centaurea sp._), rábano silvestre (_Raphanus sp._)_,_ violeta chica (_Viola kitaibeliana_), valeriana (_Valeriana sp._), amapola (_Papaver sp._), geranio (_Geranium sp._), mostaza de campo (_Sinapis sp._), altramuz (_Lupinus sp._), escabiosa (_Scabiosa sp._), diente de león (_Taraxacum sp._)
+**Anuales:** aciano (_Centaurea sp._), rábano silvestre (_Raphanus sp._)_,_ violeta chica (_Viola kitaibeliana_), valeriana (_Valeriana sp._), amapola (_Papaver sp._), geranio (_Geranium sp._), mostaza de campo (_Sinapis sp._), altramuz (_Lupinus sp._), escabiosa (_Scabiosa sp._), diente de león (_Taraxacum sp._)
 
-Perenne: alcaparra (_Caparis sp._), hierba de San Juan (_Hypericum sp._), botón de oro (_Ranunculus sp._), jara (_Cistus sp._), hinojo (_Foeniculum sp._), malva (_Malva sp._), colleja (_Silene sp._), madreselva (_Lonicera sp._), alfalfa (_Medicago sp._), brezo (_Erica sp._), alhelí de campo (_Matthiola sp._), cardo (_Carduus sp._), pinillo bastardo (_Teucrium sp._), cuernecillo (_Lotus sp._), boca de dragón (_Antirrhinum sp._), dedalera (_Digitalis sp._), hiedra (_Hedera sp._)
+**Perennes:** alcaparra (_Caparis sp._), hierba de San Juan (_Hypericum sp._), botón de oro (_Ranunculus sp._), jara (_Cistus sp._), hinojo (_Foeniculum sp._), malva (_Malva sp._), colleja (_Silene sp._), madreselva (_Lonicera sp._), alfalfa (_Medicago sp._), brezo (_Erica sp._), alhelí de campo (_Matthiola sp._), cardo (_Carduus sp._), pinillo bastardo (_Teucrium sp._), cuernecillo (_Lotus sp._), boca de dragón (_Antirrhinum sp._), dedalera (_Digitalis sp._), hiedra (_Hedera sp._)
 
 En función de tu zona, serán más abundantes unas especies que otras. Puedes buscar a partir de los géneros propuestos, las plantas más comunes y propias de tu zona. Además, cada una de estas plantas tiene unos requerimientos de suelo específicos. Investiga qué tipo de suelo tienes en tu jardín y elige las plantas que mejor se adapten a él.
 
