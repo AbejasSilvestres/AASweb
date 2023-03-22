@@ -1,7 +1,7 @@
 ---
 order: 1
 title: ZUM BEE DOS
-excerpt: "-"
+excerpt: Nueve acciones de conservación para ayudar a las abejas silvestres
 coverImage: "/assets/logo2.png"
 
 ---
