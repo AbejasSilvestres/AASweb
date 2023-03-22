@@ -2,7 +2,7 @@
 order: 1
 title: ZUM BEE DOS
 excerpt: Nueve acciones de conservación para ayudar a las abejas silvestres
-coverImage: "/assets/logo2.png"
+coverImage: "/assets/logo-vector-definitivo.png"
 
 ---
 Ayudar a las abejas silvestres no es tarea fácil, pero tampoco imposible. Hay muchas cosas que podemos hacer para favorecer un entorno que sea amigable para ellas. te proponemos nueve pequeñas acciones para ayudarlas y una forma de medir nuestro éxito en esta aventura. Prepárate para oír muchos más zumbidos en dos simples pasos:
