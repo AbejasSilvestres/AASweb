@@ -24,4 +24,5 @@ fields:
     required: true
 pages:
 - data/_projects/airbeeandbee.md
+- data/_projects/file.md
 - data/_projects/habeetat.md
