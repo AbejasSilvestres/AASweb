@@ -31,7 +31,7 @@ Te dejamos un listado de flores silvestres autóctonas que ofrecen grandes canti
 
 **Perennes:** alcaparra (_Caparis sp._), hierba de San Juan (_Hypericum sp._), botón de oro (_Ranunculus sp._), jara (_Cistus sp._), hinojo (_Foeniculum sp._), malva (_Malva sp._), colleja (_Silene sp._), madreselva (_Lonicera sp._), alfalfa (_Medicago sp._), brezo (_Erica sp._), alhelí de campo (_Matthiola sp._), cardo (_Carduus sp._), pinillo bastardo (_Teucrium sp._), cuernecillo (_Lotus sp._), boca de dragón (_Antirrhinum sp._), dedalera (_Digitalis sp._), hiedra (_Hedera sp._)
 
-En función de tu zona, serán más abundantes unas especies que otras. Puedes buscar a partir de los géneros propuestos, las plantas más comunes y propias de tu zona. Además, cada una de estas plantas tiene unos requerimientos de suelo específicos. Investiga qué tipo de suelo tienes en tu jardín y elige las plantas que mejor se adapten a él.
+En función de tu zona, serán más abundantes unas especies que otras. Puedes buscar, a partir de los géneros propuestos, las plantas más comunes y propias de tu zona. Además, cada una de estas plantas tiene unos requerimientos de suelo específicos. Investiga qué tipo de suelo tienes en tu jardín y elige las plantas que mejor se adapten a él.
 
 Si tienes vallas de madera en tu jardín, no las reemplaces cuando se estropean y en su lugar coloca un seto de plantas nativas, que proveerá de alimento a polinizadores, captura carbono a medida que crece y no necesitará reemplazamiento.
 
