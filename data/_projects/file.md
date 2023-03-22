@@ -7,4 +7,4 @@ coverImage: "/assets/logo2.png"
 ---
 ![](/assets/accion-1-web.png)
 
-![](/assets/accion-1-2-web.png)
+![](/assets/accion-2-web.png)
