@@ -86,6 +86,8 @@ Estos materiales, creados con base científica, pretenden acercar la conservaci�
 
 Si te ha gustado, puedes apoyar nuestro trabajo siguiéndonos en redes sociales (Instagram: @abejas_silvestres, Twitter: [https://twitter.com/abeja_silvestre](https://twitter.com/abeja_silvestre "https://twitter.com/abeja_silvestre")) y también puedes hacerte socio a través de Teaming: [https://www.teaming.net/abejassilvestres?lang=es_ES](https://www.teaming.net/abejassilvestres?lang=es_ES "https://www.teaming.net/abejassilvestres?lang=es_ES"). Teaming es una forma fácil y segura de contribuir al proyecto con 1 euro al mes, desgravable hasta el 75%.
 
+¡Ah! Si pones en práctica alguna de las acciones que te proponemos, no olvides compartirlo con nosotros a través de nuestras redes usando el hashtag #ZUMBEEDOS
+
 Enlace al Manual de uso App InsectsCount: [https://drive.google.com/file/d/14GBoRkZFNSginompIECAkfahgIrqjz08/view?usp=sharing](https://drive.google.com/file/d/14GBoRkZFNSginompIECAkfahgIrqjz08/view?usp=sharing "https://drive.google.com/file/d/14GBoRkZFNSginompIECAkfahgIrqjz08/view?usp=sharing")
 
 Enlace al PDF Proyecto ZUMBEEDOS: [https://drive.google.com/file/d/1SJxarAq6WhJt6UtTokgw88gEoQpSFgy3/view?usp=sharing](https://drive.google.com/file/d/1SJxarAq6WhJt6UtTokgw88gEoQpSFgy3/view?usp=sharing "https://drive.google.com/file/d/1SJxarAq6WhJt6UtTokgw88gEoQpSFgy3/view?usp=sharing")
