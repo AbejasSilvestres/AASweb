@@ -20,7 +20,7 @@ export default function AboutPage({
         <title>Quiénes somos</title>
       </Head>
       <Layout>
-        <About.Intro title={intro.title} body={intro.body} />
+        <About.Intro title={intro.title} content={intro.content} />
         <About.Services
           title={services.title}
           services={services.items}
@@ -53,7 +53,7 @@ export default function AboutPage({
 }
 
 export async function getStaticProps() {
-  const intro = getAllAboutSections(['title', 'body'])[0];
+  const intro = getAllAboutSections(['title', 'content'])[0];
 
   const services = getAllServicesSections(['title', 'items', 'button'])[0];
 

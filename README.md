@@ -8,7 +8,7 @@ This static site has been using the following technologies:
  - [tailwindcss](https://tailwindcss.com/) - utility-first CSS framework
  - [heroicons](https://heroicons.com/) - a selected set of icons
  - [github actions](https://github.com/features/actions) - CI/CD
- - [forestry](https://forestry.io/) - Content Management System
+ - [tina](https://tina.io/) - Content Management System
 
 ### Development
 
@@ -28,7 +28,7 @@ npm run dev
 
 ### Deployment
 
-The deployment is totally automated and happens on every merge/push to `main` branch, whether it happens directly through code or indirectly through forestry CMS.
+The deployment is totally automated and happens on every merge/push to `main` branch, whether it happens directly through code or indirectly through Tina CMS.
 
 
 
