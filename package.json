@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "tinacms dev -c \"next dev\"",
-    "build": "next build",
+    "build": "tinacms build && next build",
     "export": "next export && echo 'www.abejassilvestres.es' > ./out/CNAME",
     "start": "next start",
     "lint": "next lint --fix",
