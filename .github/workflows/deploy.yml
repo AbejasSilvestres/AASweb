@@ -20,6 +20,12 @@ jobs:
         with:
           node-version: 16.x
 
+      - name: Create .env
+        uses: SpicyPizza/create-envfile@v1
+        with:
+          envkey_TINA_CMS_TOKEN: ${{ secrets.TINA_CMS_TOKEN }}
+          envkey_TINA_CMS_CLIENT_ID: ${{ secrets.TINA_CMS_CLIENT_ID }}
+
       - name: Build
         run: |
           npm i
