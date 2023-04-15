@@ -199,15 +199,6 @@
         "match": { "include": "*" },
         "fields": [
           {
-            "type": "rich-text",
-            "name": "body",
-            "label": "Body of Document",
-            "description": "This is the markdown body",
-            "isBody": true,
-            "namespace": ["about", "body"],
-            "parser": { "type": "markdown" }
-          },
-          {
             "type": "string",
             "name": "title",
             "label": "title",
@@ -318,15 +309,6 @@
         "match": { "include": "*" },
         "fields": [
           {
-            "type": "rich-text",
-            "name": "body",
-            "label": "Body of Document",
-            "description": "This is the markdown body",
-            "isBody": true,
-            "namespace": ["services", "body"],
-            "parser": { "type": "markdown" }
-          },
-          {
             "type": "string",
             "name": "title",
             "label": "title",
@@ -376,15 +358,6 @@
         "frontmatterFormat": "yaml",
         "match": { "include": "*" },
         "fields": [
-          {
-            "type": "rich-text",
-            "name": "body",
-            "label": "Body of Document",
-            "description": "This is the markdown body",
-            "isBody": true,
-            "namespace": ["resources", "body"],
-            "parser": { "type": "markdown" }
-          },
           {
             "type": "string",
             "name": "category",
@@ -3203,15 +3176,6 @@
         "fields": [
           {
             "kind": "FieldDefinition",
-            "name": { "kind": "Name", "value": "body" },
-            "arguments": [],
-            "type": {
-              "kind": "NamedType",
-              "name": { "kind": "Name", "value": "JSON" }
-            }
-          },
-          {
-            "kind": "FieldDefinition",
             "name": { "kind": "Name", "value": "title" },
             "arguments": [],
             "type": {
@@ -3276,14 +3240,6 @@
         "kind": "InputObjectTypeDefinition",
         "name": { "kind": "Name", "value": "AboutFilter" },
         "fields": [
-          {
-            "kind": "InputValueDefinition",
-            "name": { "kind": "Name", "value": "body" },
-            "type": {
-              "kind": "NamedType",
-              "name": { "kind": "Name", "value": "RichTextFilter" }
-            }
-          },
           {
             "kind": "InputValueDefinition",
             "name": { "kind": "Name", "value": "title" },
@@ -3913,15 +3869,6 @@
         "fields": [
           {
             "kind": "FieldDefinition",
-            "name": { "kind": "Name", "value": "body" },
-            "arguments": [],
-            "type": {
-              "kind": "NamedType",
-              "name": { "kind": "Name", "value": "JSON" }
-            }
-          },
-          {
-            "kind": "FieldDefinition",
             "name": { "kind": "Name", "value": "title" },
             "arguments": [],
             "type": {
@@ -4026,14 +3973,6 @@
         "kind": "InputObjectTypeDefinition",
         "name": { "kind": "Name", "value": "ServicesFilter" },
         "fields": [
-          {
-            "kind": "InputValueDefinition",
-            "name": { "kind": "Name", "value": "body" },
-            "type": {
-              "kind": "NamedType",
-              "name": { "kind": "Name", "value": "RichTextFilter" }
-            }
-          },
           {
             "kind": "InputValueDefinition",
             "name": { "kind": "Name", "value": "title" },
@@ -4152,15 +4091,6 @@
         "fields": [
           {
             "kind": "FieldDefinition",
-            "name": { "kind": "Name", "value": "body" },
-            "arguments": [],
-            "type": {
-              "kind": "NamedType",
-              "name": { "kind": "Name", "value": "JSON" }
-            }
-          },
-          {
-            "kind": "FieldDefinition",
             "name": { "kind": "Name", "value": "category" },
             "arguments": [],
             "type": {
@@ -4249,14 +4179,6 @@
         "kind": "InputObjectTypeDefinition",
         "name": { "kind": "Name", "value": "ResourcesFilter" },
         "fields": [
-          {
-            "kind": "InputValueDefinition",
-            "name": { "kind": "Name", "value": "body" },
-            "type": {
-              "kind": "NamedType",
-              "name": { "kind": "Name", "value": "RichTextFilter" }
-            }
-          },
           {
             "kind": "InputValueDefinition",
             "name": { "kind": "Name", "value": "category" },
@@ -5928,14 +5850,6 @@
         "fields": [
           {
             "kind": "InputValueDefinition",
-            "name": { "kind": "Name", "value": "body" },
-            "type": {
-              "kind": "NamedType",
-              "name": { "kind": "Name", "value": "JSON" }
-            }
-          },
-          {
-            "kind": "InputValueDefinition",
             "name": { "kind": "Name", "value": "title" },
             "type": {
               "kind": "NamedType",
@@ -6056,14 +5970,6 @@
         "fields": [
           {
             "kind": "InputValueDefinition",
-            "name": { "kind": "Name", "value": "body" },
-            "type": {
-              "kind": "NamedType",
-              "name": { "kind": "Name", "value": "JSON" }
-            }
-          },
-          {
-            "kind": "InputValueDefinition",
             "name": { "kind": "Name", "value": "title" },
             "type": {
               "kind": "NamedType",
@@ -6095,14 +6001,6 @@
         "kind": "InputObjectTypeDefinition",
         "name": { "kind": "Name", "value": "ResourcesMutation" },
         "fields": [
-          {
-            "kind": "InputValueDefinition",
-            "name": { "kind": "Name", "value": "body" },
-            "type": {
-              "kind": "NamedType",
-              "name": { "kind": "Name", "value": "JSON" }
-            }
-          },
           {
             "kind": "InputValueDefinition",
             "name": { "kind": "Name", "value": "category" },

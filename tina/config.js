@@ -105,16 +105,7 @@ export default defineConfig({
         match: {
           include: '*',
         },
-        fields: [
-          {
-            type: 'rich-text',
-            name: 'body',
-            label: 'Body of Document',
-            description: 'This is the markdown body',
-            isBody: true,
-          },
-          ...aboutFields(),
-        ],
+        fields: aboutFields(),
         ui: {
           allowedActions: {
             create: false,
@@ -170,16 +161,7 @@ export default defineConfig({
         match: {
           include: '*',
         },
-        fields: [
-          {
-            type: 'rich-text',
-            name: 'body',
-            label: 'Body of Document',
-            description: 'This is the markdown body',
-            isBody: true,
-          },
-          ...serviceFields(),
-        ],
+        fields: serviceFields(),
         ui: {
           allowedActions: {
             create: false,
@@ -195,16 +177,7 @@ export default defineConfig({
         match: {
           include: '*',
         },
-        fields: [
-          {
-            type: 'rich-text',
-            name: 'body',
-            label: 'Body of Document',
-            description: 'This is the markdown body',
-            isBody: true,
-          },
-          ...resourceFields(),
-        ],
+        fields: resourceFields(),
       },
       {
         format: 'md',
