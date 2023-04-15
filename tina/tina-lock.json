@@ -436,7 +436,7 @@
     ],
     "config": {
       "client": {},
-      "media": { "tina": { "publicFolder": "static", "mediaRoot": "" } }
+      "media": { "tina": { "publicFolder": "public", "mediaRoot": "assets" } }
     }
   },
   "lookup": {
