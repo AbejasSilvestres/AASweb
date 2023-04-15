@@ -1,7 +1,7 @@
 import { RoundImage, SectionContainer } from '../../components';
 import homeSectionStyles from './home-section.module.css';
 
-export const Hero = ({ title, content, image, button }) => (
+export const Hero = ({ title, content, image }) => (
   <SectionContainer>
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
       <div className="col-span-1 flex justify-center lg:justify-start items-center lg:order-last">

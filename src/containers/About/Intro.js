@@ -5,7 +5,7 @@ import {
   SectionTitle,
 } from '../../components';
 
-export const Intro = ({ title, body }) => (
+export const Intro = ({ title, content }) => (
   <SectionContainer>
     <div className="flex flex-col md:flex-row items-center gap-10">
       <div className="shrink-0 md:order-last">
@@ -14,7 +14,7 @@ export const Intro = ({ title, body }) => (
       <div className="grow">
         <div className="max-w-xl">
           <SectionTitle className="mb-8">{title}</SectionTitle>
-          <SectionText>{body}</SectionText>
+          <SectionText>{content}</SectionText>
         </div>
       </div>
     </div>
