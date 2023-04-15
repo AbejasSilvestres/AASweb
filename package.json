@@ -2,8 +2,9 @@
   "private": true,
   "scripts": {
     "dev": "tinacms dev -c \"next dev\"",
-    "build": "tinacms build && next build",
-    "export": "next export && echo 'www.abejassilvestres.es' > ./out/CNAME",
+    "build:tina": "tinacms build && rm './out/admin/.gitignore'",
+    "build:next": "next build && next export && echo 'www.abejassilvestres.es' > ./out/CNAME",
+    "build": "npm run build:next && npm run build:tina",
     "start": "next start",
     "lint": "next lint --fix",
     "prepare": "husky install",
