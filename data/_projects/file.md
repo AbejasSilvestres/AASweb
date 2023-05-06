@@ -82,4 +82,4 @@ Sobre picaduras: Las hembras de las abejas silvestres tienen aguijón, pero rara
 
 **Enlace al Manual de uso App InsectsCount:** [https://drive.google.com/file/d/14GBoRkZFNSginompIECAkfahgIrqjz08/view?usp=sharing](https://drive.google.com/file/d/14GBoRkZFNSginompIECAkfahgIrqjz08/view?usp=sharing "https://drive.google.com/file/d/14GBoRkZFNSginompIECAkfahgIrqjz08/view?usp=sharing")
 
-**Enlace al PDF Proyecto ZUMBEEDOS:** [https://drive.google.com/file/d/1loBwhGQdRGUDmtYYK-sD3xf6BVtGEBma/view?](https://drive.google.com/file/d/1K5AOvFVuFdeS2489xWLUcB5q9XgqS9oO/view?usp=sharing)
+**Enlace al PDF Proyecto ZUMBEEDOS:** [https://drive.google.com/file/d/1K5AOvFVuFdeS2489xWLUcB5q9XgqS9oO/view?usp=sharing](https://drive.google.com/file/d/1K5AOvFVuFdeS2489xWLUcB5q9XgqS9oO/view?usp=sharing)
