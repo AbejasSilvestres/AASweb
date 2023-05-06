@@ -35,7 +35,7 @@ En función de tu zona, serán más abundantes unas especies que otras. Puedes b
 
 Si tienes vallas de madera en tu jardín, no las reemplaces cuando se estropean y en su lugar coloca un seto de plantas nativas, que proveerá de alimento a polinizadores, captura carbono a medida que crece y no necesitará reemplazamiento.
 
-![](/assets/accion-5-web.png)Las abejas silvestres no sólo se alimentan de las flores silvestres, también lo hacen de las plantas que cultivamos en nuestro huerto. Aunque pueda ser un poco más laborioso, poder seguir el ciclo completo de las plantas desde que es semilla hasta que produce el fruto es una experiencia de lo más gratificante. Ponte en contacto con agricultores de redes de semillas ecológicas y cultiva variedades que ayudan a mantener la biodiversidad hortícola.. También puedes obtener directamente las plántulas para aumentar las probabilidades de éxito.
+![](/assets/Acción-5.jpg)Las abejas silvestres no sólo se alimentan de las flores silvestres, también lo hacen de las plantas que cultivamos en nuestro huerto. Aunque pueda ser un poco más laborioso, poder seguir el ciclo completo de las plantas desde que es semilla hasta que produce el fruto es una experiencia de lo más gratificante. Ponte en contacto con agricultores de redes de semillas ecológicas y cultiva variedades que ayudan a mantener la biodiversidad hortícola.. También puedes obtener directamente las plántulas para aumentar las probabilidades de éxito.
 
 Los cultivos que más se ven beneficiados por las abejas silvestres son: sandía, melón, batata, coliflor, repollo, cebolla, ajo, pepino, berenjena, cacahuete, girasol, fresa silvestre, pimiento, zanahoria, calabaza, calabacín, judía verde, guisantes, habas y tomates.
 
