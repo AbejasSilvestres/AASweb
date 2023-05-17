@@ -70,7 +70,7 @@ En nuestro [canal de Youtube](https://www.youtube.com/@Abejas_Silvestres) encont
 
 Estos materiales, creados con base científica, pretenden acercar la conservación a todas aquellas personas, colectivos o entidades que en algún momento sientan la curiosidad o el deseo de hacer algo para ayudar a las abejas silvestres.
 
-> **Si te ha gustado, puedes apoyar nuestro trabajo siguiéndonos en redes sociales** (Instagram: @abejas\_silvestres, Twitter:\_ [@abeja\_silvestre](https://twitter.com/abeja_silvestre)) **y también puedes hacerte** **[socio a través de Teaming](https://www.teaming.net/abejassilvestres?lang=es_ES)**. Teaming es una forma fácil y segura de contribuir al proyecto con 1 euro al mes, desgravable hasta el 75%.**¡Ah! Si pones en práctica alguna de las acciones que te proponemos, no olvides compartirlo con nosotros a través de nuestras redes usando el hashtag #ZUMBEEDOS**
+> **Si te ha gustado, puedes apoyar nuestro trabajo siguiéndonos en redes sociales** (Instagram: @abejas\_silvestres, Twitter:\_ [@abeja\_silvestre](https://twitter.com/abeja_silvestre)) **y también puedes ser nuestro amigo en[ Teaming](https://www.teaming.net/abejassilvestres?lang=es_ES)**. Teaming es una forma fácil y segura de contribuir al proyecto con 1 euro al mes, desgravable hasta el 75%.**¡Ah! Si pones en práctica alguna de las acciones que te proponemos, no olvides compartirlo con nosotros a través de nuestras redes usando el hashtag #ZUMBEEDOS**
 
 **Algunos detalles por si quieres saber más:**
 
