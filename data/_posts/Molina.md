@@ -7,6 +7,9 @@ excerpt: >-
   entomólogo Curro Molina. 
 coverImage: /assets/ post entomólogo.jpg
 date: 2023-10-02T22:00:00.000Z
+author:
+  name: Curro Molina
+  picture: /assets/20210831_075801.jpg
 ---
 
 Se necesita tiempo para ver las cosas con perspectiva, una mirada atrás en el tiempo
@@ -85,8 +88,6 @@ se enturbia y desaparece.					&#x9;
 
 Pero poco a poco, con esfuerzo y voluntad, este difícil y esquivo camino, más se
 vislumbra, más se allana, y mejor se anda.
-
-
 
 &#x9;			&#x9;
 &#x9;		&#x9;
