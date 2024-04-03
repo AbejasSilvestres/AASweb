@@ -23,7 +23,7 @@ Ayudar a las abejas silvestres no es tarea fácil, pero tampoco imposible. Hay m
 
 Sé paciente, esta es una acción con una menor probabilidad de éxito, y puede pasar mucho tiempo hasta que una abeja decida nidificar allí.
 
-![](/assets/Acción-4.jpg)Además de las flores que salgan espontáneamente, puedes aprovechar una zona de tu jardín, terraza o balcón para plantar especies que atraerán una gran diversidad de abejas en busca de su polen y néctar. Utiliza plantas autóctonas que, además de ser las mejores adaptadas a las condiciones climáticas de tu zona, necesitan poco mantenimiento y riego. Al utilizar este tipo de plantas no sólo ayudarás a los polinizadores, también estarás colaborando con el mantenimiento de la biodiversidad.
+![](/assets/CUATRO.png)![](/assets/CUATRO.png)Además de las flores que salgan espontáneamente, puedes aprovechar una zona de tu jardín, terraza o balcón para plantar especies que atraerán una gran diversidad de abejas en busca de su polen y néctar. Utiliza plantas autóctonas que, además de ser las mejores adaptadas a las condiciones climáticas de tu zona, necesitan poco mantenimiento y riego. Al utilizar este tipo de plantas no sólo ayudarás a los polinizadores, también estarás colaborando con el mantenimiento de la biodiversidad.
 
 Te dejamos un listado de flores silvestres autóctonas que ofrecen grandes cantidades de polen y néctar para las abejas y los abejorros, pero hay muchas más y lo importante es la diversidad:
 
