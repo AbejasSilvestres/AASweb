@@ -13,6 +13,8 @@ Ayudar a las abejas silvestres no es tarea fácil, pero tampoco imposible. Hay m
 
 ![](/assets/Video_9accionesportada2.png "Mira nuestro video resumen: https://www.youtube.com/watch?v=bH2l7PdcOvQ")![](/assets/Video_9accionesportada2.png)
 
+* Video resumen: [https://www.youtube.com/watch?v=bH2l7PdcOvQ](https://www.youtube.com/watch?v=bH2l7PdcOvQ)
+
 **9 acciones de conservación para ayudar a las abejas silvestres:**
 
 ![](/assets/UNO.png)No hacer nada puede ayudar. No hacer nada significa intervenir lo menos posible en el crecimiento de tu jardín o de tu huerto. Es decir, deja a la naturaleza que haga su trabajo. No podes los setos y los árboles más de lo necesario, ni cortes el césped en época de mayor floración. Puedes aprovechar el otoño o el invierno para hacer mantenimiento, e intenta dejar zonas sin segar para que sigan teniendo refugio disponible. Cuando cortes el césped, hazlo con una menor frecuencia y no lo cortes demasiado. Si tienes campos de cultivo, deja los márgenes con flores y plantas silvestres. Será un lugar perfecto donde podrán refugiarse y obtener algo de alimento.
