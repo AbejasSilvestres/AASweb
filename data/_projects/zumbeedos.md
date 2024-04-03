@@ -11,7 +11,7 @@ Ayudar a las abejas silvestres no es tarea fácil, pero tampoco imposible. Hay m
 
 **2- Además, puedes medir si tus acciones funcionan.** Monitorear la salud de los polinizadores silvestres es difícil, pero necesario para ver si nuestras acciones han dado fruto. Una forma fácil y eficaz es medir las tasas de visita que reciben las plantas. Se puede hacer con una simple libreta de campo, donde se apuntan el número de insectos que visitan una planta de tu elección en 10 minutos y el número de flores observadas. Esa tasa de visitas por flor y minuto es muy fiable para comparar entre plantas, lugares o cambios a lo largo del tiempo. También hay aplicaciones como [InsectsCount](https://insectscount.eu/) que hacen la misma función online ([vídeo tutorial](https://youtu.be/gGUAT_Pr5FQ "Tutorial APP")).
 
-![](/assets/Video_9accionesportada2.png "Mira nuestro video resumen: https://www.youtube.com/watch?v=bH2l7PdcOvQ")![](/assets/Video_9accionesportada2.png)
+![](/assets/Video_9accionesportada2.png "Mira nuestro video resumen: https://www.youtube.com/watch?v=bH2l7PdcOvQ")
 
 * Video resumen: [https://www.youtube.com/watch?v=bH2l7PdcOvQ](https://www.youtube.com/watch?v=bH2l7PdcOvQ)
 
