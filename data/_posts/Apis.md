@@ -31,7 +31,7 @@ Recientemente hemos participado en un informe para la Junta de Andalucia donde h
 
 ![](/assets/Apis.png "Influencia apicola en Andalucía, incluyendo influencia alta (valores > 3), media (valores > 2) y baja (valores \< 2) alrededor de cada apiario. ")
 
-> Influencia apicola en Andalucía, incluyendo influencia alta (valores > 3), media (valores > 2) y baja (valores \< 2) alrededor de cada apiario. 
+> Más del 40% del Monte público esta bajo influencia apicola en Andalucía, ya sea con influencia alta (valores > 3), media (valores > 2) y baja (valores \< 2). 
 
 La abeja de la miel ha convivido con nosotros desde siempre, pero en los últimos años la hemos convertido en una forma más de ganadería, desplazando variedades nativas, eliminando sus poblaciones naturales, y explotando el territorio con fines productivistas. Esto no es un texto contra la abeja de la miel ni contra los apicultores. Se que hay muchos apicultores sensatos y responsables que aman la naturaleza. Pero el modelo actual ha dejado de ser sostenible y hay que trabajar todos juntos para que lo vuelva a ser.
 
