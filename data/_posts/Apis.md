@@ -23,14 +23,20 @@ Por un lado, el numero de colmenas gestionadas por apicultores ha incrementado d
 
 ![](</assets/Screenshot 2024-06-14 at 10.50.06.png> "Desde el 1980 hemos pasado de menos de 1 millón de colmenas a casi 3 millones. Sin embargo, la producción de miel lleva estancada desde el año 2000. Datos FAO")
 
+Desde el 1980 hemos pasado de menos de 1 millón de colmenas a casi 3 millones. Sin embargo, la producción de miel lleva estancada desde el año 2000. Datos FAO
+
 El panorama es aún más desolador de lo que puede parecer. Mientras que las abejas gestionadas incrementan, los nidos silvestres de abeja de la miel nativa en España prácticamente han desaparecido. De hecho, las gran mayoría de abejas de la miel gestionadas por los apicultores son de subespecies no nativas comercializadas internacionalmente. Por tanto, hemos perdido gran parte del acervo genético de nuestras poblaciones. Además, este transporte ha tenido consecuencias trágicas, ya que junto a las abejas importadas, se han introducido numerosas enfermedades que no existían en España. La punta de lanza es el ácaro de la varroa, principal responsable de que las colonias silvestres hayan desaparecido, y cuyo tratamiento require de multiples aplicaciones de acaricidas a los apicultores de toda España para poder mantener sus colonias sanas.
 
 Recientemente hemos participado en un informe para la Junta de Andalucia donde hemos cartografiado todas las colmenas del territorio. El mapa muestra más de 11 210 localizaciones diferentes de colmenares en Andalucía con una media de 50 colmenas por colmenar, superando el medio millón de colmenas en total. Sabiendo que el área de influencia de las abejas de la miel alrededor de estos colmenares es de al menos 2 km cuadrados, el 30% del territorio andaluz está bajo la influencia de la abeja de la miel, y un más de 10% tiene valores de alta influencia (a menos de 0.6 km de uno o más colmenares). Estas colmenas no están equitativamente distribuidas, sino que se focalizan en zonas naturales. El 41% del Monte público está bajo la influencia apícola, así como el 39% de zonas naturales y el 33% de zonas protegidas. Esto deja muy poco espacio para las abejas silvestres, ya que hay evidencia que las abejas de la miel compiten por recursos con las abejas silvestres, llegando a desplazarlas.
 
 ![](/assets/Apis.png "Influencia apicola en Andalucía, incluyendo influencia alta (valores > 3), media (valores > 2) y baja (valores \< 2) alrededor de cada apiario. ")
 
+Influencia apicola en Andalucía, incluyendo influencia alta (valores > 3), media (valores > 2) y baja (valores \< 2) alrededor de cada apiario. 
+
 La abeja de la miel ha convivido con nosotros desde siempre, pero en los últimos años la hemos convertido en una forma más de ganadería, desplazando variedades nativas, eliminando sus poblaciones naturales, y explotando el territorio con fines productivistas. Esto no es un texto contra la abeja de la miel ni contra los apicultores. Se que hay muchos apicultores sensatos y responsables que aman la naturaleza. Pero el modelo actual ha dejado de ser sostenible y hay que trabajar todos juntos para que lo vuelva a ser.
 
 *Referencias:*
 
 Bartomeus, I., Martinez-Nuñez, C., Allen-Perkins, A., & Velado-Alonso, E. (2024). EVALUACIÓN Y VALORACIÓN DEL SERVICIO DE LOS ECOSISTEMAS DE LA POLINIZACIÓN (1.0). Zenodo. [https://doi.org/10.5281/zenodo.11530784](https://doi.org/10.5281/zenodo.11530784)
+
+Foto: Curro Molina.
