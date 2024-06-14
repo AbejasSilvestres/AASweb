@@ -23,7 +23,7 @@ Por un lado, el numero de colmenas gestionadas por apicultores ha incrementado d
 
 ![](</assets/Screenshot 2024-06-14 at 10.50.06.png> "Desde el 1980 hemos pasado de menos de 1 millón de colmenas a casi 3 millones. Sin embargo, la producción de miel lleva estancada desde el año 2000. Datos FAO")
 
-> Desde el 1980 hemos pasado de menos de 1 millón de colmenas a casi 3 millones. Sin embargo, la producción de miel lleva estancada desde el año 2000. Datos FAO
+> *Desde el 1980 hemos pasado de menos de 1 millón de colmenas a casi 3 millones. Sin embargo, la producción de miel lleva estancada desde el año 2000. Datos FAO*
 
 El panorama es aún más desolador de lo que puede parecer. Mientras que las abejas gestionadas incrementan, los nidos silvestres de abeja de la miel nativa en España prácticamente han desaparecido. De hecho, las gran mayoría de abejas de la miel gestionadas por los apicultores son de subespecies no nativas comercializadas internacionalmente. Por tanto, hemos perdido gran parte del acervo genético de nuestras poblaciones. Además, este transporte ha tenido consecuencias trágicas, ya que junto a las abejas importadas, se han introducido numerosas enfermedades que no existían en España. La punta de lanza es el ácaro de la varroa, principal responsable de que las colonias silvestres hayan desaparecido, y cuyo tratamiento require de multiples aplicaciones de acaricidas a los apicultores de toda España para poder mantener sus colonias sanas.
 
@@ -31,7 +31,7 @@ Recientemente hemos participado en un informe para la Junta de Andalucia donde h
 
 ![](/assets/Apis.png "Influencia apicola en Andalucía, incluyendo influencia alta (valores > 3), media (valores > 2) y baja (valores \< 2) alrededor de cada apiario. ")
 
-> Más del 40% del Monte público esta bajo influencia apicola en Andalucía, ya sea con influencia alta (valores > 3), media (valores > 2) y baja (valores \< 2). 
+> *Más del 40% del Monte público esta bajo influencia apicola en Andalucía, ya sea con influencia alta (valores > 3), media (valores > 2) y baja (valores \< 2).*
 
 La abeja de la miel ha convivido con nosotros desde siempre, pero en los últimos años la hemos convertido en una forma más de ganadería, desplazando variedades nativas, eliminando sus poblaciones naturales, y explotando el territorio con fines productivistas. Esto no es un texto contra la abeja de la miel ni contra los apicultores. Se que hay muchos apicultores sensatos y responsables que aman la naturaleza. Pero el modelo actual ha dejado de ser sostenible y hay que trabajar todos juntos para que lo vuelva a ser.
 
