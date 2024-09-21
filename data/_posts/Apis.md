@@ -9,7 +9,7 @@ excerpt: >-
   fines productivistas. El modelo actual ha dejado de ser sostenible y hay que
   trabajar todos juntos para que lo vuelva a ser.
 coverImage: /assets/Screenshot 2024-06-14 at 11.18.45.png
-date: 2024-06-13T22:00:00.000Z
+date: 2024-09-20T22:00:00.000Z
 author:
   name: Nacho Bartomeus
   picture: /assets/PHOTO-2019-04-12-11-53-34.jpg
