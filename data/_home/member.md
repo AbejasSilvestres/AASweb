@@ -8,6 +8,6 @@ button:
   label: Únete ahora
 ---
 
-* Contribuirás a financiar proyectos
-* Recibirás actualizaciones
-* Recibirás la Guía Visual de Abejorros Ibéricos
+* Protegerás a las abejas silvestres
+* Contribuirás a financiar nuestros proyectos
+* Serás el primero en conocer nuestros nuevos recursos
